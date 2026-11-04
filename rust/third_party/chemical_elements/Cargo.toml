@@ -1,0 +1,25 @@
+# Vendored from crates.io chemical_elements 0.7.0 (Apache-2.0, upstream
+# mobiusklein/chemical_elements). Single local change: the BRAIN
+# `isotopic_coefficients` isotope lookup uses `Element::isotope_by_shift`
+# (the call upstream left commented out) instead of a mass-number map key
+# that dropped isotopes such as 81Br and oxygen's minor isotopes.
+[package]
+edition = "2021"
+name = "chemical_elements"
+version = "0.7.0"
+description = "A library for representing chemical compositions and generating isotopic patterns"
+license = "Apache-2.0"
+
+[features]
+default = ["mzpeaks", "serde"]
+serde = ["dep:serde", "dep:serde_with"]
+
+[lib]
+name = "chemical_elements"
+path = "src/lib.rs"
+
+[dependencies]
+fnv = "1.0.7"
+mzpeaks = { version = ">=1.0.0", optional = true }
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_with = { version = "3.9.0", optional = true }

@@ -1,0 +1,7 @@
+{
+  "id": "toppic-indexed-pipeline",
+  "version": "1",
+  "name": "TopPIC Indexed Batch Pipeline",
+  "description": "Batch top-down proteomics over one shared protein database: msconvert -> topfd -> topindex (ONCE per Run) -> toppic per sample. Every toppic job consumes the topindex completion marker, so the database is indexed exactly once per Run. DISK BUDGET: <fasta>_idx ≈ 2 x FASTA (two database copies + shift blocks); plan ≈ 4 x FASTA per Run — check free space for large databases.",
+  "nodes": ["msconvert", "toppic", "topindex"]
+}

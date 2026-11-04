@@ -1,0 +1,56 @@
+/* chart-forge design tokens — single source of visual truth (see paradigms/tokens.md) */
+:root {
+  /* semantic states — consistent across ALL TDEase figures */
+  --c-accent: #d55e00;        /* modified / significant / highlight (Okabe-Ito vermillion) */
+  --c-unmod: #bebebe;         /* unmodified / not significant (grey) */
+  --c-gap: #f2f2f2;           /* unassigned matrix cell — coverage is a claim, render AS a gap */
+  --c-threshold: #444444;     /* cutoff lines, dashed */
+  --c-xref: #9a9a9a66;        /* cross-reference peaks/traces (mirror plots) */
+
+  /* selectable/link accent (Okabe-Ito blue; absorbs the stray #005f99) */
+  --c-link: #0072b2;
+
+  /* grey ladder — ink hierarchy; charts must use these names, never raw hex */
+  --ink: #1a1a1a;        /* titles, primary labels */
+  --g-dark: #444444;     /* strong annotations, emphasis labels */
+  --g-mid: #555555;      /* axis titles, tick labels, default annotation */
+  --g-soft: #777777;     /* captions, provenance, de-emphasis */
+  --g-faint: #999999;    /* hint text */
+  --g-ghost: #bbbbbb;    /* disabled strokes/fills */
+
+  /* tooltip card — the ONE dark-card recipe (forge.tip()) */
+  --tip-bg: rgba(20,20,20,.92);  --tip-fg: #ffffff;
+  --tip-pad: 7px 10px;  --tip-radius: 6px;  --tip-fs: 12px;
+
+  /* volcano four-state model (EnhancedVolcano convention) */
+  --c-ns: #bebebe;  --c-p-only: #e69f00;  --c-fc-only: #009e73;
+
+  /* ion colours (Lorikeet/spectrum_utils standard) */
+  --c-b-ion: #0072b2;  --c-y-ion: #d55e00;  --c-a-ion: #009e73;
+  --c-c-ion: #56b4e9;  --c-z-ion: #cc79a7;  --c-x-ion: #e69f00;  /* ETD c/z + x (Okabe-Ito) */
+
+  /* Okabe-Ito categorical set (max 7 classes + grey) */
+  --cat-1: #e69f00; --cat-2: #56b4e9; --cat-3: #009e73; --cat-4: #f0e442;
+  --cat-5: #0072b2; --cat-6: #d55e00; --cat-7: #cc79a7;
+
+  /* typography — 5pt hard floor at print size */
+  --font: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "JetBrains Mono", Consolas, "Courier New", monospace;
+  --fs-axis-title: 13px;  --fs-tick: 11px;  --fs-annot: 10px;  --fs-title: 16px;  --fs-sub: 12px;
+
+  /* geometry */
+  --stroke-axis: 0.75px;  --stroke-grid: 0.5px;  --c-grid: #e0e0e0;
+  --tick-out: 3px;  --pad-axes: 8px;
+
+  /* journal widths (build/export targets) */
+  --w-single: 1054px;   /* 89mm  @ 300dpi */
+  --w-double: 2165px;   /* 183mm @ 300dpi */
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font); color: #1a1a1a; background: #fff; }
+#app { padding: 14px; }
+header h1 { font-size: var(--fs-title); margin: 0 0 2px; }
+header p  { font-size: var(--fs-sub); color: #555; margin: 0 0 10px; }
+#provenance { font-size: var(--fs-annot); color: #777; border-top: 1px solid var(--c-grid);
+  padding-top: 6px; margin-top: 10px; white-space: pre-wrap; }

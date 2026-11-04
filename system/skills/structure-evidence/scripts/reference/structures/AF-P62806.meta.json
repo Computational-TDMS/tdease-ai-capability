@@ -1,0 +1,11 @@
+{
+  "source": "alphafold",
+  "accession": "P62806",
+  "url": "https://alphafold.ebi.ac.uk/files/AF-P62806-F1-model_v6.pdb",
+  "uniprot_start": 1,
+  "uniprot_end": 103,
+  "date_modified": null,
+  "fetched_at": "2026-08-31T07:13:21+00:00",
+  "residues": 103,
+  "md5": "14b906f42ed3f6a3e425cae1e8c286e0"
+}

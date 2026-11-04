@@ -1,0 +1,7 @@
+{
+  "id": "toppic-raw-pipeline",
+  "version": "1",
+  "name": "TopPIC Raw Pipeline",
+  "description": "Top-down proteomics from vendor raw: msconvert -> topfd -> toppic. topfd/toppic are inline and declare only the ms2.msalign -> proteoform chain, so one static DAG covers both standard and MS2-only acquisitions; data-dependent flags (topfd -o / toppic -x) are set in config.yaml after probing the mzML.",
+  "nodes": ["msconvert"]
+}

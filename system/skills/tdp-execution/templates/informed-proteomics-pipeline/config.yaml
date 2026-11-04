@@ -1,0 +1,48 @@
+# informed-proteomics-pipeline default config
+# {sample}.mzML --[pbngen]--> .pbf --[promex]--> .ms1ft --[mspathfindert]-->
+#   _IcTarget.tsv / _IcDecoy.tsv / _IcTda.tsv / .mzid
+# Override per-run before submit. Keys must match what the deployed
+# informed-proteomics Node's rules.smk reads; this template adds no flags.
+#
+# Run-folder layout is FLAT. Before running, stage into the run folder:
+#   {sample}.mzML      for each sample below (toppic-raw-pipeline output;
+#                      convert vendor raw with msconvert first)
+#   database.fasta     the protein database (or set top-level `fasta:`)
+#                      A TopPIC cross-check can use identified accessions;
+#                      a separate targeted search uses its own stated scope.
+#
+# Choose the FASTA and modification model for the question. A restricted
+# cross-check tests that search space; agreement does not establish chemistry.
+
+samples:
+  - sample1
+
+# fasta: database.fasta   # default; rename your fasta or set this key
+
+# ProMex feature-finding ranges (node rule promex reads the top-level `promex:`).
+# The example range is 2..30; adapt it to the acquisition and target species.
+promex:
+  min_charge: 2
+  max_charge: 30
+
+informed-proteomics:
+  # Targeted modification library for MSPathFinderT (-mod).
+  # Default (key absent/null) = the node's bundled suite-authored targeted set
+  # (resources/mspf_targeted_mods.txt: MetOx, STY-Phospho, N-term + K Acetyl,
+  # K-Methyl/DiMethyl/TriMethyl, Cys-Trioxidation; provenance in the file).
+  # Point at a run-local source artifact to override, or set "" (quoted
+  # empty) for an unmodified-only search. Larger lists increase search cost.
+  # The bundled set is an example, not a universal model.
+  mods:
+  # -tda: 1 = target + shuffled decoy, FDR estimable (rule default, and the
+  # only mode whose full output quartet the DAG declares); 0 = target-only.
+  tda: 1
+  # -overwrite true (rule default): a rerun after a partial failure must not
+  # silently reuse stale _IcTarget/_IcDecoy files. Set false only to resume
+  # an unchanged, verified search.
+  overwrite: true
+  # Extra ProMex flags (-MinMass/-MaxMass/-BinResPPM/-ScoreTh/-csv/...), if needed.
+  promex_extra: ""
+  # Advanced MSPathFinderT flags (-MinLength/-MaxLength/-t/-f/-act/-n/-ic/...).
+  # e.g. HCD-only data may set extra: "-act HCD"; default Unknown matches all.
+  extra: ""

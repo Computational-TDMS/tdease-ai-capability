@@ -1,0 +1,59 @@
+# toppic-raw-pipeline default config
+# raw -> msconvert -> topfd -> toppic. Override per-run before submit.
+#
+# Run-folder layout is FLAT. Before running, stage into the run folder:
+#   {sample}.raw       for each sample below (vendor raw; see msconvert.raw_extension)
+#   database.fasta     the protein database (or set top-level `fasta:`)
+
+samples:
+  - sample1
+
+# fasta: database.fasta   # default; rename your fasta or set this key
+
+msconvert:
+  raw_extension: .raw
+  centroid: true     # peakPicking true 1- (vendor algorithm); TopFD wants centroided peaks
+  precision: 64      # 64-bit m/z — do NOT use 32 for top-down (see msconvert node README)
+  zlib: false
+
+# topfd parameters (flag authority: the deployed toppic Node's rules.smk).
+topfd:
+  activation: FILE       # 碎裂方式 FILE=按谱文件自判；ETD/CID/HCD/UVPD/MPD 仅在仪器元数据缺失时手填
+  max_charge: 30         # 去卷积考虑的最大电荷（顶层蛋白形式常规 30）
+  max_mass: 50000        # 去卷积考虑的最大单同位素质量 (Da)；小蛋白/组蛋白 50 kDa 起步
+  mz_error: 0.02         # 前驱 m/z 容差 (Da)；高分辨 Orbitrap 经验 0.02
+  ms1_sn_ratio: 3        # MS1 峰信噪比阈值（提高→更少更干净的特征）
+  ms2_sn_ratio: 1        # MS2 峰信噪比阈值；MS2 常低于 MS1，保持 1
+  precursor_window: 3.0  # 前驱电荷态分组窗口 (m/z)
+  skip_html: true
+  # PROBE THE DATA FIRST. MS2-only acquisition (no MS1 scans in the mzML):
+  #   extra: "-o"    # missing-level-one; and set toppic.extra: "-x" below.
+  # Without it TopFD exits with "No spectrum to read in mzML file!".
+  extra: ""
+
+# toppic parameters (flag authority: the deployed toppic Node's rules.smk).
+toppic:
+  activation: FILE
+  mass_error_tolerance: 10   # bare integer PPM, never "10ppm"
+  proteoform_error_tolerance: 1.2   # 蛋白形式质量容差 (Da)；发现式搜索经验 1.2
+  num_shift: 1                      # 每蛋白形式允许的意外质量移位数；1=发现式常规
+  min_shift: -500                   # 移位搜索下界 (Da)
+  max_shift: 500                    # 移位搜索上界 (Da)；±500 覆盖常见 PTM 组合
+  # 'TERMIN'/'MULTIPLE' are NOT valid; TopPIC accepts them silently, matches
+  # nothing, and exits 0 -> empty table reported as SUCCEEDED.
+  proteoform_type: COMPLETE,PREFIX,SUFFIX,INTERNAL
+  n_terminal_form: NONE,NME,NME_ACETYLATION,M_ACETYLATION
+  # The Node's conservative built-in PTM library is used by default. Set a
+  # run-local file to override it, or null/empty to disable variable PTMs.
+  # variable_ptm_file: custom_variable_ptms.txt
+  variable_ptm_num: 3                # 可变 PTM 组合数上限 (-S)；3 为保守默认，加大显著增时
+  # Optional second-pass characterization of remaining unexpected shifts.
+  local_ptm_file: ""
+  spectrum_cutoff_type: EVALUE      # 谱水平截断类型
+  spectrum_cutoff_value: 0.01       # 谱水平 E-value 阈值；0.01 为发现式常规
+  proteoform_cutoff_type: EVALUE    # 蛋白形式水平截断类型
+  proteoform_cutoff_value: 0.01     # 蛋白形式 E-value 阈值；0.01 为发现式常规
+  skip_html: true
+  # MS2-only acquisition (topfd produced no feature file):
+  #   extra: "-x"    # no-topfd-feature; pairs with topfd.extra: "-o".
+  extra: ""

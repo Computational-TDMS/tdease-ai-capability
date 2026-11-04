@@ -1,0 +1,155 @@
+# TDEase template: toppic-raw-pipeline
+# Top-down proteomics from vendor raw: msconvert -> topfd -> toppic
+# (flat run folder: data and outputs at the run root).
+#
+# Run-folder layout (FLAT — data and outputs at the root):
+#   Snakefile, config.yaml
+#   {sample}.raw           — input spectra (one per sample)
+#   database.fasta         — protein database (one per run, shared by all samples)
+#   {sample}.mzML          — msconvert output
+#   {sample}_ms2.msalign   — topfd output (the ONLY artifact downstream needs)
+#   {sample}_ms2_toppic_proteoform.tsv, {sample}_ms2_toppic_prsm.tsv
+#
+# Why topfd/toppic are inline here instead of including the toppic Node's
+# rules.smk:
+#   the shared Node rule declares MS1 outputs ({sample}_ms1.feature,
+#   {sample}_ms1.msalign, ...) unconditionally. On MS2-only acquisitions
+#   (e.g. PXD012084 ubiquitin) TopFD produces ONLY {sample}_ms2.msalign, so
+#   the included rule's output contract can never be met — the run dies after
+#   topfd with missing outputs. The inline rule below declares only
+#   {sample}_ms2.msalign, which TopFD produces in BOTH modes, so one static
+#   DAG covers standard and MS2-only data. On standard data the MS1/feature
+#   files are still written next to the input, just not tracked by the DAG.
+#
+# Data-dependent flags are NOT hardcoded here. Probe the data first
+# (count MS1/MS2 scans in the mzML), then record the conclusion in
+# config.yaml:
+#   MS2-only (no MS1 scans)  ->  topfd.extra: "-o"   (missing-level-one)
+#                                toppic.extra: "-x"  (no-topfd-feature)
+# These two flags are ONE data fact; set or omit both together.
+# Flag authority remains the deployed toppic Node's rules.smk (calibrated
+# against topfd.exe -h / toppic.exe -h); the rules below mirror it.
+
+from pathlib import Path
+
+_FASTA = config.get("fasta", "database.fasta")
+
+SAMPLES = config.get("samples", [])
+
+_MSCONVERT = (config.get("nodes") or {}).get("msconvert")
+if not _MSCONVERT:
+    raise FileNotFoundError("bound msconvert node is missing from this Run")
+include: _MSCONVERT + "/rules.smk"
+
+# The Backend injects config["nodes"][<id>] = the bound Node package's absolute
+# catalog path at dry-run/execution (WORKFLOW-RUN.md): a Run directory never
+# holds tool bytes or a nodes/ subtree, so binding resolution has no fallback.
+_TOPPIC = (config.get("nodes") or {}).get("toppic")
+if not _TOPPIC:
+    raise FileNotFoundError("bound toppic node is missing from this Run")
+_TOPPIC_DIR = Path(_TOPPIC)
+
+
+# ---------------------------------------------------------------------------
+# rule topfd — deconvolute mass spectra (inline; see header for why).
+# Declares only {sample}_ms2.msalign so the DAG holds for MS2-only data too.
+# MS2-only runs set config.topfd.extra: "-o".
+# ---------------------------------------------------------------------------
+_BUILTIN_VARIABLE_PTMS = _TOPPIC_DIR / "resources" / "common_variable_ptms.txt"
+
+rule topfd:
+    input:
+        mzml = "{sample}.mzML",
+    output:
+        ms2_msalign = "{sample}_ms2.msalign",
+    threads:
+        28
+    resources:
+        mem_mb = 2048,
+    params:
+        activation       = lambda wc, cfg=config: cfg.get("topfd", {}).get("activation", "FILE"),
+        max_charge       = lambda wc, cfg=config: cfg.get("topfd", {}).get("max_charge", 30),
+        max_mass         = lambda wc, cfg=config: cfg.get("topfd", {}).get("max_mass", 50000),
+        mz_error         = lambda wc, cfg=config: cfg.get("topfd", {}).get("mz_error", 0.02),
+        ms1_sn_ratio     = lambda wc, cfg=config: cfg.get("topfd", {}).get("ms1_sn_ratio", 3),
+        ms2_sn_ratio     = lambda wc, cfg=config: cfg.get("topfd", {}).get("ms2_sn_ratio", 1),
+        precursor_window = lambda wc, cfg=config: cfg.get("topfd", {}).get("precursor_window", 3.0),
+        msdeconv         = lambda wc, cfg=config: "-n" if cfg.get("topfd", {}).get("msdeconv") else "",
+        skip_html        = lambda wc, cfg=config: "-g" if cfg.get("topfd", {}).get("skip_html", True) else "",
+        disable_frag     = lambda wc, cfg=config: "-d" if cfg.get("topfd", {}).get("disable_frag", False) else "",
+        extra            = lambda wc, cfg=config: cfg.get("topfd", {}).get("extra", ""),
+        topfd_bin        = str(_TOPPIC_DIR / "topfd.exe"),
+    message:
+        "topfd: deconvoluting {input.mzml}"
+    shell:
+        '("{params.topfd_bin}" -a {params.activation} -c {params.max_charge} '
+        '-m {params.max_mass} -e {params.mz_error} -r {params.ms1_sn_ratio} '
+        '-s {params.ms2_sn_ratio} -w {params.precursor_window} '
+        '{params.msdeconv} {params.skip_html} {params.disable_frag} '
+        '{params.extra} -u {threads} "{input.mzml}")'
+
+
+# ---------------------------------------------------------------------------
+# rule toppic — identify proteoforms from msalign + fasta.
+# MS2-only runs (topfd produced no feature file) set config.toppic.extra: "-x".
+# ---------------------------------------------------------------------------
+rule toppic:
+    input:
+        msalign = "{sample}_ms2.msalign",
+        fasta   = _FASTA,
+    output:
+        proteoform = "{sample}_ms2_toppic_proteoform.tsv",
+        prsm       = "{sample}_ms2_toppic_prsm.tsv",
+    threads:
+        28
+    resources:
+        mem_mb = 2048,
+        toppic_slots = 1,
+    params:
+        activation               = lambda wc, cfg=config: cfg.get("toppic", {}).get("activation", "FILE"),
+        mass_error               = lambda wc, cfg=config: cfg.get("toppic", {}).get("mass_error_tolerance", 10),
+        proteoform_error         = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_error_tolerance", 1.2),
+        num_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("num_shift", 1),
+        min_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("min_shift", -500),
+        max_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("max_shift", 500),
+        proteoform_type          = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_type", "COMPLETE,PREFIX,SUFFIX,INTERNAL"),
+        fixed_mod                = lambda wc, cfg=config: (
+            f'-f "{cfg.get("toppic", {}).get("fixed_mod")}"'
+            if cfg.get("toppic", {}).get("fixed_mod") else ""
+        ),
+        variable_ptm             = lambda wc, cfg=config: (
+            f'-b "{cfg.get("toppic", {}).get("variable_ptm_file", _BUILTIN_VARIABLE_PTMS)}" '
+            f'-S {cfg.get("toppic", {}).get("variable_ptm_num", 3)}'
+            if cfg.get("toppic", {}).get("variable_ptm_file", _BUILTIN_VARIABLE_PTMS) else ""
+        ),
+        local_ptm                = lambda wc, cfg=config: (
+            f'-B "{cfg.get("toppic", {}).get("local_ptm_file")}"'
+            if cfg.get("toppic", {}).get("local_ptm_file") else ""
+        ),
+        n_terminal_form          = lambda wc, cfg=config: cfg.get("toppic", {}).get("n_terminal_form", "NONE,NME,NME_ACETYLATION,M_ACETYLATION"),
+        skip_html                = lambda wc, cfg=config: "-g" if cfg.get("toppic", {}).get("skip_html", True) else "",
+        decoy                    = lambda wc, cfg=config: "-d" if cfg.get("toppic", {}).get("decoy", False) else "",
+        spectrum_cutoff_type     = lambda wc, cfg=config: cfg.get("toppic", {}).get("spectrum_cutoff_type", "EVALUE"),
+        spectrum_cutoff_value    = lambda wc, cfg=config: cfg.get("toppic", {}).get("spectrum_cutoff_value", 0.01),
+        proteoform_cutoff_type   = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_cutoff_type", "EVALUE"),
+        proteoform_cutoff_value  = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_cutoff_value", 0.01),
+        lookup_table             = lambda wc, cfg=config: "-l" if cfg.get("toppic", {}).get("lookup_table", False) else "",
+        extra                    = lambda wc, cfg=config: cfg.get("toppic", {}).get("extra", ""),
+        toppic_bin               = str(_TOPPIC_DIR / "toppic.exe"),
+    message:
+        "toppic: identifying proteoforms from {input.msalign}"
+    shell:
+        '("{params.toppic_bin}" -a {params.activation} -e {params.mass_error} '
+        '-p {params.proteoform_error} -s {params.num_shift} '
+        '-m {params.min_shift} -M {params.max_shift} '
+        '-t {params.spectrum_cutoff_type} -v {params.spectrum_cutoff_value} '
+        '-T {params.proteoform_cutoff_type} -V {params.proteoform_cutoff_value} '
+        '-R {params.proteoform_type} {params.fixed_mod} {params.variable_ptm} {params.local_ptm} '
+        '-n {params.n_terminal_form} {params.skip_html} {params.decoy} {params.lookup_table} '
+        '{params.extra} -u {threads} "{input.fasta}" "{input.msalign}")'
+
+
+rule all:
+    default_target: True
+    input:
+        expand("{sample}_ms2_toppic_proteoform.tsv", sample=SAMPLES)

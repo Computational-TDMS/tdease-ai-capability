@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mzML xmlns="http://psi.hupo.org/ms/mzml" id="tdease-cli-fixture" version="1.1.0">
+  <cvList count="2">
+    <cv id="MS" fullName="PSI Mass Spectrometry Ontology" version="4.1.7" URI="https://github.com/HUPO-PSI/psi-ms-CV/blob/master/psi-ms.obo"/>
+    <cv id="UO" fullName="Unit Ontology" version="2025-01-01" URI="http://purl.obolibrary.org/obo/uo.owl"/>
+  </cvList>
+  <fileDescription><fileContent><cvParam cvRef="MS" accession="MS:1000294" name="mass spectrum"/></fileContent></fileDescription>
+  <softwareList count="1"><software id="TDEase" version="0.1.0"><cvParam cvRef="MS" accession="MS:1000799" name="custom unreleased software tool"/></software></softwareList>
+  <instrumentConfigurationList count="1">
+    <instrumentConfiguration id="IC1">
+      <componentList count="3">
+        <source order="1"><cvParam cvRef="MS" accession="MS:1000073" name="electrospray ionization"/></source>
+        <analyzer order="2"><cvParam cvRef="MS" accession="MS:1000081" name="quadrupole"/></analyzer>
+        <detector order="3"><cvParam cvRef="MS" accession="MS:1000253" name="electron multiplier"/></detector>
+      </componentList>
+    </instrumentConfiguration>
+  </instrumentConfigurationList>
+  <dataProcessingList count="1"><dataProcessing id="DP1"><processingMethod order="1" softwareRef="TDEase"><cvParam cvRef="MS" accession="MS:1000544" name="Conversion to mzML"/></processingMethod></dataProcessing></dataProcessingList>
+  <run id="run1" defaultInstrumentConfigurationRef="IC1">
+    <spectrumList count="1" defaultDataProcessingRef="DP1">
+      <spectrum id="scan=1" index="0" defaultArrayLength="178">
+        <cvParam cvRef="MS" accession="MS:1000511" name="ms level" value="1"/>
+        <cvParam cvRef="MS" accession="MS:1000127" name="centroid spectrum"/>
+        <scanList count="1"><scan><cvParam cvRef="MS" accession="MS:1000016" name="scan start time" value="0" unitCvRef="UO" unitAccession="UO:0000031" unitName="minute"/></scan></scanList>
+        <binaryDataArrayList count="2">
+          <binaryDataArray encodedLength="56">
+            <cvParam cvRef="MS" accession="MS:1000514" name="m/z array"/>
+            <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float"/>
+            <cvParam cvRef="MS" accession="MS:1000576" name="no compression"/>
+            <binary>Qs77/xhkiUCbO/pfTmSJQEwZOKCFZIlAgo3r35VkiUC2+BQA42SJQFlqvd8IZYlA7GzIPzNliUAA/b5/c2WJQPa3BOC/ZYlAVmEzwAVmiUDIfECgc2aJQMl2vp+aZolA0bLuH+tmiUDlQuVfK2eJQKuwGeBiZ4lARuwTQJFniUAwStBfqGeJQJP/yd+9Z4lAwk8cQN9niUBjtfl/VWiJQM+j4v/OaIlAHcnlP+RoiUCnkgGgSmmJQAQeGEB4aYlAH9jxX8BpiUAXnMHf72mJQFt5yf8EaolAgH7fvzlqiUA8odefhGqJQBB1H4C0aolApYP1f+5qiUCy2vy/KmuJQMqIC0Cja4lAtObHX7priUBCzvv/GGyJQCcR4V9EbIlA0bLuH4tsiUAf2PFf4GyJQKmhDcAGbYlAgH7fv3ltiUDrbwnAv22JQO+NIQD4bYlApYP1fw5uiUDVzcXfdm6JQLgE4J+SbolAjNgngKJuiUB8YMd/wW6JQBSTN8DsbolAF58CYBxviUDzqzlAMG+JQH5yFCBqb4lAQL/v37xviUAXnwJg3G+JQOEnDqAfcIlAI/YJoFhwiUDfGAKAg3CJQJ9W0R+acIlA4zPZP89wiUBAwjBgCXGJQCcR4V8kcYlAOpLLf0hxiUAAAAAAYHGJQPSo+L/DcYlAwkzbv/JxiUA4g79fLHKJQFlt/l9VcolAlBEXgIZyiUAlBRbAtHKJQJks7j/ScolAhqsDIO5yiUAf2PFfIHOJQKuwGeBic4lAGa4OgHhziUDlQuVfq3OJQI7nM6C+c4lAp5VCIPdziUCqnsw/GnSJQGjQ0D9BdIlARdrGn4h0iUAShCug0HSJQGjQ0D/hdIlAM2spIA11iUC8IvjfKnWJQAYtJGB0dYlAM2spIM11iUB1OSUgBnaJQCHn/X88dolAbO7of5l2iUDMlxdgv3aJQFRSJ6DpdolALT4FwPh2iUChZd0/FneJQPOrOUAwd4lA51Hxf2d3iUClg/V/rneJQIzYJ4DCd4lAX5fhP913iUApIO1/QHiJQJUO1v+ZeIlAj+TyH9J4iUCvzjEgG3mJQFExzt9keYlA3xXB/5Z5iUAvTRHgtHmJQNXNxd/2eYlAmSzuPzJ6iUBF2safiHqJQK685H/SeolAxF4oYBt7iUCCkCxgYnuJQHEbDeCte4lAFZD2P0B8iUA+sOO/gHyJQNC1L6CXfIlAG70aoNR8iUAdyeU/ZH2JQN0MN+BzfYlAbw9CQJ59iUC+MQQAB36JQCP2CaCYfolAL00R4NR+iUDwiuB/636JQIi6D0Aqf4lA+MPPf29/iUDfG0MAsH+JQJQRF4DGf4lAZcQFoBGAiUDZ7h6gO4CJQFt8CoDRgIlAk//J3x2BiUDymeyfZ4GJQAYtJGC0gYlA2/0qwPeBiUCfVtEfOoKJQEDCMGCJgolAJQUWwNSCiUDtfhXgG4OJQDNrKSBtg4lA3xtDALCDiUCwy/CfDoSJQNnuHqAbhIlAh6jCn0GEiUBC0TyAhYSJQOdUMgDUhIlAVFInoAmFiUC+LsN/OoWJQFZhM8BlhYlAVU/mH52FiUDlRSbg94WJQGniHeBpholATyLCv4iGiUCYLy/AnoaJQBu9GqDUholAyXa+nxqHiUA+syRALYeJQIm3zr9dh4lAcRsN4K2HiUAxXB0A0YeJQHY25J85iIlA9rTDX1OIiUCnkgGgioiJQIzYJ4DCiIlAeEXwv9WIiUDdDDfgE4mJQGjQ0D9hiYlAuRYtQLuJiUBt/fSf9YmJQL4xBAAniolAuAchID+KiUCR8L2/YYqJQN8YAoCDiolA2e4eoJuKiUAEHhhAuIqJQF2I1R8hi4lACkj7H2CLiUDpYz4gsIuJQPrVHCC4i4lAnUoGgOqLiUA=</binary>
+          </binaryDataArray>
+          <binaryDataArray encodedLength="56">
+            <cvParam cvRef="MS" accession="MS:1000515" name="intensity array"/>
+            <cvParam cvRef="MS" accession="MS:1000523" name="64-bit float"/>
+            <cvParam cvRef="MS" accession="MS:1000576" name="no compression"/>
+            <binary>mpmZmSnwIEGamZmZ96IiQc3MzMysp+ZAzczMzNBeA0GamZmZQH0iQQAAAAAQSftAMzMzM7Pj5UAzMzMzFWAsQQAAAAAAx99AzczMzFujL0EzMzMzEy8bQc3MzMySbylBzczMzICsIEGamZmZBX4iQWZmZmY1BS9BMzMzMxOT4EBmZmZmdjbnQJqZmZnZdRxBmpmZmQxTMEGamZkZBQw2QZqZmZlxFihBAAAAAGRwAUGamZmZz/oUQQAAAAAQdgFBZmZmZoaII0HNzMzM3BjzQJqZmZlhyvpAMzMzM3XhE0GamZmZSbb8QAAAAADkmQ9BzczMzEwC7ECamZmZyVsRQZqZmZmBT/9AzczMzIy//EAzMzMz00j1QM3MzMy46wNBzczMzHyV4EBmZmZmqk8QQQAAAACwR/JAMzMzM/cXC0EAAAAAwBjYQJqZmZn5xApBzczMzEST/ECamZmZafQHQZqZmZn5WwNBzczMzAw37kAzMzMz0xHSQJqZmZnV+AZBzczMzLyV7ECamZmZpVIDQQAAAACYwP9AMzMzM6+yAEEzMzMzbR4VQZqZmZkZvOVAAAAAAHDZEkEzMzMzE+LeQDMzMzNjOuVAZmZmZvpRKUEzMzMzQwboQJqZmZnZpNpAMzMzM/s5/UBmZmZm2b4gQWZmZmbmLQBBMzMzM62XJEEzMzMzU3/yQJqZmZmZ7tdAzczMzHrUJkHNzMzM9KvyQM3MzMwsFttAmpmZmVnT4kAAAAAAdMoVQQAAAADg5tZAZmZmZtYZ6UDNzMzM7BESQZqZmZkxJv9AAAAAAMCz0kAAAAAAoNvVQDMzMzMrUhZBAAAAAKCk5UAAAAAAZP8JQQAAAADQswFBmpmZmXEI9ECamZmZiVLgQDMzMzNbmQxBmpmZmcnN40AzMzMzcaERQQAAAADwAONAmpmZmSlbCEGamZmZGRrXQM3MzMw8ruFAmpmZmclO5ECamZmZYSr8QGZmZmYyQwdBZmZmZi7qAEHNzMzMjHAgQWZmZmZ2BeVAZmZmZm6/90AzMzMzmtguQc3MzMwc6+JAAAAAgHDEPkEzMzMzk8jXQGZmZmY5zkpBzczMzEyN7EDNzMzMtGfxQAAAAECCZ1JBmpmZmbnK30AAAABgdYpUQZqZmZn5w+RAAAAAAJa2UkFmZmZmZgjYQAAAAIARjExBAAAAgPt7SkHNzMzMDLrvQDMzMzMjre5AZmZmZh0RO0EzMzMzaw4jQc3MzMzWWyVBAAAAAPh98UAAAAAA7GIlQWZmZmbl9yZBmpmZmVnt3kCamZmZydbwQGZmZmaJ/CFBAAAAAJCC80CamZmZQQwHQZqZmZk1aRRBZmZmZiYs40DNzMzMaEoZQc3MzMwYVB1BmpmZmVku3kAAAAAA234oQZqZmZnBfvNAAAAAAJnuNUFmZmZmNsznQGZmZmZHqjFBMzMzM6M/5ECamZkZiUIyQZqZmZkJi+dAmpmZmUk3LUGamZmZOXLhQM3MzMwMqupAmpmZmWbhKEFmZmZmtlLjQM3MzMwtyyVBmpmZmRkH7UDNzMzM7EnbQDMzMzPPVh5BzczMzHwI4UAAAAAAansWQQAAAACANeZAMzMzM7t0C0FmZmZm2mEAQc3MzMzE5/FAMzMzM4NS+0AzMzMzj9kAQWZmZmbGS99AAAAAAMQcA0GamZmZmRH0QM3MzMxMnwlBMzMzM0cDAEEzMzMz093dQDMzMzPLdPVAZmZmZnabB0EzMzMzA6XgQGZmZmbyEg9BZmZmZsZo50AAAAAAvD0RQZqZmZkJJOJAAAAAACDy3UCamZmZafrqQAAAAADMURJBZmZmZoZr80AzMzMz867eQDMzMzMjMBJBMzMzM5NP3UAzMzMzdyQDQWZmZmYyPwNBzczMzCxX3UA=</binary>
+          </binaryDataArray>
+        </binaryDataArrayList>
+      </spectrum>
+    </spectrumList>
+  </run>
+</mzML>

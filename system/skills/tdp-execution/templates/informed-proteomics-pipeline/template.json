@@ -1,0 +1,7 @@
+{
+  "id": "informed-proteomics-pipeline",
+  "version": "3",
+  "name": "Informed-Proteomics Pipeline",
+  "description": "Paper-completion chain after TopPIC (Wilson & Zhou 2022, steps 8-13), composed from the deployed informed-proteomics Node's own rules: mzML --[pbngen]--> .pbf --[promex]--> .ms1ft (the feature-map layer the tdp-opensearch census reads) --[mspathfindert]--> _IcTarget/_IcDecoy/_IcTda.tsv + .mzid (targeted cross-check only, never replaces the TopPIC open-search shift). Stage a focused FASTA at the run root (database.fasta) and keep the modification list minimized; the node's bundled targeted mods library is the default. Output names are the empirically verified v1.1.8305 contract documented in the node's rules.smk.",
+  "nodes": ["informed-proteomics"]
+}

@@ -1,0 +1,920 @@
+{
+  "metadata": {
+    "id": "wf_toppic_only",
+    "name": "TopPIC-only analysis workflow",
+    "version": "2.1.0",
+    "description": "TopPIC complete pipeline: sample input placeholder(data_loader) -> msconvert -> topfd -> toppic, with shared FASTA reference input(fasta_loader), including feature map / spectra / PrSM table / MS2 sequence annotation visualization.",
+    "author": "TDEase",
+    "created": "2026-05-22T00:00:00Z",
+    "modified": "2026-07-23T00:00:00Z",
+    "tags": [
+      "toppic",
+      "topfd",
+      "default",
+      "visualization",
+      "public-template"
+    ]
+  },
+  "format_version": "2.0",
+  "schema_version": "2.0",
+  "projectSettings": {},
+  "nodes": [
+    {
+      "id": "data_loader_1",
+      "type": "data_loader",
+      "position": {
+        "x": 80,
+        "y": 80
+      },
+      "data": {
+        "label": "Sample raw input",
+        "samplePolicy": "independent",
+        "description": "Declares that each sample needs to bind one raw spectrum file input; the placeholder is provided by runtime sample binding."
+      },
+      "params": {
+        "dataType": "raw",
+        "accept": [
+          "raw",
+          "mzml",
+          "wiff",
+          "d"
+        ]
+      },
+      "executionMode": "script",
+      "nodeKind": "index"
+    },
+    {
+      "id": "fasta_loader_1",
+      "type": "data_loader",
+      "position": {
+        "x": 80,
+        "y": 240
+      },
+      "data": {
+        "label": "FASTA reference input",
+        "samplePolicy": "independent",
+        "description": "Declares the run/workflow-shared FASTA reference database input; not used as sample-local raw input."
+      },
+      "params": {
+        "dataType": "fasta",
+        "accept": [
+          "fasta",
+          "fa",
+          "fna",
+          "faa"
+        ]
+      },
+      "executionMode": "script",
+      "nodeKind": "index"
+    },
+    {
+      "id": "msconvert_1",
+      "type": "msconvert",
+      "position": {
+        "x": 260,
+        "y": 80
+      },
+      "nodeConfig": {
+        "toolId": "msconvert",
+        "paramValues": {
+          "format": "mzML",
+          "mz_precision": "64",
+          "intensity_precision": "64",
+          "filters": "peakPicking true 1-",
+          "default_precision": "64",
+          "numpress_pic": false,
+          "numpress_all": false,
+          "gzip": false,
+          "merge": false,
+          "sim_as_spectra": false,
+          "srm_as_spectra": false,
+          "combine_ion_mobility_spectra": false,
+          "dda_processing": false,
+          "ignore_calibration_scans": false,
+          "accept_zero_length_spectra": false,
+          "ignore_missing_zero_samples": false,
+          "ignore_unknown_instrument_error": false,
+          "strip_location_from_source_files": false,
+          "strip_version_from_software": false,
+          "continue_on_error": false,
+          "verbose": false
+        }
+      },
+      "data": {
+        "label": "MSConvert",
+        "params": {
+          "format": "mzML",
+          "mz_precision": "64",
+          "intensity_precision": "64",
+          "filters": "peakPicking true 1-",
+          "default_precision": "64",
+          "numpress_pic": false,
+          "numpress_all": false,
+          "gzip": false,
+          "merge": false,
+          "sim_as_spectra": false,
+          "srm_as_spectra": false,
+          "combine_ion_mobility_spectra": false,
+          "dda_processing": false,
+          "ignore_calibration_scans": false,
+          "accept_zero_length_spectra": false,
+          "ignore_missing_zero_samples": false,
+          "ignore_unknown_instrument_error": false,
+          "strip_location_from_source_files": false,
+          "strip_version_from_software": false,
+          "continue_on_error": false,
+          "verbose": false
+        }
+      },
+      "params": {
+        "format": "mzML",
+        "mz_precision": "64",
+        "intensity_precision": "64",
+        "filters": "peakPicking true 1-",
+        "default_precision": "64",
+        "numpress_pic": false,
+        "numpress_all": false,
+        "gzip": false,
+        "merge": false,
+        "sim_as_spectra": false,
+        "srm_as_spectra": false,
+        "combine_ion_mobility_spectra": false,
+        "dda_processing": false,
+        "ignore_calibration_scans": false,
+        "accept_zero_length_spectra": false,
+        "ignore_missing_zero_samples": false,
+        "ignore_unknown_instrument_error": false,
+        "strip_location_from_source_files": false,
+        "strip_version_from_software": false,
+        "continue_on_error": false,
+        "verbose": false
+      },
+      "inputs": [
+        {
+          "id": "input_files",
+          "name": "Input Files",
+          "dataType": "raw",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "id": "mzml",
+          "name": "mzML",
+          "dataType": "mzml"
+        }
+      ],
+      "executionMode": "native",
+      "nodeKind": "compute"
+    },
+    {
+      "id": "topfd_1",
+      "type": "topfd",
+      "position": {
+        "x": 460,
+        "y": 80
+      },
+      "nodeConfig": {
+        "toolId": "topfd",
+        "paramValues": {
+          "activation": "FILE",
+          "max_charge": "30",
+          "max_mass": "70000",
+          "mz_error": "0.02",
+          "ms_one_sn_ratio": "3",
+          "ms_two_sn_ratio": "1",
+          "precursor_window": "3.0",
+          "ecscore_cutoff": "0.1",
+          "min_scan_number": "1",
+          "thread_number": "12",
+          "env_cnn_cutoff": "0.0",
+          "split_intensity_ratio": "2.5",
+          "missing_level_one": false,
+          "msdeconv": false,
+          "disable_frag_num_filtering": false,
+          "single_scan_noise": false,
+          "disable_additional_feature_search": false,
+          "skip_html_folder": false
+        }
+      },
+      "data": {
+        "label": "TopFD",
+        "params": {
+          "activation": "FILE",
+          "max_charge": "30",
+          "max_mass": "70000",
+          "mz_error": "0.02",
+          "ms_one_sn_ratio": "3",
+          "ms_two_sn_ratio": "1",
+          "precursor_window": "3.0",
+          "ecscore_cutoff": "0.1",
+          "min_scan_number": "1",
+          "thread_number": "12",
+          "env_cnn_cutoff": "0.0",
+          "split_intensity_ratio": "2.5",
+          "missing_level_one": false,
+          "msdeconv": false,
+          "disable_frag_num_filtering": false,
+          "single_scan_noise": false,
+          "disable_additional_feature_search": false,
+          "skip_html_folder": false
+        }
+      },
+      "params": {
+        "activation": "FILE",
+        "max_charge": "30",
+        "max_mass": "70000",
+        "mz_error": "0.02",
+        "ms_one_sn_ratio": "3",
+        "ms_two_sn_ratio": "1",
+        "precursor_window": "3.0",
+        "ecscore_cutoff": "0.1",
+        "min_scan_number": "1",
+        "thread_number": "12",
+        "env_cnn_cutoff": "0.0",
+        "split_intensity_ratio": "2.5",
+        "missing_level_one": false,
+        "msdeconv": false,
+        "disable_frag_num_filtering": false,
+        "single_scan_noise": false,
+        "disable_additional_feature_search": false,
+        "skip_html_folder": false
+      },
+      "inputs": [
+        {
+          "id": "input_files",
+          "name": "mzML Files",
+          "dataType": "mzml",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "id": "ms1feature",
+          "name": "MS1 Feature File",
+          "dataType": "feature",
+          "description": "LC-MS feature file containing MS1 features",
+          "semanticType": "proteomics/feature-table"
+        },
+        {
+          "id": "ms2feature",
+          "name": "MS2 Feature File",
+          "dataType": "feature",
+          "description": "MS/MS scan IDs and their corresponding LC-MS feature IDs",
+          "semanticType": "proteomics/feature-selection-map"
+        },
+        {
+          "id": "feature_xml",
+          "name": "Feature XML",
+          "dataType": "xml",
+          "description": "LC-MS features in XML format"
+        },
+        {
+          "id": "ms1_msalign",
+          "name": "MS1 MSAlign",
+          "dataType": "msalign",
+          "description": "Deconvoluted MS1 spectra"
+        },
+        {
+          "id": "ms2_msalign",
+          "name": "MS2 MSAlign",
+          "dataType": "msalign",
+          "description": "Deconvoluted MS/MS spectra for TopPIC",
+          "semanticType": "proteomics/ms2_msalign"
+        },
+        {
+          "id": "html_folder",
+          "name": "HTML Visualization",
+          "dataType": "html",
+          "description": "JavaScript files for MS1 and MS/MS spectral visualization"
+        }
+      ],
+      "executionMode": "native",
+      "nodeKind": "compute"
+    },
+    {
+      "id": "topindex_1",
+      "type": "topindex",
+      "position": {
+        "x": 500,
+        "y": 240
+      },
+      "data": {
+        "label": "TopIndex",
+        "description": "Build the shared FASTA index once before parallel TopPIC searches. Parameters are defined by rules.smk."
+      },
+      "inputs": [
+        {
+          "id": "fasta_file",
+          "name": "FASTA File",
+          "dataType": "fasta",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "id": "index_complete",
+          "name": "Index Complete",
+          "dataType": "topindex-marker"
+        }
+      ],
+      "executionMode": "native",
+      "nodeKind": "compute"
+    },
+    {
+      "id": "toppic_1",
+      "type": "toppic",
+      "position": {
+        "x": 700,
+        "y": 80
+      },
+      "nodeConfig": {
+        "toolId": "toppic",
+        "paramValues": {
+          "activation": "FILE",
+          "n_terminal_form": "NONE,NME,NME_ACETYLATION,M_ACETYLATION",
+          "proteoform_type": "COMPLETE,PREFIX,SUFFIX,INTERNAL",
+          "num_shift": "1",
+          "min_shift": "-500",
+          "max_shift": "500",
+          "variable_ptm_num": "3",
+          "mass_error_tolerance": "10",
+          "proteoform_error_tolerance": "1.2",
+          "spectrum_cutoff_type": "EVALUE",
+          "spectrum_cutoff_value": "0.01",
+          "proteoform_cutoff_type": "EVALUE",
+          "proteoform_cutoff_value": "0.01",
+          "miscore_threshold": "0.15",
+          "thread_number": "12",
+          "num_combined_spectra": "1",
+          "decoy": false,
+          "approximate_spectra": false,
+          "lookup_table": false,
+          "no_topfd_feature": false,
+          "keep_temp_files": false,
+          "keep_decoy_ids": false,
+          "skip_html_folder": true
+        }
+      },
+      "data": {
+        "label": "TopPIC",
+        "params": {
+          "activation": "FILE",
+          "n_terminal_form": "NONE,NME,NME_ACETYLATION,M_ACETYLATION",
+          "proteoform_type": "COMPLETE,PREFIX,SUFFIX,INTERNAL",
+          "num_shift": "1",
+          "min_shift": "-500",
+          "max_shift": "500",
+          "variable_ptm_num": "3",
+          "mass_error_tolerance": "10",
+          "proteoform_error_tolerance": "1.2",
+          "spectrum_cutoff_type": "EVALUE",
+          "spectrum_cutoff_value": "0.01",
+          "proteoform_cutoff_type": "EVALUE",
+          "proteoform_cutoff_value": "0.01",
+          "miscore_threshold": "0.15",
+          "thread_number": "12",
+          "num_combined_spectra": "1",
+          "decoy": false,
+          "approximate_spectra": false,
+          "lookup_table": false,
+          "no_topfd_feature": false,
+          "keep_temp_files": false,
+          "keep_decoy_ids": false,
+          "skip_html_folder": true
+        }
+      },
+      "params": {
+        "activation": "FILE",
+        "n_terminal_form": "NONE,NME,NME_ACETYLATION,M_ACETYLATION",
+        "proteoform_type": "COMPLETE,PREFIX,SUFFIX,INTERNAL",
+        "num_shift": "1",
+        "min_shift": "-500",
+        "max_shift": "500",
+        "variable_ptm_num": "3",
+        "mass_error_tolerance": "10",
+        "proteoform_error_tolerance": "1.2",
+        "spectrum_cutoff_type": "EVALUE",
+        "spectrum_cutoff_value": "0.01",
+        "proteoform_cutoff_type": "EVALUE",
+        "proteoform_cutoff_value": "0.01",
+        "miscore_threshold": "0.15",
+        "thread_number": "12",
+        "num_combined_spectra": "1",
+        "decoy": false,
+        "approximate_spectra": false,
+        "lookup_table": false,
+        "no_topfd_feature": false,
+        "keep_temp_files": false,
+        "keep_decoy_ids": false,
+        "skip_html_folder": true
+      },
+      "inputs": [
+        {
+          "id": "fasta_file",
+          "name": "FASTA file",
+          "dataType": "fasta",
+          "required": true
+        },
+        {
+          "id": "msalign_files",
+          "name": "MSAlign file",
+          "dataType": "msalign",
+          "required": true
+        },
+        {
+          "id": "index_complete",
+          "name": "TopIndex Complete",
+          "dataType": "topindex-marker",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "id": "prsm",
+          "name": "PrSM TSV (All Proteins)",
+          "dataType": "tsv",
+          "description": "Proteoform spectrum-matches with E-value/FDR cutoff (all proteins reported)",
+          "semanticType": "prsm"
+        },
+        {
+          "id": "prsm_single",
+          "name": "PrSM TSV (Single Protein)",
+          "dataType": "tsv",
+          "description": "Proteoform spectrum-matches with E-value/FDR cutoff (single protein reported)",
+          "semanticType": "prsm"
+        },
+        {
+          "id": "proteoforms",
+          "name": "Proteoforms TSV (All Proteins)",
+          "dataType": "tsv",
+          "description": "Identified proteoforms with E-value/proteoform-level FDR cutoff (all proteins reported)",
+          "semanticType": "proteomics/proteoform_table"
+        },
+        {
+          "id": "proteoforms_single",
+          "name": "Proteoforms TSV (Single Protein)",
+          "dataType": "tsv",
+          "description": "Identified proteoforms with E-value/proteoform-level FDR cutoff (single protein reported)",
+          "semanticType": "proteomics/proteoform_table"
+        },
+        {
+          "id": "proteoform_xml",
+          "name": "Proteoform XML",
+          "dataType": "xml",
+          "description": "Identified proteoforms in XML format with E-value/FDR cutoff"
+        },
+        {
+          "id": "prsm_xml",
+          "name": "PrSM XML",
+          "dataType": "xml",
+          "description": "All identified PrSMs in XML format without clustering/filtering"
+        },
+        {
+          "id": "html_folder",
+          "name": "HTML Visualization",
+          "dataType": "html",
+          "description": "HTML files for PrSM and proteoform visualization (open topmsv/index.html in Chrome)"
+        }
+      ],
+      "executionMode": "native",
+      "nodeKind": "compute"
+    },
+    {
+      "id": "featuremap_2",
+      "type": "featuremap_viewer",
+      "position": {
+        "x": 960,
+        "y": 80
+      },
+      "nodeConfig": {
+        "toolId": "featuremap_viewer",
+        "paramValues": {
+          "plot_type": "scatter",
+          "color_scale": "viridis",
+          "show_labels": false,
+          "max_features": "1000"
+        }
+      },
+      "data": {
+        "label": "TopFD FeatureMap",
+        "params": {
+          "plot_type": "scatter",
+          "color_scale": "viridis",
+          "show_labels": false,
+          "max_features": "1000"
+        }
+      },
+      "params": {
+        "plot_type": "scatter",
+        "color_scale": "viridis",
+        "show_labels": false,
+        "max_features": "1000"
+      },
+      "inputs": [
+        {
+          "id": "topfd_feature",
+          "name": "TopFD Feature Data",
+          "dataType": "ms1feature",
+          "required": true,
+          "description": "TopFD MS1 feature output (.ms1.feature)"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "selection_out",
+          "name": "Selection Output",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-out",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "executionMode": "interactive",
+      "nodeKind": "interactive",
+      "visualizationConfig": {
+        "type": "featuremap",
+        "config": {
+          "maxFeatures": 1000,
+          "selectionKeyField": "Feature ID"
+        }
+      }
+    },
+    {
+      "id": "spectrum_2",
+      "type": "spectrum_viewer",
+      "position": {
+        "x": 960,
+        "y": 260
+      },
+      "nodeConfig": {
+        "toolId": "spectrum_viewer",
+        "paramValues": {
+          "max_peaks": "1000",
+          "min_mz": "0",
+          "max_mz": "2000",
+          "normalize_intensity": true
+        }
+      },
+      "data": {
+        "label": "TopFD Spectrum",
+        "params": {
+          "max_peaks": "1000",
+          "min_mz": "0",
+          "max_mz": "2000",
+          "normalize_intensity": true
+        }
+      },
+      "params": {
+        "max_peaks": "1000",
+        "min_mz": "0",
+        "max_mz": "2000",
+        "normalize_intensity": true
+      },
+      "inputs": [
+        {
+          "id": "ms1feature_file",
+          "name": "MS1 Feature File",
+          "dataType": "ms1feature",
+          "required": true,
+          "description": "TopFD MS1 feature output (.ms1.feature)"
+        },
+        {
+          "id": "selection_in",
+          "name": "Selection In",
+          "dataType": "selection",
+          "required": false,
+          "description": "Optional feature selection propagated from feature map",
+          "portKind": "state-in",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "selection",
+          "name": "Selection",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-out",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "executionMode": "interactive",
+      "nodeKind": "interactive",
+      "visualizationConfig": {
+        "type": "spectrum",
+        "config": {
+          "broadcastColumn": "Feature_ID"
+        }
+      }
+    },
+    {
+      "id": "table_viewer_1",
+      "type": "table_viewer",
+      "position": {
+        "x": 1200,
+        "y": 80
+      },
+      "nodeConfig": {
+        "toolId": "table_viewer",
+        "paramValues": {
+          "max_rows": "1000",
+          "encoding": "utf-8",
+          "delimiter": "auto"
+        }
+      },
+      "data": {
+        "label": "PrSM result table",
+        "params": {
+          "max_rows": "1000",
+          "encoding": "utf-8",
+          "delimiter": "auto"
+        }
+      },
+      "params": {
+        "max_rows": "1000",
+        "encoding": "utf-8",
+        "delimiter": "auto"
+      },
+      "inputs": [
+        {
+          "id": "data_file",
+          "name": "Data File",
+          "dataType": "tsv",
+          "required": true,
+          "accept": [
+            "tsv",
+            "csv",
+            "prsm",
+            "proteoforms"
+          ],
+          "description": "PrSM tabular results from TopPIC",
+          "semanticType": "prsm"
+        },
+        {
+          "id": "selection_in",
+          "name": "Selection In",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-in",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "selection",
+          "name": "Selection",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-out",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "executionMode": "interactive",
+      "nodeKind": "interactive",
+      "visualizationConfig": {
+        "type": "table",
+        "config": {
+          "selectionKeyField": "Prsm ID",
+          "linkColumns": {
+            "Spectrum ID": "spectrum",
+            "Feature ID": "feature",
+            "Proteoform ID": "proteoform"
+          }
+        }
+      }
+    },
+    {
+      "id": "table_viewer_2",
+      "type": "table_viewer",
+      "position": {
+        "x": 1200,
+        "y": 260
+      },
+      "nodeConfig": {
+        "toolId": "table_viewer",
+        "paramValues": {
+          "max_rows": "1000",
+          "encoding": "utf-8",
+          "delimiter": "auto"
+        }
+      },
+      "data": {
+        "label": "Proteoform result table",
+        "params": {
+          "max_rows": "1000",
+          "encoding": "utf-8",
+          "delimiter": "auto"
+        }
+      },
+      "params": {
+        "max_rows": "1000",
+        "encoding": "utf-8",
+        "delimiter": "auto"
+      },
+      "inputs": [
+        {
+          "id": "data_file",
+          "name": "Data File",
+          "dataType": "tsv",
+          "required": true,
+          "accept": [
+            "tsv",
+            "csv",
+            "prsm",
+            "proteoforms"
+          ],
+          "description": "Proteoform tabular results from TopPIC",
+          "semanticType": "proteomics/proteoform_table"
+        },
+        {
+          "id": "selection_in",
+          "name": "Selection In",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-in",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "outputs": [
+        {
+          "id": "selection",
+          "name": "Selection",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-out",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "executionMode": "interactive",
+      "nodeKind": "interactive",
+      "visualizationConfig": {
+        "type": "table",
+        "config": {
+          "selectionKeyField": "Proteoform ID",
+          "linkColumns": {
+            "Proteoform ID": "proteoform",
+            "Protein accession": "protein"
+          }
+        }
+      }
+    },
+    {
+      "id": "ms2_sequence_viewer_1",
+      "type": "ms2_sequence_viewer",
+      "position": {
+        "x": 1200,
+        "y": 460
+      },
+      "nodeConfig": {
+        "toolId": "ms2_sequence_viewer",
+        "paramValues": {}
+      },
+      "data": {
+        "label": "MS2 Sequence Viewer",
+        "params": {}
+      },
+      "params": {},
+      "inputs": [
+        {
+          "id": "data_file",
+          "name": "PrSM Table",
+          "dataType": "tsv",
+          "required": true,
+          "accept": [
+            "tsv",
+            "csv",
+            "prsm"
+          ],
+          "description": "TopPIC PrSM table used for direct row-driven sequence/spectrum reconstruction",
+          "semanticType": "prsm"
+        },
+        {
+          "id": "selection_in",
+          "name": "Selection In",
+          "dataType": "selection",
+          "required": false,
+          "portKind": "state-in",
+          "semanticType": "state/selection_ids"
+        }
+      ],
+      "outputs": [],
+      "executionMode": "interactive",
+      "nodeKind": "interactive",
+      "visualizationConfig": {
+        "type": "ms2_sequence",
+        "config": {
+          "selectionKeyField": "Prsm ID"
+        }
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_data_msconvert",
+      "source": "data_loader_1",
+      "target": "msconvert_1",
+      "sourceHandle": "output-output",
+      "targetHandle": "input-input_files",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_msconvert_topfd",
+      "source": "msconvert_1",
+      "target": "topfd_1",
+      "sourceHandle": "output-mzml",
+      "targetHandle": "input-input_files",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_topfd_toppic",
+      "source": "topfd_1",
+      "target": "toppic_1",
+      "sourceHandle": "output-ms2_msalign",
+      "targetHandle": "input-msalign_files",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_fasta_topindex",
+      "source": "fasta_loader_1",
+      "target": "topindex_1",
+      "sourceHandle": "output-output",
+      "targetHandle": "input-fasta_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_topindex_toppic",
+      "source": "topindex_1",
+      "target": "toppic_1",
+      "sourceHandle": "output-index_complete",
+      "targetHandle": "input-index_complete",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_fasta_toppic",
+      "source": "fasta_loader_1",
+      "target": "toppic_1",
+      "sourceHandle": "output-output",
+      "targetHandle": "input-fasta_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_topfd_featuremap",
+      "source": "topfd_1",
+      "target": "featuremap_2",
+      "sourceHandle": "output-ms1feature",
+      "targetHandle": "input-topfd_feature",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_topfd_spectrum",
+      "source": "topfd_1",
+      "target": "spectrum_2",
+      "sourceHandle": "output-ms1feature",
+      "targetHandle": "input-ms1feature_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_featuremap_spectrum_selection",
+      "source": "featuremap_2",
+      "target": "spectrum_2",
+      "sourceHandle": "output-selection_out",
+      "targetHandle": "input-selection_in",
+      "connectionKind": "state",
+      "semanticType": "state/selection_ids"
+    },
+    {
+      "id": "e_toppic_table_prsm",
+      "source": "toppic_1",
+      "target": "table_viewer_1",
+      "sourceHandle": "output-prsm",
+      "targetHandle": "input-data_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_toppic_table_proteoforms",
+      "source": "toppic_1",
+      "target": "table_viewer_2",
+      "sourceHandle": "output-proteoforms",
+      "targetHandle": "input-data_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_toppic_ms2_sequence_prsm",
+      "source": "toppic_1",
+      "target": "ms2_sequence_viewer_1",
+      "sourceHandle": "output-prsm",
+      "targetHandle": "input-data_file",
+      "connectionKind": "data"
+    },
+    {
+      "id": "e_table_ms2_sequence_selection",
+      "source": "table_viewer_1",
+      "target": "ms2_sequence_viewer_1",
+      "sourceHandle": "output-selection",
+      "targetHandle": "input-selection_in",
+      "connectionKind": "state",
+      "semanticType": "state/selection_ids"
+    }
+  ]
+}

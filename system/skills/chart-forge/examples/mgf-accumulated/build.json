@@ -1,0 +1,6 @@
+{
+ "bundle": "d3",
+ "scripts": [
+  "../../components/ms2-annotation.js"
+ ]
+}

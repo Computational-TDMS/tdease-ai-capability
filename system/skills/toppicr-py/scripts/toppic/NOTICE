@@ -1,0 +1,9 @@
+TopPICPy is a Python rewrite of TopPICR.
+
+Upstream project: https://github.com/evan-albert-martin/TopPICR
+Validated upstream version: v0.0.7 (commit 0acc421)
+Upstream license: GNU General Public License, version 3 or later
+
+This repository contains a modified, independently implemented Python version.
+The original TopPICR repository and JPR reproducibility dataset are not bundled.
+See docs/validation.md for scientific validation and known differences.

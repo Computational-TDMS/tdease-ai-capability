@@ -1,0 +1,37 @@
+# Python transient artifacts
+__pycache__/
+*.pyc
+*.egg-info/
+
+# SQLite transient sidecars (unimod.sqlite, psimod.sqlite, knowledge.db)
+*.sqlite-shm
+*.sqlite-wal
+*.db-shm
+*.db-wal
+
+# Generated reference databases (rebuilt at build time from XML/OBO sources).
+# unimod.sqlite → `pnpm run build:unimod`; psimod.sqlite → `pnpm run build:psimod`.
+# knowledge.db is still committed because it mixes a UniProt seed with runtime
+# observations and has no offline source (see reference-data.md).
+system/reference/unimod.sqlite
+system/reference/psimod.sqlite
+
+# ptm-database local mirror — rebuilt by skills/ptm-database/scripts/fetch.py
+# (dbPTM + iPTMnet + ELM normalized into one SQLite; ~125 MB, too heavy for git).
+system/skills/ptm-database/cache/
+
+# Local build output (the rust/ workspace has its own /target/ entry)
+.venv/
+.pytest_cache/
+
+# chart-forge example dirs hold source only: build/audit artifacts never land
+system/skills/chart-forge/examples/*.html
+system/skills/chart-forge/examples/*/*.html
+system/skills/chart-forge/examples/*/*.manifest.json
+system/skills/chart-forge/examples/*/*.data.csv
+system/skills/chart-forge/examples/*/export/
+.tmp/
+
+# Local build artifacts (rebuilt by build scripts, never canonical)
+rust/toolbox.zip
+system/prompts.zip

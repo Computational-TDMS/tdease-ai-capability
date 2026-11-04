@@ -1,0 +1,48 @@
+{
+ "data": {
+  "levels": [
+   {
+    "level": 1,
+    "searched": 30,
+    "attributed": 30
+   },
+   {
+    "level": 2,
+    "searched": 25,
+    "attributed": 25
+   },
+   {
+    "level": 3,
+    "searched": 20,
+    "attributed": 20
+   },
+   {
+    "level": 4,
+    "searched": 10,
+    "attributed": 25
+   },
+   {
+    "level": 5,
+    "searched": 15,
+    "attributed": 0
+   }
+  ],
+  "series": [
+   {
+    "key": "searched",
+    "label": "as searched (TopPIC)"
+   },
+   {
+    "key": "attributed",
+    "label": "after direct attribution"
+   }
+  ]
+ },
+ "meta": {
+  "title": "Smith proteoform grading",
+  "source": "opensearch.json",
+  "n": "100 graded assignments",
+  "generated": "2026-09-06T17:19:08Z",
+  "tool": "chart-forge"
+ }
+}

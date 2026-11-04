@@ -1,0 +1,171 @@
+{
+ "data": {
+  "panels": [
+   {
+    "title": "Source A — PTM on K12 (scan 4231)",
+    "subtitle": "y23 z=4 · matched, envelope Pearson r = 0.91",
+    "color": "#0F766E",
+    "observed": {
+     "x": [
+      612.331,
+      612.581,
+      612.832,
+      613.082,
+      613.333,
+      613.583,
+      613.834,
+      614.084
+     ],
+     "y": [
+      18,
+      38,
+      72,
+      100,
+      93,
+      64,
+      33,
+      14
+     ],
+     "ppm": [
+      -3.1,
+      -2.4,
+      -1.8,
+      -1.2,
+      1.5,
+      2.2,
+      2.9,
+      3.6
+     ],
+     "matched": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "theoretical": {
+     "x": [
+      612.333,
+      612.584,
+      612.835,
+      613.086,
+      613.337,
+      613.588,
+      613.839,
+      614.09
+     ],
+     "y": [
+      20,
+      43,
+      76,
+      100,
+      92,
+      62,
+      31,
+      12
+     ],
+     "offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   },
+   {
+    "title": "Source B — PTM on K15 (scan 4231)",
+    "subtitle": "y23 z=4 · displaced, 2/8 slots ±10 ppm",
+    "color": "#C2410C",
+    "observed": {
+     "x": [
+      612.331,
+      612.581,
+      612.832,
+      613.082,
+      613.333,
+      613.583,
+      613.834,
+      614.084
+     ],
+     "y": [
+      18,
+      38,
+      72,
+      100,
+      93,
+      64,
+      33,
+      14
+     ],
+     "ppm": [
+      -255,
+      -214,
+      -172,
+      -131,
+      -90,
+      -48,
+      -7,
+      34
+     ],
+     "matched": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false,
+      false
+     ]
+    },
+    "theoretical": {
+     "x": [
+      613.113,
+      613.364,
+      613.615,
+      613.866,
+      614.117,
+      614.368,
+      614.619,
+      614.87
+     ],
+     "y": [
+      20,
+      43,
+      76,
+      100,
+      92,
+      62,
+      31,
+      12
+     ],
+     "offsets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+     ]
+    }
+   }
+  ],
+  "xlabel": "m/z",
+  "ylabel": "rel. intensity (%)"
+ },
+ "meta": {
+  "title": "Envelope mirror — fragment-ion isotope window comparison",
+  "subtitle": "two extraction sources in one figure",
+  "source": "sample contract"
+ }
+}

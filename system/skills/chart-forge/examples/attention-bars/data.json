@@ -1,0 +1,32 @@
+{
+ "data": {
+  "panels": [
+   {
+    "title": "Representative run",
+    "rows": [
+     {
+      "label": "feature-101",
+      "score": 0.91,
+      "hover": "high recurrence; unresolved"
+     },
+     {
+      "label": "feature-205",
+      "score": 0.63,
+      "hover": "moderate recurrence"
+     },
+     {
+      "label": "feature-309",
+      "score": 0.28,
+      "hover": "low evidence depth"
+     }
+    ]
+   }
+  ],
+  "xlabel": "attention score"
+ },
+ "meta": {
+  "title": "OpenSearch attention projection",
+  "source": "representative acceptance fixture",
+  "n": "3 attention items"
+ }
+}

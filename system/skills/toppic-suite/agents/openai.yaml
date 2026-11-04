@@ -1,0 +1,4 @@
+interface:
+  display_name: "TopPIC Suite"
+  short_description: "Configure, run, debug, and interpret TopPIC workflows"
+  default_prompt: "Use $toppic-suite to configure, validate, and interpret this TopPIC analysis."

@@ -1,0 +1,32 @@
+# TDEase template: toppicr-py
+# Top-down proteomics identification (flat run folder).
+#
+# Composes the deployed TopPIC Node rule. TopPIC jobs are globally serialized;
+# the first job builds the Run-wide database index and later jobs reuse it.
+#
+# Run-folder layout (FLAT — data and outputs at the root):
+#   Snakefile, config.yaml
+#   {sample}.mzML          — input spectra (one per sample)
+#   database.fasta         — protein database (one per run, shared by all samples)
+#   {sample}_ms1.feature, {sample}_ms2.feature   — topfd outputs (next to input)
+#   {sample}_ms1.msalign, {sample}_ms2.msalign
+#   {sample}_feature.xml
+#   {sample}_ms2_toppic_proteoform.tsv           — toppic outputs
+#   {sample}_ms2_toppic_prsm.tsv
+
+# The Backend injects config["nodes"][<id>] = the bound Node package's absolute
+# catalog path at dry-run/execution (WORKFLOW-RUN.md): a Run directory never
+# holds tool bytes or a nodes/ subtree, so binding resolution has no fallback.
+_TOPPIC = (config.get("nodes") or {}).get("toppic")
+if not _TOPPIC:
+    raise FileNotFoundError("bound toppic node is missing from this Run")
+include: _TOPPIC + "/rules.smk"
+
+
+# Samples come from config.yaml.
+SAMPLES = config.get("samples", ["chlamy_h4_centroided"])
+
+
+rule all:
+    input:
+        expand("{sample}_ms2_toppic_proteoform.tsv", sample=SAMPLES)

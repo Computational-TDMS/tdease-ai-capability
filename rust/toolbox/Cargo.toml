@@ -1,0 +1,35 @@
+[package]
+name = "tdeasenexus-toolbox"
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-or-later"
+rust-version = "1.97"
+
+[lib]
+crate-type = ["rlib"]
+
+[dependencies]
+chemical_elements = { version = "0.7", default-features = false, features = ["mzpeaks"] }
+mzdata = { version = "0.51.0", default-features = false, features = ["mzml", "mgf"] }
+mzpeaks = "1"
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"
+# ProFormA parsing backend (replaces the self-written subset in src/proforma.rs).
+# default-features=false drops the flate2 default; glycan-render-bitmap enables
+# SVG + bitmap glycan rendering (swash/zeno). NOT enabling internal-no-data so
+# the embedded UniMod/PSI-MOD/GNOme ontologies stay available for [UNIMOD:n]
+# and named-modification resolution.
+mzcore = { version = "0.2", default-features = false, features = ["glycan-render-bitmap"] }
+mzannotate = { version = "0.2", default-features = false }
+# CLI-only dependencies.
+clap = { version = "4", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+# UniMod reference query (D12-R): the CLI reads the bundled unimod.sqlite.
+# `bundled` compiles SQLite into the binary so a packaged build has no system
+# dependency.
+rusqlite = { version = "0.32", features = ["bundled"] }
+rayon = "1.10"
+
+[dev-dependencies]
+base64 = "0.22"

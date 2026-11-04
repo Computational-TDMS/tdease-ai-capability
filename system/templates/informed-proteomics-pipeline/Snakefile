@@ -1,0 +1,54 @@
+# TDEase template: informed-proteomics-pipeline
+# Paper-completion chain after TopPIC (Wilson & Zhou 2022, Methods 3.2 steps
+# 8-13), composed ENTIRELY from the deployed informed-proteomics Node's own
+# rules (v1.1.8305 output names empirically verified — see the node's
+# output-name contract):
+#   {sample}.mzML --[pbngen]--> {sample}.pbf
+#                 --[promex]--> {sample}.ms1ft        (feature list, mass x RT)
+#                 --[mspathfindert]--> {sample}_IcTarget.tsv / _IcDecoy.tsv
+#                                      / _IcTda.tsv / .mzid
+#
+# Role in TDEase (what replaces the paper's LcMsSpectator):
+#   - {sample}.ms1ft IS the feature-map layer: the tdp-opensearch census
+#     consumes it next to the TopPIC tables.
+#   - MSPathFinderT is the targeted CROSS-CHECK only. Its known-PTM fit must
+#     NOT replace the TopPIC open-search shift — Informed-Proteomics tends to
+#     force-match unknown PTMs into known-PTM + truncation combinations
+#     (paper Note 18). Adjudication stays in tdp-copilot.
+#
+# Run-folder layout (FLAT — data and outputs at the run root):
+#   Snakefile, config.yaml
+#   {sample}.mzML             — input spectra (toppic-raw-pipeline output;
+#                               vendor raw must be converted by msconvert first)
+#   database.fasta            — protein database, one per run (toppic-node
+#                               convention; set top-level `fasta:` to rename)
+#   {sample}.pbf              — PbfGen spectrum store (idempotent: a stale pbf
+#                               is silently reused — keep run dirs fresh)
+#   {sample}.ms1ft            — ProMex feature list (durable artifact)
+#   {sample}_IcTarget.tsv / _IcDecoy.tsv / _IcTda.tsv / {sample}.mzid
+#
+# Search-space discipline (paper Note 15 + TDEase rule): stage a FOCUSED FASTA
+# (the TopPIC-identified protein list) and keep the modification list
+# minimized, or the search will not complete in practical time. The node's
+# bundled targeted library is the default -mod; `informed-proteomics.mods` may
+# point at another source artifact or "" for unmodified-only. Rare PTMs are
+# confirmed manually in tdp-copilot, never searched into place.
+
+# The Backend injects config["nodes"][<id>] = the bound Node package's absolute
+# catalog path at dry-run/execution (WORKFLOW-RUN.md): a Run directory never
+# holds tool bytes or a nodes/ subtree, so binding resolution has no fallback.
+_IP = (config.get("nodes") or {}).get("informed-proteomics")
+if not _IP:
+    raise FileNotFoundError("bound informed-proteomics node is missing from this Run")
+include: _IP + "/rules.smk"
+
+SAMPLES = config.get("samples", [])
+
+
+rule all:
+    default_target: True
+    input:
+        # The merged target+decoy table (FDR-ranked) is the human-facing result;
+        # pulling it materializes the full quartet (Target/Decoy/Tda/mzid —
+        # one mspathfindert invocation writes all four).
+        expand("{sample}_IcTda.tsv", sample=SAMPLES)

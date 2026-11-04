@@ -1,0 +1,138 @@
+/* Vendored and maintained locally for the chart-forge preview loop.
+ * Trimmed to the figure-page skeleton: tokens, layout, scrollbars.
+ * Removed vendor chrome (dark theme, toggle, search, toolbar buttons,
+ * footer, status toasts) and the Google Fonts import — output pages are
+ * self-contained and offline. */
+
+:root {
+    /* Typography */
+    --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, monospace;
+    --font-size-xs: 12px;
+    --font-size-sm: 13px;
+    --font-size-base: 14px;
+    --font-size-lg: 16px;
+    --font-size-xl: 18px;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --line-height-normal: 1.5;
+
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+
+    /* Transitions */
+    --transition-base: 0.2s;
+
+    /* Background Colors */
+    --color-bg-base: #ffffff;
+    --color-bg-alt: #f9fafb;
+
+    /* Text Colors */
+    --color-text-primary: #0f172a;
+    --color-text-secondary: #475569;
+    --color-text-tertiary: #64748b;
+
+    /* Border Colors */
+    --color-border-secondary: #cbd5e1;
+
+    /* Header Colors */
+    --color-header-bg: #f8fafc;
+    --color-header-text: var(--color-text-primary);
+    --color-header-border: var(--color-border-secondary);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-normal);
+    line-height: var(--line-height-normal);
+    background: var(--color-bg-base);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+/* Header */
+.preview-header {
+    background: var(--color-header-bg);
+    color: var(--color-header-text);
+    border-bottom: 1px solid var(--color-header-border);
+    padding: var(--spacing-md) var(--spacing-2xl);
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.preview-header-info {
+    display: flex;
+    align-items: baseline;
+}
+
+.preview-header-title {
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-semibold);
+    letter-spacing: -0.02em;
+    margin: 0;
+    color: var(--color-header-text);
+}
+
+/* Preview Body */
+.preview-body {
+    flex: 1;
+    overflow: auto;
+    background: var(--color-bg-alt);
+    padding-left: var(--spacing-2xl);
+    padding-right: var(--spacing-2xl);
+}
+
+/* Scrollbar Styling */
+.preview-body::-webkit-scrollbar,
+#csv-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.preview-body::-webkit-scrollbar-track,
+#csv-container::-webkit-scrollbar-track {
+    background: #f8fafc;
+}
+
+.preview-body::-webkit-scrollbar-thumb,
+#csv-container::-webkit-scrollbar-thumb {
+    background: var(--color-border-secondary);
+    border-radius: var(--radius-sm);
+}
+
+.preview-body::-webkit-scrollbar-thumb:hover,
+#csv-container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-text-tertiary);
+}
+
+#csv-container::-webkit-scrollbar-corner {
+    background: #f8fafc;
+}

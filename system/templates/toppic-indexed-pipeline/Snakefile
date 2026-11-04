@@ -1,0 +1,180 @@
+# TDEase template: toppic-indexed-pipeline
+# Batch top-down proteomics with a SHARED protein-database index:
+# msconvert -> topfd -> topindex (ONCE per Run) -> toppic (per sample).
+#
+# When to use this instead of toppic-raw-pipeline:
+#   MANY samples over ONE database. The index (<fasta>_idx/) is built by a
+#   single topindex job and every toppic job consumes its completion marker,
+#   so the database is indexed exactly once per Run instead of once per
+#   sample job racing on the same directory.
+#
+# ⚠ DISK BUDGET — the index is LARGE and lives beside the FASTA.
+#   Measured composition (topindex 1.8.x, Windows):
+#     <fasta>_idx/ ≈ 2 × S_fasta   (two full database copies:
+#                                    <fasta>_standard + <fasta>_target)
+#                    + shift-block files (<fasta>_target_0..N) that scale
+#                      with the protein count.
+#   Empirical anchor: 40 proteins / 6,201 residues / 9.7 KiB FASTA
+#   -> 30 KiB index  (≈ 5 bytes/residue, 3.1 × FASTA).
+#   Planning rule: budget ≈ 4 × S_fasta per Run —
+#     histone-scale database (10 KiB)   -> tens of KiB
+#     Glycine max (66 MB, 134k proteins) -> ≈ 250 MB
+#   Check free space on the Run volume before submitting large-database
+#   batch runs; the index is rebuilt (not reused) for every new Run
+#   revision that touches the FASTA or its topindex parameters.
+#   Memory floor: the topindex rule declares mem_mb = 2048 (a floor, not
+#   clamped — a Run budget below it fails the dry-run naming the rule).
+#
+# Run-folder layout (FLAT — data and outputs at the root):
+#   Snakefile, config.yaml
+#   {sample}.raw                  — input spectra (one per sample)
+#   database.fasta                — protein database (one per Run, shared)
+#   {sample}.mzML                 — msconvert output
+#   {sample}_ms2.msalign          — topfd output (the only downstream input)
+#   database.fasta_idx/           — the SHARED index (see disk budget above)
+#   .tdease/topindex/database.fasta.complete — topindex completion marker
+#   {sample}_ms2_toppic_proteoform.tsv, {sample}_ms2_toppic_prsm.tsv
+#
+# topfd/toppic are inline for the same reason as toppic-raw-pipeline:
+#   the shared Node rule declares MS1 outputs unconditionally; the inline
+#   rules declare only {sample}_ms2.msalign so ONE static DAG covers both
+#   standard and MS2-only acquisitions (probe the mzML, then set
+#   topfd.extra: "-o" + toppic.extra: "-x" together for MS2-only data).
+#   The topindex rule is included VERBATIM from the topindex Node: its
+#   single-rule contract (fasta in, marker out) needs no adaptation.
+# Flag authority remains the deployed Nodes' rules.smk; rules below mirror it.
+
+from pathlib import Path
+
+_FASTA = config.get("fasta", "database.fasta")
+
+SAMPLES = config.get("samples", [])
+
+_MSCONVERT = (config.get("nodes") or {}).get("msconvert")
+if not _MSCONVERT:
+    raise FileNotFoundError("bound msconvert node is missing from this Run")
+include: _MSCONVERT + "/rules.smk"
+
+# The Backend injects config["nodes"][<id>] = the bound Node package's absolute
+# catalog path at dry-run/execution (WORKFLOW-RUN.md): a Run directory never
+# holds tool bytes or a nodes/ subtree, so binding resolution has no fallback.
+_TOPPIC = (config.get("nodes") or {}).get("toppic")
+if not _TOPPIC:
+    raise FileNotFoundError("bound toppic node is missing from this Run")
+_TOPPIC_DIR = Path(_TOPPIC)
+
+_TOPINDEX = (config.get("nodes") or {}).get("topindex")
+if not _TOPINDEX:
+    raise FileNotFoundError("bound topindex node is missing from this Run")
+include: _TOPINDEX + "/rules.smk"
+
+# Declared completion output of the included topindex rule (the Node's
+# contract): one marker per Run, written only after topindex.exe succeeds.
+_INDEX_COMPLETE = f".tdease/topindex/{Path(_FASTA).name}.complete"
+
+_BUILTIN_VARIABLE_PTMS = _TOPPIC_DIR / "resources" / "common_variable_ptms.txt"
+
+
+# ---------------------------------------------------------------------------
+# rule topfd — deconvolute MS2 spectra (inline; see header for why).
+# Declares only {sample}_ms2.msalign so the DAG holds for MS2-only data too.
+# MS2-only runs set config.topfd.extra: "-o".
+# ---------------------------------------------------------------------------
+rule topfd:
+    input:
+        mzml = "{sample}.mzML",
+    output:
+        ms2_msalign = "{sample}_ms2.msalign",
+    threads:
+        28
+    resources:
+        mem_mb = 2048,
+    params:
+        activation       = lambda wc, cfg=config: cfg.get("topfd", {}).get("activation", "FILE"),
+        max_charge       = lambda wc, cfg=config: cfg.get("topfd", {}).get("max_charge", 30),
+        max_mass         = lambda wc, cfg=config: cfg.get("topfd", {}).get("max_mass", 50000),
+        mz_error         = lambda wc, cfg=config: cfg.get("topfd", {}).get("mz_error", 0.02),
+        ms1_sn_ratio     = lambda wc, cfg=config: cfg.get("topfd", {}).get("ms1_sn_ratio", 3),
+        ms2_sn_ratio     = lambda wc, cfg=config: cfg.get("topfd", {}).get("ms2_sn_ratio", 1),
+        precursor_window = lambda wc, cfg=config: cfg.get("topfd", {}).get("precursor_window", 3.0),
+        msdeconv         = lambda wc, cfg=config: "-n" if cfg.get("topfd", {}).get("msdeconv") else "",
+        skip_html        = lambda wc, cfg=config: "-g" if cfg.get("topfd", {}).get("skip_html", True) else "",
+        disable_frag     = lambda wc, cfg=config: "-d" if cfg.get("topfd", {}).get("disable_frag", False) else "",
+        extra            = lambda wc, cfg=config: cfg.get("topfd", {}).get("extra", ""),
+        topfd_bin        = str(_TOPPIC_DIR / "topfd.exe"),
+    message:
+        "topfd: deconvoluting {input.mzml}"
+    shell:
+        '("{params.topfd_bin}" -a {params.activation} -c {params.max_charge} '
+        '-m {params.max_mass} -e {params.mz_error} -r {params.ms1_sn_ratio} '
+        '-s {params.ms2_sn_ratio} -w {params.precursor_window} '
+        '{params.msdeconv} {params.skip_html} {params.disable_frag} '
+        '{params.extra} -u {threads} "{input.mzml}")'
+
+
+# ---------------------------------------------------------------------------
+# rule toppic — identify proteoforms from msalign + fasta + THE SHARED INDEX.
+# The completion-marker input serializes: one topindex job first, then every
+# sample toppic job fans out. MS2-only runs set config.toppic.extra: "-x".
+# ---------------------------------------------------------------------------
+rule toppic:
+    input:
+        msalign = "{sample}_ms2.msalign",
+        fasta   = _FASTA,
+        index   = _INDEX_COMPLETE,
+    output:
+        proteoform = "{sample}_ms2_toppic_proteoform.tsv",
+        prsm       = "{sample}_ms2_toppic_prsm.tsv",
+    threads:
+        28
+    resources:
+        mem_mb = 2048,
+        toppic_slots = 1,
+    params:
+        activation               = lambda wc, cfg=config: cfg.get("toppic", {}).get("activation", "FILE"),
+        mass_error               = lambda wc, cfg=config: cfg.get("toppic", {}).get("mass_error_tolerance", 10),
+        proteoform_error         = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_error_tolerance", 1.2),
+        num_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("num_shift", 1),
+        min_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("min_shift", -500),
+        max_shift                = lambda wc, cfg=config: cfg.get("toppic", {}).get("max_shift", 500),
+        proteoform_type          = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_type", "COMPLETE,PREFIX,SUFFIX,INTERNAL"),
+        fixed_mod                = lambda wc, cfg=config: (
+            f'-f "{cfg.get("toppic", {}).get("fixed_mod")}"'
+            if cfg.get("toppic", {}).get("fixed_mod") else ""
+        ),
+        variable_ptm             = lambda wc, cfg=config: (
+            f'-b "{cfg.get("toppic", {}).get("variable_ptm_file", _BUILTIN_VARIABLE_PTMS)}" '
+            f'-S {cfg.get("toppic", {}).get("variable_ptm_num", 3)}'
+            if cfg.get("toppic", {}).get("variable_ptm_file", _BUILTIN_VARIABLE_PTMS) else ""
+        ),
+        local_ptm                = lambda wc, cfg=config: (
+            f'-B "{cfg.get("toppic", {}).get("local_ptm_file")}"'
+            if cfg.get("toppic", {}).get("local_ptm_file") else ""
+        ),
+        n_terminal_form          = lambda wc, cfg=config: cfg.get("toppic", {}).get("n_terminal_form", "NONE,NME,NME_ACETYLATION,M_ACETYLATION"),
+        skip_html                = lambda wc, cfg=config: "-g" if cfg.get("toppic", {}).get("skip_html", True) else "",
+        decoy                    = lambda wc, cfg=config: "-d" if cfg.get("toppic", {}).get("decoy", False) else "",
+        spectrum_cutoff_type     = lambda wc, cfg=config: cfg.get("toppic", {}).get("spectrum_cutoff_type", "EVALUE"),
+        spectrum_cutoff_value    = lambda wc, cfg=config: cfg.get("toppic", {}).get("spectrum_cutoff_value", 0.01),
+        proteoform_cutoff_type   = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_cutoff_type", "EVALUE"),
+        proteoform_cutoff_value  = lambda wc, cfg=config: cfg.get("toppic", {}).get("proteoform_cutoff_value", 0.01),
+        lookup_table             = lambda wc, cfg=config: "-l" if cfg.get("toppic", {}).get("lookup_table", False) else "",
+        extra                    = lambda wc, cfg=config: cfg.get("toppic", {}).get("extra", ""),
+        toppic_bin               = str(_TOPPIC_DIR / "toppic.exe"),
+    message:
+        "toppic: identifying proteoforms from {input.msalign} (shared index)"
+    shell:
+        '("{params.toppic_bin}" -a {params.activation} -e {params.mass_error} '
+        '-p {params.proteoform_error} -s {params.num_shift} '
+        '-m {params.min_shift} -M {params.max_shift} '
+        '-t {params.spectrum_cutoff_type} -v {params.spectrum_cutoff_value} '
+        '-T {params.proteoform_cutoff_type} -V {params.proteoform_cutoff_value} '
+        '-R {params.proteoform_type} {params.fixed_mod} {params.variable_ptm} {params.local_ptm} '
+        '-n {params.n_terminal_form} {params.skip_html} {params.decoy} {params.lookup_table} '
+        '{params.extra} -u {threads} "{input.fasta}" "{input.msalign}")'
+
+
+rule all:
+    default_target: True
+    input:
+        expand("{sample}_ms2_toppic_proteoform.tsv", sample=SAMPLES)

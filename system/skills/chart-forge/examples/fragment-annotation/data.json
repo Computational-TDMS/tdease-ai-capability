@@ -1,0 +1,4899 @@
+{
+ "data": {
+  "peaks": [
+   {
+    "ion": "c",
+    "number": 3,
+    "charge": 1,
+    "mz": 360.1988379854436,
+    "theo": 360.1989933754889,
+    "ppm": -0.43140055396297333,
+    "intensity": 15780.3115234375,
+    "label": "c3",
+    "sequence": "[Acetyl]SGR"
+   },
+   {
+    "ion": "c",
+    "number": 4,
+    "charge": 1,
+    "mz": 417.220703125,
+    "theo": 417.2204570946929,
+    "ppm": 0.5896889831562002,
+    "intensity": 10424.626953125,
+    "label": "c4",
+    "sequence": "[Acetyl]SGRG"
+   },
+   {
+    "ion": "c",
+    "number": 5,
+    "charge": 1,
+    "mz": 545.3161010742188,
+    "theo": 545.3154201052289,
+    "ppm": 1.2487616611376684,
+    "intensity": 5287.19482421875,
+    "label": "c5",
+    "sequence": "[Acetyl]SGRGK"
+   },
+   {
+    "ion": "c",
+    "number": 5,
+    "charge": 2,
+    "mz": 273.16119384765625,
+    "theo": 273.1613482786089,
+    "ppm": -0.5653470142140626,
+    "intensity": 436.5483703613281,
+    "label": "c5²⁺",
+    "sequence": "[Acetyl]SGRGK"
+   },
+   {
+    "ion": "c",
+    "number": 6,
+    "charge": 1,
+    "mz": 602.33837890625,
+    "theo": 602.3368838244329,
+    "ppm": 2.4821355909745764,
+    "intensity": 2298.493408203125,
+    "label": "c6",
+    "sequence": "[Acetyl]SGRGKG"
+   },
+   {
+    "ion": "c",
+    "number": 6,
+    "charge": 2,
+    "mz": 301.671875,
+    "theo": 301.67208013821096,
+    "ppm": -0.6800039661094341,
+    "intensity": 1025.733642578125,
+    "label": "c6²⁺",
+    "sequence": "[Acetyl]SGRGKG"
+   },
+   {
+    "ion": "c",
+    "number": 7,
+    "charge": 1,
+    "mz": 659.3599243164062,
+    "theo": 659.3583475436369,
+    "ppm": 2.3913745465029446,
+    "intensity": 9572.587890625,
+    "label": "c7",
+    "sequence": "[Acetyl]SGRGKGG"
+   },
+   {
+    "ion": "c",
+    "number": 7,
+    "charge": 2,
+    "mz": 330.1827087402344,
+    "theo": 330.1828119978129,
+    "ppm": -0.3127285091112827,
+    "intensity": 2788.990478515625,
+    "label": "c7²⁺",
+    "sequence": "[Acetyl]SGRGKGG"
+   },
+   {
+    "ion": "c",
+    "number": 8,
+    "charge": 1,
+    "mz": 787.454833984375,
+    "theo": 787.453310554173,
+    "ppm": 1.93462924293199,
+    "intensity": 8583.6875,
+    "label": "c8",
+    "sequence": "[Acetyl]SGRGKGGK"
+   },
+   {
+    "ion": "c",
+    "number": 8,
+    "charge": 2,
+    "mz": 394.2303161621094,
+    "theo": 394.23029350308093,
+    "ppm": 0.05747662931789028,
+    "intensity": 43152.61328125,
+    "label": "c8²⁺",
+    "sequence": "[Acetyl]SGRGKGGK"
+   },
+   {
+    "ion": "c",
+    "number": 9,
+    "charge": 1,
+    "mz": 844.4791259765625,
+    "theo": 844.474774273377,
+    "ppm": 5.153147634609757,
+    "intensity": 4724.69970703125,
+    "label": "c9",
+    "sequence": "[Acetyl]SGRGKGGKG"
+   },
+   {
+    "ion": "c",
+    "number": 9,
+    "charge": 2,
+    "mz": 422.7412414550781,
+    "theo": 422.74102536268293,
+    "ppm": 0.5111696812641812,
+    "intensity": 17442.544921875,
+    "label": "c9²⁺",
+    "sequence": "[Acetyl]SGRGKGGKG"
+   },
+   {
+    "ion": "c",
+    "number": 9,
+    "charge": 3,
+    "mz": 282.1628112792969,
+    "theo": 282.16310905911826,
+    "ppm": -1.0553464000787658,
+    "intensity": 621.8447875976562,
+    "label": "c9³⁺",
+    "sequence": "[Acetyl]SGRGKGGKG"
+   },
+   {
+    "ion": "c",
+    "number": 10,
+    "charge": 1,
+    "mz": 957.564208984375,
+    "theo": 957.5588382477648,
+    "ppm": 5.608779738294561,
+    "intensity": 3284.932373046875,
+    "label": "c10",
+    "sequence": "[Acetyl]SGRGKGGKGL"
+   },
+   {
+    "ion": "c",
+    "number": 10,
+    "charge": 2,
+    "mz": 479.28350830078125,
+    "theo": 479.28305734987686,
+    "ppm": 0.9408863874463683,
+    "intensity": 12712.78125,
+    "label": "c10²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGL"
+   },
+   {
+    "ion": "c",
+    "number": 11,
+    "charge": 2,
+    "mz": 507.7942810058594,
+    "theo": 507.7937892094789,
+    "ppm": 0.9684962496771092,
+    "intensity": 14765.134765625,
+    "label": "c11²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLG"
+   },
+   {
+    "ion": "c",
+    "number": 11,
+    "charge": 3,
+    "mz": 338.8646240234375,
+    "theo": 338.8649516236489,
+    "ppm": -0.9667574348495908,
+    "intensity": 1403.121826171875,
+    "label": "c11³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLG"
+   },
+   {
+    "ion": "c",
+    "number": 12,
+    "charge": 2,
+    "mz": 571.8422241210938,
+    "theo": 571.8412707147469,
+    "ppm": 1.6672569744304957,
+    "intensity": 14312.7265625,
+    "label": "c12²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGK"
+   },
+   {
+    "ion": "c",
+    "number": 12,
+    "charge": 3,
+    "mz": 381.562773763348,
+    "theo": 381.56327262716087,
+    "ppm": -1.3074209408167885,
+    "intensity": 12181.7646484375,
+    "label": "c12³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGK"
+   },
+   {
+    "ion": "c",
+    "number": 13,
+    "charge": 2,
+    "mz": 600.352783203125,
+    "theo": 600.352002574349,
+    "ppm": 1.3002851205767683,
+    "intensity": 25548.998046875,
+    "label": "c13²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKG"
+   },
+   {
+    "ion": "c",
+    "number": 13,
+    "charge": 3,
+    "mz": 400.5704650878906,
+    "theo": 400.57042720022895,
+    "ppm": 0.09458427058948007,
+    "intensity": 38256.8515625,
+    "label": "c13³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKG"
+   },
+   {
+    "ion": "c",
+    "number": 14,
+    "charge": 2,
+    "mz": 628.863525390625,
+    "theo": 628.8627344339509,
+    "ppm": 1.257757266887604,
+    "intensity": 3725.48681640625,
+    "label": "c14²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGG"
+   },
+   {
+    "ion": "c",
+    "number": 14,
+    "charge": 3,
+    "mz": 419.5776062011719,
+    "theo": 419.5775817732969,
+    "ppm": 0.05822016242785932,
+    "intensity": 7997.41162109375,
+    "label": "c14³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGG"
+   },
+   {
+    "ion": "c",
+    "number": 15,
+    "charge": 2,
+    "mz": 664.3826904296875,
+    "theo": 664.381291325451,
+    "ppm": 2.10587542841035,
+    "intensity": 16540.6484375,
+    "label": "c15²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGA"
+   },
+   {
+    "ion": "c",
+    "number": 15,
+    "charge": 3,
+    "mz": 443.2566833496094,
+    "theo": 443.25661970096365,
+    "ppm": 0.14359322092921933,
+    "intensity": 14906.6494140625,
+    "label": "c15³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGA"
+   },
+   {
+    "ion": "c",
+    "number": 16,
+    "charge": 2,
+    "mz": 728.42529296875,
+    "theo": 728.4287728307188,
+    "ppm": -4.777216522181102,
+    "intensity": 3272.34130859375,
+    "label": "c16²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAK"
+   },
+   {
+    "ion": "c",
+    "number": 16,
+    "charge": 3,
+    "mz": 485.9553527832031,
+    "theo": 485.9549407044756,
+    "ppm": 0.8479772362274788,
+    "intensity": 13671.470703125,
+    "label": "c16³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAK"
+   },
+   {
+    "ion": "c",
+    "number": 17,
+    "charge": 2,
+    "mz": 806.4780883789062,
+    "theo": 806.4793283402369,
+    "ppm": -1.5374992105047929,
+    "intensity": 3881.95947265625,
+    "label": "c17²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKR"
+   },
+   {
+    "ion": "c",
+    "number": 17,
+    "charge": 3,
+    "mz": 537.9891967773438,
+    "theo": 537.9886443774875,
+    "ppm": 1.026787204562382,
+    "intensity": 24274.6484375,
+    "label": "c17³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKR"
+   },
+   {
+    "ion": "c",
+    "number": 17,
+    "charge": 4,
+    "mz": 403.7431945800781,
+    "theo": 403.74330239611294,
+    "ppm": -0.2670410485401309,
+    "intensity": 3744.0224609375,
+    "label": "c17⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKR"
+   },
+   {
+    "ion": "c",
+    "number": 18,
+    "charge": 3,
+    "mz": 583.6759033203125,
+    "theo": 583.674948329253,
+    "ppm": 1.6361693477907526,
+    "intensity": 7236.4140625,
+    "label": "c18³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRH"
+   },
+   {
+    "ion": "c",
+    "number": 18,
+    "charge": 4,
+    "mz": 438.0080871582031,
+    "theo": 438.0080303599369,
+    "ppm": 0.12967402938675843,
+    "intensity": 11265.236328125,
+    "label": "c18⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRH"
+   },
+   {
+    "ion": "c",
+    "number": 19,
+    "charge": 3,
+    "mz": 645.0543212890625,
+    "theo": 645.0519853355983,
+    "ppm": 3.621341407118097,
+    "intensity": 927.146728515625,
+    "label": "c19³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]"
+   },
+   {
+    "ion": "c",
+    "number": 20,
+    "charge": 3,
+    "mz": 687.7508544921875,
+    "theo": 687.7503063391104,
+    "ppm": 0.7970233849337444,
+    "intensity": 842.4135131835938,
+    "label": "c20³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]K"
+   },
+   {
+    "ion": "c",
+    "number": 20,
+    "charge": 4,
+    "mz": 516.0653076171875,
+    "theo": 516.0645488673299,
+    "ppm": 1.470261538524884,
+    "intensity": 3449.384521484375,
+    "label": "c20⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]K"
+   },
+   {
+    "ion": "c",
+    "number": 20,
+    "charge": 5,
+    "mz": 413.0533447265625,
+    "theo": 413.0530943842617,
+    "ppm": 0.6060777759018959,
+    "intensity": 1489.640380859375,
+    "label": "c20⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]K"
+   },
+   {
+    "ion": "c",
+    "number": 21,
+    "charge": 4,
+    "mz": 540.8323974609375,
+    "theo": 540.8316523449779,
+    "ppm": 1.377722543368713,
+    "intensity": 2692.7744140625,
+    "label": "c21⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KV"
+   },
+   {
+    "ion": "c",
+    "number": 21,
+    "charge": 5,
+    "mz": 432.8671875,
+    "theo": 432.86677716638013,
+    "ppm": 0.9479443595886735,
+    "intensity": 1294.35107421875,
+    "label": "c21⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KV"
+   },
+   {
+    "ion": "c",
+    "number": 22,
+    "charge": 4,
+    "mz": 569.1038818359375,
+    "theo": 569.102668338575,
+    "ppm": 2.1322995481124973,
+    "intensity": 4986.64306640625,
+    "label": "c22⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVL"
+   },
+   {
+    "ion": "c",
+    "number": 23,
+    "charge": 4,
+    "mz": 608.1289672851562,
+    "theo": 608.1279460933339,
+    "ppm": 1.679238438096132,
+    "intensity": 7202.44287109375,
+    "label": "c23⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLR"
+   },
+   {
+    "ion": "c",
+    "number": 23,
+    "charge": 5,
+    "mz": 486.7040710449219,
+    "theo": 486.70381216506496,
+    "ppm": 0.5319043131455364,
+    "intensity": 23300.05859375,
+    "label": "c23⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLR"
+   },
+   {
+    "ion": "c",
+    "number": 23,
+    "charge": 6,
+    "mz": 405.75433349609375,
+    "theo": 405.7543895462189,
+    "ppm": -0.13813806225735215,
+    "intensity": 1788.5479736328125,
+    "label": "c23⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLR"
+   },
+   {
+    "ion": "c",
+    "number": 24,
+    "charge": 4,
+    "mz": 636.8858032226562,
+    "theo": 636.8846818487139,
+    "ppm": 1.7607174019972787,
+    "intensity": 22174.3046875,
+    "label": "c24⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRD"
+   },
+   {
+    "ion": "c",
+    "number": 24,
+    "charge": 5,
+    "mz": 509.7096862792969,
+    "theo": 509.7092007693689,
+    "ppm": 0.95252337454851,
+    "intensity": 10824.279296875,
+    "label": "c24⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRD"
+   },
+   {
+    "ion": "c",
+    "number": 25,
+    "charge": 3,
+    "mz": 886.8702392578125,
+    "theo": 886.8581261270916,
+    "ppm": 13.658476326732302,
+    "intensity": 961.412109375,
+    "label": "c25³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDN"
+   },
+   {
+    "ion": "c",
+    "number": 25,
+    "charge": 4,
+    "mz": 665.3861026565847,
+    "theo": 665.3954137083159,
+    "ppm": -13.993261058537916,
+    "intensity": 4794.80126953125,
+    "label": "c25⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDN"
+   },
+   {
+    "ion": "c",
+    "number": 25,
+    "charge": 5,
+    "mz": 532.5182495117188,
+    "theo": 532.5177862570505,
+    "ppm": 0.8699327613403951,
+    "intensity": 1360.875,
+    "label": "c25⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDN"
+   },
+   {
+    "ion": "c",
+    "number": 26,
+    "charge": 3,
+    "mz": 924.5512084960938,
+    "theo": 924.5528141185545,
+    "ppm": -1.7366476378596662,
+    "intensity": 1027.177490234375,
+    "label": "c26³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNI"
+   },
+   {
+    "ion": "c",
+    "number": 26,
+    "charge": 4,
+    "mz": 693.6686401367188,
+    "theo": 693.6664297019129,
+    "ppm": 3.1865961955583852,
+    "intensity": 9615.9287109375,
+    "label": "c26⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNI"
+   },
+   {
+    "ion": "c",
+    "number": 26,
+    "charge": 5,
+    "mz": 555.1351928710938,
+    "theo": 555.1345990519281,
+    "ppm": 1.0696850216425982,
+    "intensity": 5145.4072265625,
+    "label": "c26⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNI"
+   },
+   {
+    "ion": "c",
+    "number": 27,
+    "charge": 4,
+    "mz": 725.6834716796875,
+    "theo": 725.6810740774639,
+    "ppm": 3.3039337930145676,
+    "intensity": 2000.4571533203125,
+    "label": "c27⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQ"
+   },
+   {
+    "ion": "c",
+    "number": 27,
+    "charge": 6,
+    "mz": 484.123779296875,
+    "theo": 484.1231415356389,
+    "ppm": 1.3173533371178465,
+    "intensity": 1841.6053466796875,
+    "label": "c27⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQ"
+   },
+   {
+    "ion": "c",
+    "number": 28,
+    "charge": 5,
+    "mz": 592.151611328125,
+    "theo": 592.1506072962097,
+    "ppm": 1.695568497103582,
+    "intensity": 780.607666015625,
+    "label": "c28⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQG"
+   },
+   {
+    "ion": "c",
+    "number": 28,
+    "charge": 6,
+    "mz": 493.6282958984375,
+    "theo": 493.62671882217296,
+    "ppm": 3.1948762180091417,
+    "intensity": 657.9991455078125,
+    "label": "c28⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQG"
+   },
+   {
+    "ion": "c",
+    "number": 29,
+    "charge": 4,
+    "mz": 768.20361328125,
+    "theo": 768.207456000862,
+    "ppm": -5.002189944832434,
+    "intensity": 786.1214599609375,
+    "label": "c29⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGI"
+   },
+   {
+    "ion": "c",
+    "number": 29,
+    "charge": 5,
+    "mz": 614.7689819335938,
+    "theo": 614.7674200910873,
+    "ppm": 2.540542090282582,
+    "intensity": 2254.17333984375,
+    "label": "c29⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGI"
+   },
+   {
+    "ion": "c",
+    "number": 29,
+    "charge": 6,
+    "mz": 512.4751586914062,
+    "theo": 512.4740628179043,
+    "ppm": 2.138397982437313,
+    "intensity": 626.818115234375,
+    "label": "c29⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGI"
+   },
+   {
+    "ion": "c",
+    "number": 30,
+    "charge": 4,
+    "mz": 793.4718627929688,
+    "theo": 793.4693756173759,
+    "ppm": 3.1345577652365693,
+    "intensity": 1821.3370361328125,
+    "label": "c30⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGIT"
+   },
+   {
+    "ion": "c",
+    "number": 30,
+    "charge": 5,
+    "mz": 634.9780883789062,
+    "theo": 634.9769557842985,
+    "ppm": 1.7836782853419175,
+    "intensity": 1300.5950927734375,
+    "label": "c30⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGIT"
+   },
+   {
+    "ion": "c",
+    "number": 30,
+    "charge": 6,
+    "mz": 529.3164672851562,
+    "theo": 529.3153425622469,
+    "ppm": 2.124863609512077,
+    "intensity": 739.0177001953125,
+    "label": "c30⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGIT"
+   },
+   {
+    "ion": "c",
+    "number": 31,
+    "charge": 4,
+    "mz": 825.4971923828125,
+    "theo": 825.4931163700098,
+    "ppm": 4.937670250473005,
+    "intensity": 1758.8370361328125,
+    "label": "c31⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITK"
+   },
+   {
+    "ion": "c",
+    "number": 32,
+    "charge": 5,
+    "mz": 680.00830078125,
+    "theo": 680.0065011557649,
+    "ppm": 2.6464827645510316,
+    "intensity": 1416.148193359375,
+    "label": "c32⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKP"
+   },
+   {
+    "ion": "c",
+    "number": 32,
+    "charge": 6,
+    "mz": 566.840576171875,
+    "theo": 566.8399637051356,
+    "ppm": 1.0804932232065647,
+    "intensity": 749.8103637695312,
+    "label": "c32⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKP"
+   },
+   {
+    "ion": "c",
+    "number": 33,
+    "charge": 4,
+    "mz": 867.5032958984375,
+    "theo": 867.5155857774589,
+    "ppm": -14.166752993141172,
+    "intensity": 1371.7047119140625,
+    "label": "c33⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPA"
+   },
+   {
+    "ion": "c",
+    "number": 33,
+    "charge": 5,
+    "mz": 694.2152099609375,
+    "theo": 694.213923912365,
+    "ppm": 1.8525248892680943,
+    "intensity": 2554.74658203125,
+    "label": "c33⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPA"
+   },
+   {
+    "ion": "c",
+    "number": 33,
+    "charge": 6,
+    "mz": 578.679931640625,
+    "theo": 578.679482668969,
+    "ppm": 0.7758554942796394,
+    "intensity": 630.4528198242188,
+    "label": "c33⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPA"
+   },
+   {
+    "ion": "c",
+    "number": 34,
+    "charge": 5,
+    "mz": 716.8327026367188,
+    "theo": 716.8307367072426,
+    "ppm": 2.742529547692883,
+    "intensity": 7063.04736328125,
+    "label": "c34⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAI"
+   },
+   {
+    "ion": "c",
+    "number": 34,
+    "charge": 6,
+    "mz": 597.5264282226562,
+    "theo": 597.5268266647003,
+    "ppm": -0.6668186702612295,
+    "intensity": 4332.4091796875,
+    "label": "c34⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAI"
+   },
+   {
+    "ion": "c",
+    "number": 34,
+    "charge": 7,
+    "mz": 512.309326171875,
+    "theo": 512.3097480628843,
+    "ppm": -0.823507674587756,
+    "intensity": 605.8064575195312,
+    "label": "c34⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAI"
+   },
+   {
+    "ion": "c",
+    "number": 35,
+    "charge": 4,
+    "mz": 934.8154907226562,
+    "theo": 934.8118795258149,
+    "ppm": 3.863019844355964,
+    "intensity": 762.458984375,
+    "label": "c35⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIR"
+   },
+   {
+    "ion": "c",
+    "number": 35,
+    "charge": 5,
+    "mz": 748.0540161132812,
+    "theo": 748.0509589110496,
+    "ppm": 4.086890331732012,
+    "intensity": 1117.3519287109375,
+    "label": "c35⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIR"
+   },
+   {
+    "ion": "c",
+    "number": 35,
+    "charge": 6,
+    "mz": 623.5440063476562,
+    "theo": 623.5436785012063,
+    "ppm": 0.5257794462213491,
+    "intensity": 1149.7557373046875,
+    "label": "c35⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIR"
+   },
+   {
+    "ion": "c",
+    "number": 35,
+    "charge": 7,
+    "mz": 534.6103515625,
+    "theo": 534.6099067798895,
+    "ppm": 0.8319759976436375,
+    "intensity": 2694.26220703125,
+    "label": "c35⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIR"
+   },
+   {
+    "ion": "c",
+    "number": 36,
+    "charge": 5,
+    "mz": 779.2619018554688,
+    "theo": 779.2711811148569,
+    "ppm": -11.907612668074421,
+    "intensity": 657.9202880859375,
+    "label": "c36⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRR"
+   },
+   {
+    "ion": "c",
+    "number": 36,
+    "charge": 6,
+    "mz": 649.561279296875,
+    "theo": 649.5605303377123,
+    "ppm": 1.1530244337921078,
+    "intensity": 1022.5028686523438,
+    "label": "c36⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRR"
+   },
+   {
+    "ion": "c",
+    "number": 36,
+    "charge": 7,
+    "mz": 556.9117431640625,
+    "theo": 556.9100654968946,
+    "ppm": 3.012456178872926,
+    "intensity": 398.0016784667969,
+    "label": "c36⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRR"
+   },
+   {
+    "ion": "c",
+    "number": 36,
+    "charge": 8,
+    "mz": 487.4237976074219,
+    "theo": 487.4222168662814,
+    "ppm": 3.2430633765955084,
+    "intensity": 443.96856689453125,
+    "label": "c36⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRR"
+   },
+   {
+    "ion": "c",
+    "number": 37,
+    "charge": 5,
+    "mz": 801.8829345703125,
+    "theo": 801.8879939097345,
+    "ppm": -6.309284414336984,
+    "intensity": 1980.7796630859375,
+    "label": "c37⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRL"
+   },
+   {
+    "ion": "c",
+    "number": 37,
+    "charge": 6,
+    "mz": 668.4093017578125,
+    "theo": 668.4078743334436,
+    "ppm": 2.1355588761162125,
+    "intensity": 10244.1201171875,
+    "label": "c37⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRL"
+   },
+   {
+    "ion": "c",
+    "number": 37,
+    "charge": 7,
+    "mz": 573.06591796875,
+    "theo": 573.06493177895,
+    "ppm": 1.7209041162203031,
+    "intensity": 3009.849853515625,
+    "label": "c37⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRL"
+   },
+   {
+    "ion": "c",
+    "number": 37,
+    "charge": 8,
+    "mz": 501.5587158203125,
+    "theo": 501.55772486307995,
+    "ppm": 1.975759086984491,
+    "intensity": 979.4871826171875,
+    "label": "c37⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRL"
+   },
+   {
+    "ion": "c",
+    "number": 38,
+    "charge": 5,
+    "mz": 816.10302734375,
+    "theo": 816.0954166663345,
+    "ppm": 9.32572008138046,
+    "intensity": 1797.038330078125,
+    "label": "c38⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLA"
+   },
+   {
+    "ion": "c",
+    "number": 38,
+    "charge": 6,
+    "mz": 680.2484130859375,
+    "theo": 680.247393297277,
+    "ppm": 1.499143797648717,
+    "intensity": 7782.6484375,
+    "label": "c38⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLA"
+   },
+   {
+    "ion": "c",
+    "number": 38,
+    "charge": 7,
+    "mz": 583.21435546875,
+    "theo": 583.2130908908073,
+    "ppm": 2.168294852210445,
+    "intensity": 3213.656494140625,
+    "label": "c38⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLA"
+   },
+   {
+    "ion": "c",
+    "number": 39,
+    "charge": 5,
+    "mz": 847.3082885742188,
+    "theo": 847.3156388701416,
+    "ppm": -8.674802618578877,
+    "intensity": 3321.73828125,
+    "label": "c39⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLAR"
+   },
+   {
+    "ion": "c",
+    "number": 39,
+    "charge": 6,
+    "mz": 706.2651977539062,
+    "theo": 706.2642451337829,
+    "ppm": 1.3488154468172366,
+    "intensity": 1489.370849609375,
+    "label": "c39⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLAR"
+   },
+   {
+    "ion": "c",
+    "number": 39,
+    "charge": 7,
+    "mz": 605.513427734375,
+    "theo": 605.5132496078123,
+    "ppm": 0.29417450863150163,
+    "intensity": 4480.4248046875,
+    "label": "c39⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLAR"
+   },
+   {
+    "ion": "c",
+    "number": 39,
+    "charge": 8,
+    "mz": 529.9522094726562,
+    "theo": 529.9500029633344,
+    "ppm": 4.163617906350955,
+    "intensity": 814.465576171875,
+    "label": "c39⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLAR"
+   },
+   {
+    "ion": "c",
+    "number": 40,
+    "charge": 6,
+    "mz": 732.271781868849,
+    "theo": 732.281096970289,
+    "ppm": -12.720663524692648,
+    "intensity": 1728.1268310546875,
+    "label": "c40⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARR"
+   },
+   {
+    "ion": "c",
+    "number": 40,
+    "charge": 7,
+    "mz": 627.8140869140625,
+    "theo": 627.8134083248175,
+    "ppm": 1.0808772734293524,
+    "intensity": 4399.64697265625,
+    "label": "c40⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARR"
+   },
+   {
+    "ion": "c",
+    "number": 40,
+    "charge": 8,
+    "mz": 549.4634399414062,
+    "theo": 549.4626418407139,
+    "ppm": 1.4525112929906068,
+    "intensity": 1990.904541015625,
+    "label": "c40⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARR"
+   },
+   {
+    "ion": "c",
+    "number": 41,
+    "charge": 6,
+    "mz": 741.7850341796875,
+    "theo": 741.784674256823,
+    "ppm": 0.48521205276311213,
+    "intensity": 886.6739501953125,
+    "label": "c41⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRG"
+   },
+   {
+    "ion": "c",
+    "number": 41,
+    "charge": 7,
+    "mz": 635.9611206054688,
+    "theo": 635.9593317132752,
+    "ppm": 2.812903442601711,
+    "intensity": 2402.34521484375,
+    "label": "c41⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRG"
+   },
+   {
+    "ion": "c",
+    "number": 41,
+    "charge": 8,
+    "mz": 556.591064453125,
+    "theo": 556.5903248056145,
+    "ppm": 1.3288903481353633,
+    "intensity": 526.1089477539062,
+    "label": "c41⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRG"
+   },
+   {
+    "ion": "c",
+    "number": 42,
+    "charge": 5,
+    "mz": 901.3423461914062,
+    "theo": 901.3444465616305,
+    "ppm": -2.330263677010696,
+    "intensity": 1487.318603515625,
+    "label": "c42⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGG"
+   },
+   {
+    "ion": "c",
+    "number": 42,
+    "charge": 6,
+    "mz": 751.293701171875,
+    "theo": 751.288251543357,
+    "ppm": 7.253711883324467,
+    "intensity": 3364.30859375,
+    "label": "c42⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGG"
+   },
+   {
+    "ion": "c",
+    "number": 43,
+    "charge": 8,
+    "mz": 576.1009521484375,
+    "theo": 576.1015595093389,
+    "ppm": -1.0542601237598281,
+    "intensity": 447.9625244140625,
+    "label": "c43⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGV"
+   },
+   {
+    "ion": "c",
+    "number": 44,
+    "charge": 6,
+    "mz": 789.1571044921875,
+    "theo": 789.1488143635448,
+    "ppm": 10.505152503278463,
+    "intensity": 639.824462890625,
+    "label": "c44⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVK"
+   },
+   {
+    "ion": "c",
+    "number": 44,
+    "charge": 7,
+    "mz": 676.5596313476562,
+    "theo": 676.5571660904654,
+    "ppm": 3.643826884654901,
+    "intensity": 824.3983154296875,
+    "label": "c44⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVK"
+   },
+   {
+    "ion": "c",
+    "number": 45,
+    "charge": 6,
+    "mz": 815.1748046875,
+    "theo": 815.165666200051,
+    "ppm": 11.210589243332047,
+    "intensity": 8335.5849609375,
+    "label": "c45⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKR"
+   },
+   {
+    "ion": "c",
+    "number": 45,
+    "charge": 8,
+    "mz": 611.6218872070312,
+    "theo": 611.6260687630354,
+    "ppm": -6.836785117086729,
+    "intensity": 469.3109436035156,
+    "label": "c45⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKR"
+   },
+   {
+    "ion": "c",
+    "number": 46,
+    "charge": 8,
+    "mz": 625.7618408203125,
+    "theo": 625.7615767598339,
+    "ppm": 0.42198257032394937,
+    "intensity": 1226.9425048828125,
+    "label": "c46⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRI"
+   },
+   {
+    "ion": "c",
+    "number": 46,
+    "charge": 9,
+    "mz": 556.3389282226562,
+    "theo": 556.3444322811844,
+    "ppm": -9.893257142071676,
+    "intensity": 526.4855346679688,
+    "label": "c46⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRI"
+   },
+   {
+    "ion": "c",
+    "number": 47,
+    "charge": 5,
+    "mz": 1018.0227661132812,
+    "theo": 1018.020562624993,
+    "ppm": 2.164483085284441,
+    "intensity": 969.613037109375,
+    "label": "c47⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRIS"
+   },
+   {
+    "ion": "c",
+    "number": 47,
+    "charge": 11,
+    "mz": 463.28143310546875,
+    "theo": 463.2860428942635,
+    "ppm": -9.950200023225824,
+    "intensity": 1212.242431640625,
+    "label": "c47¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRIS"
+   },
+   {
+    "ion": "c",
+    "number": 48,
+    "charge": 7,
+    "mz": 735.5910034179688,
+    "theo": 735.5912613925923,
+    "ppm": -0.3507037631857549,
+    "intensity": 519.5078735351562,
+    "label": "c48⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISG"
+   },
+   {
+    "ion": "c",
+    "number": 48,
+    "charge": 9,
+    "mz": 572.3434448242188,
+    "theo": 572.350375850236,
+    "ppm": -12.10976057619485,
+    "intensity": 9770.8564453125,
+    "label": "c48⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISG"
+   },
+   {
+    "ion": "c",
+    "number": 49,
+    "charge": 6,
+    "mz": 876.8801879882812,
+    "theo": 876.8692695450909,
+    "ppm": 12.451620292284824,
+    "intensity": 20378.150390625,
+    "label": "c49⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGL"
+   },
+   {
+    "ion": "c",
+    "number": 49,
+    "charge": 8,
+    "mz": 657.9041137695312,
+    "theo": 657.9037712718155,
+    "ppm": 0.5205893790970141,
+    "intensity": 1679.739013671875,
+    "label": "c49⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGL"
+   },
+   {
+    "ion": "c",
+    "number": 50,
+    "charge": 6,
+    "mz": 895.70703125,
+    "theo": 895.7166135408223,
+    "ppm": -10.697904535278484,
+    "intensity": 1638.0281982421875,
+    "label": "c50⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLI"
+   },
+   {
+    "ion": "c",
+    "number": 50,
+    "charge": 7,
+    "mz": 767.8936767578125,
+    "theo": 767.9009939567032,
+    "ppm": -9.528831123193832,
+    "intensity": 1859.419921875,
+    "label": "c50⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLI"
+   },
+   {
+    "ion": "c",
+    "number": 50,
+    "charge": 8,
+    "mz": 672.0327758789062,
+    "theo": 672.039279268614,
+    "ppm": -9.67709761670962,
+    "intensity": 474.0316467285156,
+    "label": "c50⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLI"
+   },
+   {
+    "ion": "c",
+    "number": 51,
+    "charge": 8,
+    "mz": 692.4234008789062,
+    "theo": 692.4221953348455,
+    "ppm": 1.7410534626175729,
+    "intensity": 1699.7882080078125,
+    "label": "c51⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIY"
+   },
+   {
+    "ion": "c",
+    "number": 51,
+    "charge": 9,
+    "mz": 615.5990600585938,
+    "theo": 615.5983154589725,
+    "ppm": 1.2095543515511147,
+    "intensity": 1023.2392578125,
+    "label": "c51⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIY"
+   },
+   {
+    "ion": "c",
+    "number": 52,
+    "charge": 7,
+    "mz": 809.6356811523438,
+    "theo": 809.6304113302986,
+    "ppm": 6.508923048646586,
+    "intensity": 613.8076171875,
+    "label": "c52⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYE"
+   },
+   {
+    "ion": "c",
+    "number": 52,
+    "charge": 8,
+    "mz": 708.55419921875,
+    "theo": 708.5525194705099,
+    "ppm": 2.3706757000551986,
+    "intensity": 2112.742431640625,
+    "label": "c52⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYE"
+   },
+   {
+    "ion": "c",
+    "number": 53,
+    "charge": 7,
+    "mz": 828.05712890625,
+    "theo": 828.0650674853438,
+    "ppm": -9.586902533979242,
+    "intensity": 3531.93701171875,
+    "label": "c53⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEE"
+   },
+   {
+    "ion": "c",
+    "number": 53,
+    "charge": 9,
+    "mz": 644.2724609375,
+    "theo": 644.2744472557092,
+    "ppm": -3.083031179771596,
+    "intensity": 1115.816162109375,
+    "label": "c53⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEE"
+   },
+   {
+    "ion": "c",
+    "number": 54,
+    "charge": 7,
+    "mz": 842.5037841796875,
+    "theo": 842.5004501233518,
+    "ppm": 3.957334782670542,
+    "intensity": 579.1868286132812,
+    "label": "c54⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEET"
+   },
+   {
+    "ion": "c",
+    "number": 54,
+    "charge": 8,
+    "mz": 737.3175659179688,
+    "theo": 737.3138034144315,
+    "ppm": 5.102988062642957,
+    "intensity": 2350.158447265625,
+    "label": "c54⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEET"
+   },
+   {
+    "ion": "c",
+    "number": 54,
+    "charge": 9,
+    "mz": 655.50146484375,
+    "theo": 655.5019670852712,
+    "ppm": -0.7661937666227974,
+    "intensity": 677.8681030273438,
+    "label": "c54⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEET"
+   },
+   {
+    "ion": "c",
+    "number": 55,
+    "charge": 7,
+    "mz": 864.8108520507812,
+    "theo": 864.8006088403569,
+    "ppm": 11.844592059350179,
+    "intensity": 1137.4656982421875,
+    "label": "c55⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETR"
+   },
+   {
+    "ion": "c",
+    "number": 55,
+    "charge": 8,
+    "mz": 756.8311767578125,
+    "theo": 756.826442291811,
+    "ppm": 6.255682593753051,
+    "intensity": 819.4373779296875,
+    "label": "c55⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETR"
+   },
+   {
+    "ion": "c",
+    "number": 55,
+    "charge": 10,
+    "mz": 605.6572265625,
+    "theo": 605.6626091238464,
+    "ppm": -8.88706231052189,
+    "intensity": 10047.4326171875,
+    "label": "c55¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETR"
+   },
+   {
+    "ion": "c",
+    "number": 56,
+    "charge": 8,
+    "mz": 763.95556640625,
+    "theo": 763.9541252567114,
+    "ppm": 1.8864346574029762,
+    "intensity": 1023.345458984375,
+    "label": "c56⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRG"
+   },
+   {
+    "ion": "c",
+    "number": 56,
+    "charge": 9,
+    "mz": 679.1847534179688,
+    "theo": 679.1822531672977,
+    "ppm": 3.681266198204631,
+    "intensity": 618.0902709960938,
+    "label": "c56⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRG"
+   },
+   {
+    "ion": "c",
+    "number": 56,
+    "charge": 10,
+    "mz": 611.3708160087369,
+    "theo": 611.3647554957669,
+    "ppm": 9.913088570425646,
+    "intensity": 2127.985107421875,
+    "label": "c56¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRG"
+   },
+   {
+    "ion": "c",
+    "number": 57,
+    "charge": 7,
+    "mz": 887.0899658203125,
+    "theo": 887.0991627874706,
+    "ppm": -10.367462335573899,
+    "intensity": 3051.781494140625,
+    "label": "c57⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGV"
+   },
+   {
+    "ion": "c",
+    "number": 58,
+    "charge": 7,
+    "mz": 903.2500610351562,
+    "theo": 903.2540290695262,
+    "ppm": -4.393043642431669,
+    "intensity": 1952.6448974609375,
+    "label": "c58⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVL"
+   },
+   {
+    "ion": "c",
+    "number": 58,
+    "charge": 8,
+    "mz": 790.4822998046875,
+    "theo": 790.4731849923339,
+    "ppm": 11.53083055393149,
+    "intensity": 1038.478515625,
+    "label": "c58⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVL"
+   },
+   {
+    "ion": "c",
+    "number": 59,
+    "charge": 7,
+    "mz": 921.5614624023438,
+    "theo": 921.5533094996026,
+    "ppm": 8.846913854129227,
+    "intensity": 1318.20947265625,
+    "label": "c59⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLK"
+   },
+   {
+    "ion": "c",
+    "number": 59,
+    "charge": 10,
+    "mz": 645.3904418945312,
+    "theo": 645.3894995853185,
+    "ppm": 1.4600628199742265,
+    "intensity": 1332.6298828125,
+    "label": "c59¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLK"
+   },
+   {
+    "ion": "c",
+    "number": 60,
+    "charge": 9,
+    "mz": 727.99609375,
+    "theo": 727.995125923532,
+    "ppm": 1.3294408623759928,
+    "intensity": 919.8355712890625,
+    "label": "c60⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKV"
+   },
+   {
+    "ion": "c",
+    "number": 61,
+    "charge": 7,
+    "mz": 956.7176513671875,
+    "theo": 956.7157134740573,
+    "ppm": 2.025568413760805,
+    "intensity": 1625.9014892578125,
+    "label": "c61⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVF"
+   },
+   {
+    "ion": "c",
+    "number": 61,
+    "charge": 8,
+    "mz": 837.2523193359375,
+    "theo": 837.2521588462989,
+    "ppm": 0.19168614482336951,
+    "intensity": 1299.66455078125,
+    "label": "c61⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVF"
+   },
+   {
+    "ion": "c",
+    "number": 62,
+    "charge": 8,
+    "mz": 851.3956298828125,
+    "theo": 851.3876668430973,
+    "ppm": 9.353012764064337,
+    "intensity": 12378.2431640625,
+    "label": "c62⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFL"
+   },
+   {
+    "ion": "c",
+    "number": 62,
+    "charge": 9,
+    "mz": 756.8916625976562,
+    "theo": 756.9009567996409,
+    "ppm": -12.279284232812453,
+    "intensity": 1966.760009765625,
+    "label": "c62⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFL"
+   },
+   {
+    "ion": "c",
+    "number": 63,
+    "charge": 7,
+    "mz": 991.3035278320312,
+    "theo": 991.3052359111581,
+    "ppm": -1.7230607334306025,
+    "intensity": 3307.3642578125,
+    "label": "c63⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLE"
+   },
+   {
+    "ion": "c",
+    "number": 64,
+    "charge": 8,
+    "mz": 881.7779541015625,
+    "theo": 881.773356908563,
+    "ppm": 5.213576667430456,
+    "intensity": 1478.81884765625,
+    "label": "c64⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLEN"
+   },
+   {
+    "ion": "c",
+    "number": 64,
+    "charge": 11,
+    "mz": 641.5556640625,
+    "theo": 641.5644258749518,
+    "ppm": -13.65694869978357,
+    "intensity": 494.79583740234375,
+    "label": "c64¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLEN"
+   },
+   {
+    "ion": "c",
+    "number": 65,
+    "charge": 7,
+    "mz": 1021.7412109375,
+    "theo": 1021.7497132467296,
+    "ppm": -8.321322843895972,
+    "intensity": 999.4110717773438,
+    "label": "c65⁷⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENV"
+   },
+   {
+    "ion": "c",
+    "number": 65,
+    "charge": 9,
+    "mz": 794.9151611328125,
+    "theo": 794.9180606256759,
+    "ppm": -3.647536780272095,
+    "intensity": 1582.8494873046875,
+    "label": "c65⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENV"
+   },
+   {
+    "ion": "c",
+    "number": 66,
+    "charge": 9,
+    "mz": 807.4868774414062,
+    "theo": 807.4829566228303,
+    "ppm": 4.855605364500758,
+    "intensity": 1831.4456787109375,
+    "label": "c66⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVI"
+   },
+   {
+    "ion": "c",
+    "number": 66,
+    "charge": 10,
+    "mz": 726.8426513671875,
+    "theo": 726.8353886057461,
+    "ppm": 9.992305761790826,
+    "intensity": 1068.0909423828125,
+    "label": "c66¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVI"
+   },
+   {
+    "ion": "c",
+    "number": 67,
+    "charge": 9,
+    "mz": 824.81591796875,
+    "theo": 824.8275245138342,
+    "ppm": -14.071481296690044,
+    "intensity": 1358.2969970703125,
+    "label": "c67⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIR"
+   },
+   {
+    "ion": "c",
+    "number": 67,
+    "charge": 10,
+    "mz": 742.4551391601562,
+    "theo": 742.4454997076498,
+    "ppm": 12.983380612123275,
+    "intensity": 1515.929443359375,
+    "label": "c67¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIR"
+   },
+   {
+    "ion": "c",
+    "number": 67,
+    "charge": 12,
+    "mz": 618.87548828125,
+    "theo": 618.872462498373,
+    "ppm": 4.8891864808042325,
+    "intensity": 257.0411682128906,
+    "label": "c67¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIR"
+   },
+   {
+    "ion": "c",
+    "number": 67,
+    "charge": 13,
+    "mz": 571.3378295898438,
+    "theo": 571.3443712640357,
+    "ppm": -11.44961694019189,
+    "intensity": 949.4541625976562,
+    "label": "c67¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIR"
+   },
+   {
+    "ion": "c",
+    "number": 68,
+    "charge": 8,
+    "mz": 942.169921875,
+    "theo": 942.1834233992549,
+    "ppm": -14.330037994324805,
+    "intensity": 634.2681884765625,
+    "label": "c68⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRD"
+   },
+   {
+    "ion": "c",
+    "number": 68,
+    "charge": 10,
+    "mz": 753.9453735351562,
+    "theo": 753.9481940098017,
+    "ppm": -3.7409395868855233,
+    "intensity": 570.9229125976562,
+    "label": "c68¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRD"
+   },
+   {
+    "ion": "c",
+    "number": 69,
+    "charge": 14,
+    "mz": 543.89013671875,
+    "theo": 543.896297120641,
+    "ppm": -11.326427342059263,
+    "intensity": 618.0045776367188,
+    "label": "c69¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDA"
+   },
+   {
+    "ion": "c",
+    "number": 70,
+    "charge": 8,
+    "mz": 963.4468383789062,
+    "theo": 963.4466143609541,
+    "ppm": 0.23251724469065213,
+    "intensity": 1043.70703125,
+    "label": "c70⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAV"
+   },
+   {
+    "ion": "c",
+    "number": 70,
+    "charge": 9,
+    "mz": 856.5081176757812,
+    "theo": 856.5089101488468,
+    "ppm": -0.9252362189585532,
+    "intensity": 1266.7373046875,
+    "label": "c70⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAV"
+   },
+   {
+    "ion": "c",
+    "number": 70,
+    "charge": 10,
+    "mz": 770.964111328125,
+    "theo": 770.958746779161,
+    "ppm": 6.9582827699465595,
+    "intensity": 719.3729248046875,
+    "label": "c70¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAV"
+   },
+   {
+    "ion": "c",
+    "number": 71,
+    "charge": 8,
+    "mz": 976.0921020507812,
+    "theo": 976.077574169211,
+    "ppm": 14.883941558300512,
+    "intensity": 1473.68212890625,
+    "label": "c71⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVT"
+   },
+   {
+    "ion": "c",
+    "number": 71,
+    "charge": 12,
+    "mz": 651.0568237304688,
+    "theo": 651.0541415968037,
+    "ppm": 4.1196783703690265,
+    "intensity": 970.779296875,
+    "label": "c71¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVT"
+   },
+   {
+    "ion": "c",
+    "number": 72,
+    "charge": 9,
+    "mz": 885.8529052734375,
+    "theo": 885.8545775928364,
+    "ppm": -1.8878035303417822,
+    "intensity": 2724.231689453125,
+    "label": "c72⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTY"
+   },
+   {
+    "ion": "c",
+    "number": 72,
+    "charge": 14,
+    "mz": 569.8419189453125,
+    "theo": 569.837684328248,
+    "ppm": 7.431268905140876,
+    "intensity": 317.7797546386719,
+    "label": "c72¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTY"
+   },
+   {
+    "ion": "c",
+    "number": 73,
+    "charge": 10,
+    "mz": 807.4639892578125,
+    "theo": 807.4746153253573,
+    "ppm": -13.159630461548735,
+    "intensity": 1415.58544921875,
+    "label": "c73¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYT"
+   },
+   {
+    "ion": "c",
+    "number": 73,
+    "charge": 13,
+    "mz": 621.3733520507812,
+    "theo": 621.3667678930416,
+    "ppm": 10.596250201781253,
+    "intensity": 2192.5205078125,
+    "label": "c73¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYT"
+   },
+   {
+    "ion": "c",
+    "number": 73,
+    "charge": 15,
+    "mz": 538.6577758789062,
+    "theo": 538.6521690342345,
+    "ppm": 10.409026444332719,
+    "intensity": 7733.8349609375,
+    "label": "c73¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYT"
+   },
+   {
+    "ion": "c",
+    "number": 74,
+    "charge": 9,
+    "mz": 911.4156494140625,
+    "theo": 911.4201633207665,
+    "ppm": -4.952607903207855,
+    "intensity": 693.318359375,
+    "label": "c74⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTE"
+   },
+   {
+    "ion": "c",
+    "number": 74,
+    "charge": 10,
+    "mz": 820.3768310546875,
+    "theo": 820.3788746338889,
+    "ppm": -2.49101880193932,
+    "intensity": 3277.193359375,
+    "label": "c74¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTE"
+   },
+   {
+    "ion": "c",
+    "number": 74,
+    "charge": 11,
+    "mz": 745.8949584960938,
+    "theo": 745.8905475264434,
+    "ppm": 5.913695601883738,
+    "intensity": 1765.8824462890625,
+    "label": "c74¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTE"
+   },
+   {
+    "ion": "c",
+    "number": 75,
+    "charge": 9,
+    "mz": 926.6505126953125,
+    "theo": 926.6489313046885,
+    "ppm": 1.7065693064106044,
+    "intensity": 654.9576416015625,
+    "label": "c75⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEH"
+   },
+   {
+    "ion": "c",
+    "number": 75,
+    "charge": 10,
+    "mz": 834.0776977539062,
+    "theo": 834.0847658194185,
+    "ppm": -8.474037414324043,
+    "intensity": 957.1842651367188,
+    "label": "c75¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEH"
+   },
+   {
+    "ion": "c",
+    "number": 75,
+    "charge": 11,
+    "mz": 758.3615112304688,
+    "theo": 758.3504486041977,
+    "ppm": 14.587749359682938,
+    "intensity": 2694.04736328125,
+    "label": "c75¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEH"
+   },
+   {
+    "ion": "c",
+    "number": 75,
+    "charge": 13,
+    "mz": 641.8399658203125,
+    "theo": 641.8361144269348,
+    "ppm": 6.000586896075836,
+    "intensity": 830.1965942382812,
+    "label": "c75¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEH"
+   },
+   {
+    "ion": "c",
+    "number": 76,
+    "charge": 10,
+    "mz": 841.1925659179688,
+    "theo": 841.1884771977186,
+    "ppm": 4.860647002392339,
+    "intensity": 1963.5238037109375,
+    "label": "c76¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHA"
+   },
+   {
+    "ion": "c",
+    "number": 77,
+    "charge": 9,
+    "mz": 948.7793579101562,
+    "theo": 948.7747176150814,
+    "ppm": 4.890829180744326,
+    "intensity": 1032.9512939453125,
+    "label": "c77⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAK"
+   },
+   {
+    "ion": "c",
+    "number": 77,
+    "charge": 11,
+    "mz": 776.4591674804688,
+    "theo": 776.4533646763372,
+    "ppm": 7.473474126801431,
+    "intensity": 561.598388671875,
+    "label": "c77¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAK"
+   },
+   {
+    "ion": "c",
+    "number": 77,
+    "charge": 12,
+    "mz": 711.8280029296875,
+    "theo": 711.8328573243083,
+    "ppm": -6.8195708737580825,
+    "intensity": 762.5172729492188,
+    "label": "c77¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAK"
+   },
+   {
+    "ion": "c",
+    "number": 78,
+    "charge": 15,
+    "mz": 580.0745239257812,
+    "theo": 580.0744818844468,
+    "ppm": 0.07247575235321994,
+    "intensity": 458.29669189453125,
+    "label": "c78¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKR"
+   },
+   {
+    "ion": "c",
+    "number": 79,
+    "charge": 8,
+    "mz": 1102.7838134765625,
+    "theo": 1102.7701570141644,
+    "ppm": 12.383779440567164,
+    "intensity": 3410.66357421875,
+    "label": "c79⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRK"
+   },
+   {
+    "ion": "c",
+    "number": 79,
+    "charge": 9,
+    "mz": 980.3494873046875,
+    "theo": 980.3520591739228,
+    "ppm": -2.623413916737734,
+    "intensity": 1056.266845703125,
+    "label": "c79⁹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRK"
+   },
+   {
+    "ion": "c",
+    "number": 79,
+    "charge": 10,
+    "mz": 882.4076538085938,
+    "theo": 882.4175809017294,
+    "ppm": -11.249881405888987,
+    "intensity": 2720.580810546875,
+    "label": "c79¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRK"
+   },
+   {
+    "ion": "c",
+    "number": 79,
+    "charge": 11,
+    "mz": 802.2925415039062,
+    "theo": 802.2893714062983,
+    "ppm": 3.9513144769604103,
+    "intensity": 3658.04638671875,
+    "label": "c79¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRK"
+   },
+   {
+    "ion": "c",
+    "number": 81,
+    "charge": 10,
+    "mz": 902.421875,
+    "theo": 902.4291901393941,
+    "ppm": -8.10605360956791,
+    "intensity": 3624.407958984375,
+    "label": "c81¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTV"
+   },
+   {
+    "ion": "c",
+    "number": 81,
+    "charge": 11,
+    "mz": 820.4926147460938,
+    "theo": 820.481743440539,
+    "ppm": 13.249905487372061,
+    "intensity": 933.4768676757812,
+    "label": "c81¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTV"
+   },
+   {
+    "ion": "c",
+    "number": 81,
+    "charge": 13,
+    "mz": 694.4189453125,
+    "theo": 694.4087485192236,
+    "ppm": 14.684137113902954,
+    "intensity": 15359.615234375,
+    "label": "c81¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTV"
+   },
+   {
+    "ion": "c",
+    "number": 82,
+    "charge": 11,
+    "mz": 829.6781005859375,
+    "theo": 829.6678960283624,
+    "ppm": 12.299569049185779,
+    "intensity": 1448.43994140625,
+    "label": "c82¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVT"
+   },
+   {
+    "ion": "c",
+    "number": 82,
+    "charge": 13,
+    "mz": 702.1832885742188,
+    "theo": 702.1816468627665,
+    "ppm": 2.3380153264168158,
+    "intensity": 458.6899108886719,
+    "label": "c82¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVT"
+   },
+   {
+    "ion": "c",
+    "number": 83,
+    "charge": 12,
+    "mz": 767.85693359375,
+    "theo": 767.8659372122479,
+    "ppm": -11.725508401359344,
+    "intensity": 837.593994140625,
+    "label": "c83¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]"
+   },
+   {
+    "ion": "c",
+    "number": 84,
+    "charge": 13,
+    "mz": 718.96533203125,
+    "theo": 718.9568467756229,
+    "ppm": 11.802176535536981,
+    "intensity": 729.2620849609375,
+    "label": "c84¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]M"
+   },
+   {
+    "ion": "c",
+    "number": 84,
+    "charge": 16,
+    "mz": 584.3441772460938,
+    "theo": 584.3413023399415,
+    "ppm": 4.919909204950193,
+    "intensity": 1958.786865234375,
+    "label": "c84¹⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]M"
+   },
+   {
+    "ion": "c",
+    "number": 85,
+    "charge": 12,
+    "mz": 788.3734741210938,
+    "theo": 788.3715562210523,
+    "ppm": 2.4327362223157825,
+    "intensity": 1096.9261474609375,
+    "label": "c85¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MD"
+   },
+   {
+    "ion": "c",
+    "number": 86,
+    "charge": 10,
+    "mz": 955.750732421875,
+    "theo": 955.7512535659241,
+    "ppm": -0.545271635451412,
+    "intensity": 684.1713256835938,
+    "label": "c86¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDV"
+   },
+   {
+    "ion": "c",
+    "number": 86,
+    "charge": 11,
+    "mz": 868.9525146484375,
+    "theo": 868.9563465555665,
+    "ppm": -4.409780933383593,
+    "intensity": 3247.32421875,
+    "label": "c86¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDV"
+   },
+   {
+    "ion": "c",
+    "number": 86,
+    "charge": 12,
+    "mz": 796.6298217773438,
+    "theo": 796.6272573802684,
+    "ppm": 3.2190677027825005,
+    "intensity": 1028.6240234375,
+    "label": "c86¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDV"
+   },
+   {
+    "ion": "c",
+    "number": 87,
+    "charge": 11,
+    "mz": 885.0457153320312,
+    "theo": 885.0468296383475,
+    "ppm": -1.2590365604821911,
+    "intensity": 1157.179443359375,
+    "label": "c87¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]"
+   },
+   {
+    "ion": "c",
+    "number": 87,
+    "charge": 12,
+    "mz": 811.3858032226562,
+    "theo": 811.3768668728177,
+    "ppm": 11.013808999763471,
+    "intensity": 12910.498046875,
+    "label": "c87¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]"
+   },
+   {
+    "ion": "c",
+    "number": 88,
+    "charge": 11,
+    "mz": 899.8692626953125,
+    "theo": 899.8707685956068,
+    "ppm": -1.6734628425247797,
+    "intensity": 1452.9293212890625,
+    "label": "c88¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]Y"
+   },
+   {
+    "ion": "c",
+    "number": 88,
+    "charge": 12,
+    "mz": 824.9603881835938,
+    "theo": 824.9654775836387,
+    "ppm": -6.1692279050287615,
+    "intensity": 909.5231323242188,
+    "label": "c88¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]Y"
+   },
+   {
+    "ion": "c",
+    "number": 89,
+    "charge": 10,
+    "mz": 996.8738403320312,
+    "theo": 996.8608291882686,
+    "ppm": 13.052116586114968,
+    "intensity": 1587.0469970703125,
+    "label": "c89¹⁰⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YA"
+   },
+   {
+    "ion": "c",
+    "number": 89,
+    "charge": 13,
+    "mz": 767.058349609375,
+    "theo": 767.0484708645118,
+    "ppm": 12.87890562121107,
+    "intensity": 1903.576171875,
+    "label": "c89¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YA"
+   },
+   {
+    "ion": "c",
+    "number": 89,
+    "charge": 14,
+    "mz": 712.3350830078125,
+    "theo": 712.3312426921887,
+    "ppm": 5.391193581981938,
+    "intensity": 970.7081298828125,
+    "label": "c89¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YA"
+   },
+   {
+    "ion": "c",
+    "number": 89,
+    "charge": 15,
+    "mz": 664.9091796875,
+    "theo": 664.909644942842,
+    "ppm": -0.6997271666958841,
+    "intensity": 559.685791015625,
+    "label": "c89¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YA"
+   },
+   {
+    "ion": "c",
+    "number": 90,
+    "charge": 11,
+    "mz": 916.61865234375,
+    "theo": 916.609057482642,
+    "ppm": 10.467779070758853,
+    "intensity": 11038.0419921875,
+    "label": "c90¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YAL"
+   },
+   {
+    "ion": "c",
+    "number": 90,
+    "charge": 12,
+    "mz": 840.3018798828125,
+    "theo": 840.3089090634211,
+    "ppm": -8.364995935147055,
+    "intensity": 4176.74267578125,
+    "label": "c90¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YAL"
+   },
+   {
+    "ion": "c",
+    "number": 90,
+    "charge": 13,
+    "mz": 775.7383759855497,
+    "theo": 775.7472450163878,
+    "ppm": -11.432887316056604,
+    "intensity": 2810.56982421875,
+    "label": "c90¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YAL"
+   },
+   {
+    "ion": "c",
+    "number": 91,
+    "charge": 11,
+    "mz": 928.2515869140625,
+    "theo": 928.2540541199636,
+    "ppm": -2.657899408192961,
+    "intensity": 1258.5455322265625,
+    "label": "c91¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALK"
+   },
+   {
+    "ion": "c",
+    "number": 91,
+    "charge": 12,
+    "mz": 850.9755859375,
+    "theo": 850.9834893142989,
+    "ppm": -9.287344464584343,
+    "intensity": 8220.484375,
+    "label": "c91¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALK"
+   },
+   {
+    "ion": "c",
+    "number": 91,
+    "charge": 13,
+    "mz": 785.5938720703125,
+    "theo": 785.600703709506,
+    "ppm": -8.69607061350696,
+    "intensity": 3182.888427734375,
+    "label": "c91¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALK"
+   },
+   {
+    "ion": "c",
+    "number": 91,
+    "charge": 14,
+    "mz": 729.553955078125,
+    "theo": 729.5583160482547,
+    "ppm": -5.97754837931502,
+    "intensity": 1789.8995361328125,
+    "label": "c91¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALK"
+   },
+   {
+    "ion": "c",
+    "number": 92,
+    "charge": 8,
+    "mz": 1295.478759765625,
+    "theo": 1295.4842346228334,
+    "ppm": -4.226108710577505,
+    "intensity": 909.5942993164062,
+    "label": "c92⁸⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKR"
+   },
+   {
+    "ion": "c",
+    "number": 92,
+    "charge": 11,
+    "mz": 942.4456176757812,
+    "theo": 942.4450642126031,
+    "ppm": 0.5872630661712454,
+    "intensity": 3743.884521484375,
+    "label": "c92¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKR"
+   },
+   {
+    "ion": "c",
+    "number": 92,
+    "charge": 13,
+    "mz": 797.6145629882812,
+    "theo": 797.6084814802009,
+    "ppm": 7.624678299629149,
+    "intensity": 601.044189453125,
+    "label": "c92¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKR"
+   },
+   {
+    "ion": "c",
+    "number": 92,
+    "charge": 14,
+    "mz": 740.6986083984375,
+    "theo": 740.7083954067573,
+    "ppm": -13.213038194897067,
+    "intensity": 3885.249755859375,
+    "label": "c92¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKR"
+   },
+   {
+    "ion": "c",
+    "number": 92,
+    "charge": 15,
+    "mz": 691.3994140625,
+    "theo": 691.3949874764393,
+    "ppm": 6.402398254126687,
+    "intensity": 563.2529907226562,
+    "label": "c92¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKR"
+   },
+   {
+    "ion": "c",
+    "number": 93,
+    "charge": 11,
+    "mz": 954.076904296875,
+    "theo": 954.0867530764398,
+    "ppm": -10.322729597722406,
+    "intensity": 3123.546142578125,
+    "label": "c93¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQ"
+   },
+   {
+    "ion": "c",
+    "number": 93,
+    "charge": 14,
+    "mz": 749.8455810546875,
+    "theo": 749.8554366569148,
+    "ppm": -13.143336362559813,
+    "intensity": 816.7127685546875,
+    "label": "c93¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQ"
+   },
+   {
+    "ion": "c",
+    "number": 94,
+    "charge": 11,
+    "mz": 959.2720947265625,
+    "theo": 959.2705225054585,
+    "ppm": 1.6389757290401927,
+    "intensity": 1324.51953125,
+    "label": "c94¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQG"
+   },
+   {
+    "ion": "c",
+    "number": 94,
+    "charge": 12,
+    "mz": 879.4094848632812,
+    "theo": 879.4152520010028,
+    "ppm": -6.5579232432786165,
+    "intensity": 5404.89013671875,
+    "label": "c94¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQG"
+   },
+   {
+    "ion": "c",
+    "number": 94,
+    "charge": 13,
+    "mz": 811.8439331054688,
+    "theo": 811.8454077280015,
+    "ppm": -1.8163834133267474,
+    "intensity": 1712.826171875,
+    "label": "c94¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQG"
+   },
+   {
+    "ion": "c",
+    "number": 95,
+    "charge": 12,
+    "mz": 892.4210205078125,
+    "theo": 892.4236779192556,
+    "ppm": -2.9777464548229786,
+    "intensity": 5600.2060546875,
+    "label": "c95¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGR"
+   },
+   {
+    "ion": "c",
+    "number": 95,
+    "charge": 13,
+    "mz": 823.8560180664062,
+    "theo": 823.8531854986967,
+    "ppm": 3.4381947650615032,
+    "intensity": 2449.61181640625,
+    "label": "c95¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGR"
+   },
+   {
+    "ion": "c",
+    "number": 95,
+    "charge": 14,
+    "mz": 765.08447265625,
+    "theo": 765.0784777096461,
+    "ppm": 7.8357276783397944,
+    "intensity": 1811.69091796875,
+    "label": "c95¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGR"
+   },
+   {
+    "ion": "c",
+    "number": 95,
+    "charge": 16,
+    "mz": 669.5650634765625,
+    "theo": 669.569577552439,
+    "ppm": -6.741757731886452,
+    "intensity": 737.8734130859375,
+    "label": "c95¹⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGR"
+   },
+   {
+    "ion": "c",
+    "number": 96,
+    "charge": 11,
+    "mz": 982.6500854492188,
+    "theo": 982.6476851859213,
+    "ppm": 2.4426489103034443,
+    "intensity": 1150.5191650390625,
+    "label": "c96¹¹⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRT"
+   },
+   {
+    "ion": "c",
+    "number": 96,
+    "charge": 12,
+    "mz": 900.836669921875,
+    "theo": 900.844317791427,
+    "ppm": -8.489668415446305,
+    "intensity": 932.860107421875,
+    "label": "c96¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRT"
+   },
+   {
+    "ion": "c",
+    "number": 96,
+    "charge": 13,
+    "mz": 831.6264038085938,
+    "theo": 831.6260838422396,
+    "ppm": 0.3847478576701138,
+    "intensity": 1214.292236328125,
+    "label": "c96¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRT"
+   },
+   {
+    "ion": "c",
+    "number": 97,
+    "charge": 12,
+    "mz": 910.2767333984375,
+    "theo": 910.2679897892926,
+    "ppm": 9.605532923202112,
+    "intensity": 687.1436767578125,
+    "label": "c97¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTL"
+   },
+   {
+    "ion": "c",
+    "number": 97,
+    "charge": 16,
+    "mz": 682.9547729492188,
+    "theo": 682.9528114549668,
+    "ppm": 2.8720787426114724,
+    "intensity": 613.651611328125,
+    "label": "c97¹⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTL"
+   },
+   {
+    "ion": "c",
+    "number": 98,
+    "charge": 15,
+    "mz": 739.2841796875,
+    "theo": 739.2867356904887,
+    "ppm": -3.4573905703216194,
+    "intensity": 1379.875732421875,
+    "label": "c98¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLY"
+   },
+   {
+    "ion": "c",
+    "number": 99,
+    "charge": 12,
+    "mz": 928.6106567382812,
+    "theo": 928.6083891433808,
+    "ppm": 2.4419280796471687,
+    "intensity": 6135.38330078125,
+    "label": "c99¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYG"
+   },
+   {
+    "ion": "c",
+    "number": 99,
+    "charge": 15,
+    "mz": 743.077392578125,
+    "theo": 743.0881666051024,
+    "ppm": -14.498988762832605,
+    "intensity": 986.6329956054688,
+    "label": "c99¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYG"
+   },
+   {
+    "ion": "c",
+    "number": 99,
+    "charge": 16,
+    "mz": 696.7124633789062,
+    "theo": 696.7081109705327,
+    "ppm": 6.247104497525453,
+    "intensity": 485.6573181152344,
+    "label": "c99¹⁶⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYG"
+   },
+   {
+    "ion": "c",
+    "number": 100,
+    "charge": 12,
+    "mz": 940.8718872070312,
+    "theo": 940.8640903025967,
+    "ppm": 8.286961437853922,
+    "intensity": 1669.6328125,
+    "label": "c100¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGF"
+   },
+   {
+    "ion": "c",
+    "number": 100,
+    "charge": 15,
+    "mz": 752.8984985351562,
+    "theo": 752.8927275324751,
+    "ppm": 7.665106156737311,
+    "intensity": 1025.947998046875,
+    "label": "c100¹⁵⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGF"
+   },
+   {
+    "ion": "c",
+    "number": 101,
+    "charge": 12,
+    "mz": 945.6268310546875,
+    "theo": 945.6158789458638,
+    "ppm": 11.581984892167105,
+    "intensity": 6617.23095703125,
+    "label": "c101¹²⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFG"
+   },
+   {
+    "ion": "c",
+    "number": 101,
+    "charge": 13,
+    "mz": 872.9622192382812,
+    "theo": 872.9536787540271,
+    "ppm": 9.783433487921675,
+    "intensity": 3249.9208984375,
+    "label": "c101¹³⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFG"
+   },
+   {
+    "ion": "c",
+    "number": 101,
+    "charge": 14,
+    "mz": 810.6793212890625,
+    "theo": 810.6717928753102,
+    "ppm": 9.286635872218179,
+    "intensity": 1494.257568359375,
+    "label": "c101¹⁴⁺",
+    "sequence": "[Acetyl]SGRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFG"
+   },
+   {
+    "ion": "z",
+    "number": 9,
+    "charge": 1,
+    "mz": 910.4486083984375,
+    "theo": 910.4417428118409,
+    "ppm": 7.540940044585536,
+    "intensity": 4543.21142578125,
+    "label": "z9",
+    "sequence": "GRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 15,
+    "charge": 2,
+    "mz": 835.4490356445312,
+    "theo": 835.4440885414228,
+    "ppm": 5.921525062250112,
+    "intensity": 1618.7200927734375,
+    "label": "z15²⁺",
+    "sequence": "YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 15,
+    "charge": 4,
+    "mz": 418.224365234375,
+    "theo": 418.22568249670593,
+    "ppm": -3.1496447637195146,
+    "intensity": 1152.4833984375,
+    "label": "z15⁴⁺",
+    "sequence": "YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 19,
+    "charge": 4,
+    "mz": 548.755859375,
+    "theo": 548.758471478415,
+    "ppm": -4.760023855242617,
+    "intensity": 291.7680969238281,
+    "label": "z19⁴⁺",
+    "sequence": "MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 20,
+    "charge": 3,
+    "mz": 760.343994140625,
+    "theo": 760.3545744148902,
+    "ppm": -13.914921565799924,
+    "intensity": 803.8637084960938,
+    "label": "z20³⁺",
+    "sequence": "A[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 23,
+    "charge": 3,
+    "mz": 860.7322998046875,
+    "theo": 860.7424980291248,
+    "ppm": -11.848171155332535,
+    "intensity": 1231.2694091796875,
+    "label": "z23³⁺",
+    "sequence": "TVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 23,
+    "charge": 4,
+    "mz": 645.8076171875,
+    "theo": 645.8086926348409,
+    "ppm": -1.6652723216025862,
+    "intensity": 650.7177124023438,
+    "label": "z23⁴⁺",
+    "sequence": "TVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 24,
+    "charge": 3,
+    "mz": 903.4295043945312,
+    "theo": 903.4408190326368,
+    "ppm": -12.5239394403952,
+    "intensity": 1545.2275390625,
+    "label": "z24³⁺",
+    "sequence": "KTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 24,
+    "charge": 11,
+    "mz": 247.12290954589844,
+    "theo": 247.1255153376202,
+    "ppm": -10.544405818187448,
+    "intensity": 1096.2706298828125,
+    "label": "z24¹¹⁺",
+    "sequence": "KTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 25,
+    "charge": 4,
+    "mz": 716.8504896184837,
+    "theo": 716.8577111422339,
+    "ppm": -10.073859341920281,
+    "intensity": 797.3619384765625,
+    "label": "z25⁴⁺",
+    "sequence": "RKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 25,
+    "charge": 5,
+    "mz": 573.6874389648438,
+    "theo": 573.6876242041849,
+    "ppm": -0.32289234301057046,
+    "intensity": 467.3367614746094,
+    "label": "z25⁵⁺",
+    "sequence": "RKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 26,
+    "charge": 4,
+    "mz": 748.8868408203125,
+    "theo": 748.881451894868,
+    "ppm": 7.195965971535256,
+    "intensity": 1121.8048095703125,
+    "label": "z26⁴⁺",
+    "sequence": "KRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 26,
+    "charge": 5,
+    "mz": 599.3123168945312,
+    "theo": 599.3066168062921,
+    "ppm": 9.511138504502402,
+    "intensity": 1546.52490234375,
+    "label": "z26⁵⁺",
+    "sequence": "KRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 27,
+    "charge": 7,
+    "mz": 438.5093688964844,
+    "theo": 438.51210724549117,
+    "ppm": -6.244637175450854,
+    "intensity": 5387.26416015625,
+    "label": "z27⁷⁺",
+    "sequence": "AKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 28,
+    "charge": 4,
+    "mz": 800.9152221679688,
+    "theo": 800.9054583044419,
+    "ppm": 12.191031320331644,
+    "intensity": 3938.741455078125,
+    "label": "z28⁴⁺",
+    "sequence": "HAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 31,
+    "charge": 5,
+    "mz": 719.5577392578125,
+    "theo": 719.5565419501961,
+    "ppm": 1.6639520963133694,
+    "intensity": 5971.25048828125,
+    "label": "z31⁵⁺",
+    "sequence": "YTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 31,
+    "charge": 6,
+    "mz": 599.7982177734375,
+    "theo": 599.7983310338283,
+    "ppm": -0.18883078680976909,
+    "intensity": 958.9742431640625,
+    "label": "z31⁶⁺",
+    "sequence": "YTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 33,
+    "charge": 4,
+    "mz": 949.2239990234375,
+    "theo": 949.22288141891,
+    "ppm": 1.177388945615445,
+    "intensity": 1669.6373291015625,
+    "label": "z33⁴⁺",
+    "sequence": "VTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 34,
+    "charge": 5,
+    "mz": 773.7941284179688,
+    "theo": 773.7871831821257,
+    "ppm": 8.975640840326658,
+    "intensity": 984.8312377929688,
+    "label": "z34⁵⁺",
+    "sequence": "AVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 35,
+    "charge": 6,
+    "mz": 664.1549072265625,
+    "theo": 664.1616892306896,
+    "ppm": -10.211375086929673,
+    "intensity": 428.7327575683594,
+    "label": "z35⁶⁺",
+    "sequence": "DAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 36,
+    "charge": 5,
+    "mz": 828.0033569335938,
+    "theo": 828.012793990237,
+    "ppm": -11.39723529848708,
+    "intensity": 621.5330200195312,
+    "label": "z36⁵⁺",
+    "sequence": "RDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 36,
+    "charge": 6,
+    "mz": 690.1691248114264,
+    "theo": 690.1785410671956,
+    "ppm": -13.643217238635605,
+    "intensity": 1654.359619140625,
+    "label": "z36⁶⁺",
+    "sequence": "RDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 37,
+    "charge": 5,
+    "mz": 850.6216430664062,
+    "theo": 850.6296067851144,
+    "ppm": -9.362146161706443,
+    "intensity": 1043.4046630859375,
+    "label": "z37⁵⁺",
+    "sequence": "IRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 37,
+    "charge": 6,
+    "mz": 709.029541015625,
+    "theo": 709.0258850629269,
+    "ppm": 5.156303563929413,
+    "intensity": 478.11004638671875,
+    "label": "z37⁶⁺",
+    "sequence": "IRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 38,
+    "charge": 6,
+    "mz": 725.5264892578125,
+    "theo": 725.537287381359,
+    "ppm": -14.88293397771186,
+    "intensity": 583.0989990234375,
+    "label": "z38⁶⁺",
+    "sequence": "VIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 41,
+    "charge": 6,
+    "mz": 784.9091796875,
+    "theo": 784.8988847977108,
+    "ppm": 13.11619877232023,
+    "intensity": 2988.325927734375,
+    "label": "z41⁶⁺",
+    "sequence": "LENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 42,
+    "charge": 5,
+    "mz": 971.0994262695312,
+    "theo": 971.0908892489737,
+    "ppm": 8.791165329730527,
+    "intensity": 796.3768920898438,
+    "label": "z42⁵⁺",
+    "sequence": "FLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 42,
+    "charge": 7,
+    "mz": 693.9189453125,
+    "theo": 693.9241427355495,
+    "ppm": -7.489900883101836,
+    "intensity": 22393.5703125,
+    "label": "z42⁷⁺",
+    "sequence": "FLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 44,
+    "charge": 6,
+    "mz": 847.2806396484375,
+    "theo": 847.2708499363308,
+    "ppm": 11.554406843356455,
+    "intensity": 1584.2193603515625,
+    "label": "z44⁶⁺",
+    "sequence": "KVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 44,
+    "charge": 8,
+    "mz": 635.7093505859375,
+    "theo": 635.7049565652454,
+    "ppm": 6.912044096393944,
+    "intensity": 1859.9193115234375,
+    "label": "z44⁸⁺",
+    "sequence": "KVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 45,
+    "charge": 6,
+    "mz": 866.125,
+    "theo": 866.1181939320622,
+    "ppm": 7.858128354123193,
+    "intensity": 817.2881469726562,
+    "label": "z45⁶⁺",
+    "sequence": "LKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 46,
+    "charge": 9,
+    "mz": 588.7474365234375,
+    "theo": 588.7554896509926,
+    "ppm": -13.678220749724444,
+    "intensity": 489.8526306152344,
+    "label": "z46⁹⁺",
+    "sequence": "VLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 48,
+    "charge": 6,
+    "mz": 918.1602783203125,
+    "theo": 918.1500253735343,
+    "ppm": 11.166962364404512,
+    "intensity": 2223.360107421875,
+    "label": "z48⁶⁺",
+    "sequence": "RGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 48,
+    "charge": 7,
+    "mz": 787.136962890625,
+    "theo": 787.1296326704563,
+    "ppm": 9.312595872949185,
+    "intensity": 640.2000122070312,
+    "label": "z48⁷⁺",
+    "sequence": "RGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 49,
+    "charge": 6,
+    "mz": 934.9937744140625,
+    "theo": 934.9913051178769,
+    "ppm": 2.640983046679425,
+    "intensity": 1536.5709228515625,
+    "label": "z49⁶⁺",
+    "sequence": "TRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 49,
+    "charge": 7,
+    "mz": 801.5751342773438,
+    "theo": 801.5650153084645,
+    "ppm": 12.624015127941698,
+    "intensity": 732.2653198242188,
+    "label": "z49⁷⁺",
+    "sequence": "TRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 50,
+    "charge": 7,
+    "mz": 819.9912719726562,
+    "theo": 819.9996714635093,
+    "ppm": -10.2432856321794,
+    "intensity": 1116.3135986328125,
+    "label": "z50⁷⁺",
+    "sequence": "ETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 50,
+    "charge": 8,
+    "mz": 717.6349487304688,
+    "theo": 717.6256220870695,
+    "ppm": 12.996530659192501,
+    "intensity": 6223.2490234375,
+    "label": "z50⁸⁺",
+    "sequence": "ETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 51,
+    "charge": 10,
+    "mz": 587.1976318359375,
+    "theo": 587.2062122685849,
+    "ppm": -14.612298828062944,
+    "intensity": 316.03155517578125,
+    "label": "z51¹⁰⁺",
+    "sequence": "EETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 52,
+    "charge": 6,
+    "mz": 1005.1759643554688,
+    "theo": 1005.1827242346243,
+    "ppm": -6.725025204432855,
+    "intensity": 1889.852783203125,
+    "label": "z52⁶⁺",
+    "sequence": "YEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 52,
+    "charge": 7,
+    "mz": 861.7368774414062,
+    "theo": 861.729088837105,
+    "ppm": 9.038344419549189,
+    "intensity": 4673.7529296875,
+    "label": "z52⁷⁺",
+    "sequence": "YEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 52,
+    "charge": 8,
+    "mz": 754.1323852539062,
+    "theo": 754.1388622889654,
+    "ppm": -8.588650423672645,
+    "intensity": 1083.219970703125,
+    "label": "z52⁸⁺",
+    "sequence": "YEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 52,
+    "charge": 10,
+    "mz": 603.51220703125,
+    "theo": 603.5125451215702,
+    "ppm": -0.5602042954846387,
+    "intensity": 2737.850341796875,
+    "label": "z52¹⁰⁺",
+    "sequence": "YEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 53,
+    "charge": 7,
+    "mz": 877.8809814453125,
+    "theo": 877.8839551191603,
+    "ppm": -3.3873199646317365,
+    "intensity": 8889.0419921875,
+    "label": "z53⁷⁺",
+    "sequence": "IYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 53,
+    "charge": 10,
+    "mz": 614.8197631835938,
+    "theo": 614.820951519009,
+    "ppm": -1.9328154193510045,
+    "intensity": 552.684814453125,
+    "label": "z53¹⁰⁺",
+    "sequence": "IYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 53,
+    "charge": 12,
+    "mz": 512.5126953125,
+    "theo": 512.5186723411722,
+    "ppm": -11.662070076175947,
+    "intensity": 750.1097412109375,
+    "label": "z53¹²⁺",
+    "sequence": "IYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 54,
+    "charge": 10,
+    "mz": 626.1378173828125,
+    "theo": 626.1293579164477,
+    "ppm": 13.510732659059434,
+    "intensity": 2024.62744140625,
+    "label": "z54¹⁰⁺",
+    "sequence": "LIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 55,
+    "charge": 7,
+    "mz": 902.175048828125,
+    "theo": 902.1847447896735,
+    "ppm": -10.747201839152945,
+    "intensity": 1271.7620849609375,
+    "label": "z55⁷⁺",
+    "sequence": "GLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 55,
+    "charge": 9,
+    "mz": 701.9196166992188,
+    "theo": 701.9230851590769,
+    "ppm": -4.941367411152529,
+    "intensity": 611.584716796875,
+    "label": "z55⁹⁺",
+    "sequence": "GLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 56,
+    "charge": 7,
+    "mz": 914.6162109375,
+    "theo": 914.617891704282,
+    "ppm": -1.8376710069116147,
+    "intensity": 2086.000732421875,
+    "label": "z56⁷⁺",
+    "sequence": "SGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 56,
+    "charge": 9,
+    "mz": 711.5933837890625,
+    "theo": 711.5933105371058,
+    "ppm": 0.1029407606753462,
+    "intensity": 730.467041015625,
+    "label": "z56⁹⁺",
+    "sequence": "SGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 57,
+    "charge": 8,
+    "mz": 814.55126953125,
+    "theo": 814.5520727945438,
+    "ppm": -0.9861411205925701,
+    "intensity": 8168.943359375,
+    "label": "z57⁸⁺",
+    "sequence": "ISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 57,
+    "charge": 9,
+    "mz": 724.1605834960938,
+    "theo": 724.15820653426,
+    "ppm": 3.2823791987898447,
+    "intensity": 945.7923583984375,
+    "label": "z57⁹⁺",
+    "sequence": "ISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 58,
+    "charge": 7,
+    "mz": 953.0819091796875,
+    "theo": 953.0729167033427,
+    "ppm": 9.435244866594287,
+    "intensity": 1417.8226318359375,
+    "label": "z58⁷⁺",
+    "sequence": "RISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 58,
+    "charge": 8,
+    "mz": 834.0552368164062,
+    "theo": 834.0647116719234,
+    "ppm": -11.359856596949509,
+    "intensity": 2155.751708984375,
+    "label": "z58⁸⁺",
+    "sequence": "RISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 58,
+    "charge": 11,
+    "mz": 606.8758544921875,
+    "theo": 606.8672293392141,
+    "ppm": 14.212586471037788,
+    "intensity": 833.9656982421875,
+    "label": "z58¹¹⁺",
+    "sequence": "RISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 58,
+    "charge": 14,
+    "mz": 477.0334167480469,
+    "theo": 477.0400965776658,
+    "ppm": -14.002658616832091,
+    "intensity": 6107.77099609375,
+    "label": "z58¹⁴⁺",
+    "sequence": "RISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 59,
+    "charge": 7,
+    "mz": 971.3734130859375,
+    "theo": 971.3721971334191,
+    "ppm": 1.2517884719564318,
+    "intensity": 686.985595703125,
+    "label": "z59⁷⁺",
+    "sequence": "KRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 60,
+    "charge": 8,
+    "mz": 862.469970703125,
+    "theo": 862.4601337870644,
+    "ppm": 11.405647258663869,
+    "intensity": 1419.147216796875,
+    "label": "z60⁸⁺",
+    "sequence": "VKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 61,
+    "charge": 8,
+    "mz": 869.5869750976562,
+    "theo": 869.587816751965,
+    "ppm": -0.9678773006029201,
+    "intensity": 2659.99853515625,
+    "label": "z61⁸⁺",
+    "sequence": "GVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 61,
+    "charge": 9,
+    "mz": 773.0830688476562,
+    "theo": 773.0788678297454,
+    "ppm": 5.43413885140383,
+    "intensity": 1667.369873046875,
+    "label": "z61⁹⁺",
+    "sequence": "GVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 62,
+    "charge": 8,
+    "mz": 876.7230224609375,
+    "theo": 876.7154997168655,
+    "ppm": 8.580598922315952,
+    "intensity": 14426.6240234375,
+    "label": "z62⁸⁺",
+    "sequence": "GGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 62,
+    "charge": 11,
+    "mz": 637.8890380859375,
+    "theo": 637.88598428099,
+    "ppm": 4.787383674771901,
+    "intensity": 4362.76025390625,
+    "label": "z62¹¹⁺",
+    "sequence": "GGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 62,
+    "charge": 14,
+    "mz": 501.4189147949219,
+    "theo": 501.41197546048977,
+    "ppm": 13.839586551021787,
+    "intensity": 632.4705810546875,
+    "label": "z62¹⁴⁺",
+    "sequence": "GGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 63,
+    "charge": 8,
+    "mz": 896.2206420898438,
+    "theo": 896.228138594245,
+    "ppm": -8.364504614899388,
+    "intensity": 704.4860229492188,
+    "label": "z63⁸⁺",
+    "sequence": "RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 63,
+    "charge": 9,
+    "mz": 796.7628784179688,
+    "theo": 796.759153911772,
+    "ppm": 4.674569697026157,
+    "intensity": 1118.6240234375,
+    "label": "z63⁹⁺",
+    "sequence": "RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 63,
+    "charge": 12,
+    "mz": 597.8147583007812,
+    "theo": 597.8211845468262,
+    "ppm": -10.74944517033809,
+    "intensity": 778.3436889648438,
+    "label": "z63¹²⁺",
+    "sequence": "RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 64,
+    "charge": 9,
+    "mz": 814.1015014648438,
+    "theo": 814.103721802776,
+    "ppm": -2.7273403533336613,
+    "intensity": 15006.6259765625,
+    "label": "z64⁹⁺",
+    "sequence": "RRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 64,
+    "charge": 10,
+    "mz": 732.7837524414062,
+    "theo": 732.7940772676973,
+    "ppm": -14.089669405520912,
+    "intensity": 4024.1953125,
+    "label": "z64¹⁰⁺",
+    "sequence": "RRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 64,
+    "charge": 14,
+    "mz": 523.7149658203125,
+    "theo": 523.7121341774949,
+    "ppm": 5.4068688364758115,
+    "intensity": 484.9830627441406,
+    "label": "z64¹⁴⁺",
+    "sequence": "RRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 65,
+    "charge": 8,
+    "mz": 924.6142578125,
+    "theo": 924.6204166944993,
+    "ppm": -6.6609842137795585,
+    "intensity": 2927.376220703125,
+    "label": "z65⁸⁺",
+    "sequence": "ARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 65,
+    "charge": 10,
+    "mz": 739.8897094726562,
+    "theo": 739.8977886459973,
+    "ppm": -10.919310024952452,
+    "intensity": 2743.3408203125,
+    "label": "z65¹⁰⁺",
+    "sequence": "ARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 66,
+    "charge": 8,
+    "mz": 938.7533569335938,
+    "theo": 938.755924691298,
+    "ppm": -2.7352772288344744,
+    "intensity": 1291.751953125,
+    "label": "z66⁸⁺",
+    "sequence": "LARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 66,
+    "charge": 9,
+    "mz": 834.5637817382812,
+    "theo": 834.5616304424858,
+    "ppm": 2.5777554550431465,
+    "intensity": 2702.807373046875,
+    "label": "z66⁹⁺",
+    "sequence": "LARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 68,
+    "charge": 7,
+    "mz": 1117.3150634765625,
+    "theo": 1117.3203347309238,
+    "ppm": -4.717764635154434,
+    "intensity": 1572.101318359375,
+    "label": "z68⁷⁺",
+    "sequence": "RRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 68,
+    "charge": 9,
+    "mz": 869.255126953125,
+    "theo": 869.2507662244939,
+    "ppm": 5.016652041697394,
+    "intensity": 2939.189453125,
+    "label": "z68⁹⁺",
+    "sequence": "RRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 68,
+    "charge": 11,
+    "mz": 711.3822021484375,
+    "theo": 711.3883135385839,
+    "ppm": -8.59079356537408,
+    "intensity": 779.73974609375,
+    "label": "z68¹¹⁺",
+    "sequence": "RRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 68,
+    "charge": 12,
+    "mz": 652.19677734375,
+    "theo": 652.1898937813676,
+    "ppm": 10.55453702681049,
+    "intensity": 777.8843994140625,
+    "label": "z68¹²⁺",
+    "sequence": "RRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 69,
+    "charge": 8,
+    "mz": 991.9058227539062,
+    "theo": 991.9167104428553,
+    "ppm": -10.976414485669892,
+    "intensity": 11777.73046875,
+    "label": "z69⁸⁺",
+    "sequence": "IRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 69,
+    "charge": 9,
+    "mz": 881.8265991210938,
+    "theo": 881.815662221648,
+    "ppm": 12.402704912447941,
+    "intensity": 3000.96240234375,
+    "label": "z69⁹⁺",
+    "sequence": "IRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 69,
+    "charge": 10,
+    "mz": 793.7254028320312,
+    "theo": 793.7348236446821,
+    "ppm": -11.868967280065705,
+    "intensity": 944.4480590820312,
+    "label": "z69¹⁰⁺",
+    "sequence": "IRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 69,
+    "charge": 12,
+    "mz": 661.6050415039062,
+    "theo": 661.6135657792332,
+    "ppm": -12.884069746872639,
+    "intensity": 1460.30419921875,
+    "label": "z69¹²⁺",
+    "sequence": "IRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 69,
+    "charge": 14,
+    "mz": 567.2406005859375,
+    "theo": 567.2412387324841,
+    "ppm": -1.125000269833518,
+    "intensity": 491.8003234863281,
+    "label": "z69¹⁴⁺",
+    "sequence": "IRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 70,
+    "charge": 11,
+    "mz": 728.136962890625,
+    "theo": 728.1266024256191,
+    "ppm": 14.228933500520654,
+    "intensity": 444.9986877441406,
+    "label": "z70¹¹⁺",
+    "sequence": "AIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 70,
+    "charge": 12,
+    "mz": 667.5331420898438,
+    "theo": 667.5333252611498,
+    "ppm": -0.27440024208022906,
+    "intensity": 4974.94580078125,
+    "label": "z70¹²⁺",
+    "sequence": "AIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 70,
+    "charge": 13,
+    "mz": 616.2669677734375,
+    "theo": 616.2620907373682,
+    "ppm": 7.913899203890339,
+    "intensity": 1439.2080078125,
+    "label": "z70¹³⁺",
+    "sequence": "AIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 71,
+    "charge": 9,
+    "mz": 900.5057373046875,
+    "theo": 900.4923152916253,
+    "ppm": 14.905194452223126,
+    "intensity": 1732.640625,
+    "label": "z71⁹⁺",
+    "sequence": "PAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 71,
+    "charge": 11,
+    "mz": 736.9484252929688,
+    "theo": 736.949580957146,
+    "ppm": -1.5681726500245659,
+    "intensity": 1422.236083984375,
+    "label": "z71¹¹⁺",
+    "sequence": "PAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 72,
+    "charge": 11,
+    "mz": 748.5935668945312,
+    "theo": 748.5945775944674,
+    "ppm": -1.350129918663631,
+    "intensity": 729.4365234375,
+    "label": "z72¹¹⁺",
+    "sequence": "KPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 73,
+    "charge": 8,
+    "mz": 1041.56201171875,
+    "theo": 1041.570775331154,
+    "ppm": -8.413842449828286,
+    "intensity": 780.9413452148438,
+    "label": "z73⁸⁺",
+    "sequence": "TKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 73,
+    "charge": 9,
+    "mz": 925.9594116210938,
+    "theo": 925.9526087890245,
+    "ppm": 7.346846917137897,
+    "intensity": 5821.29248046875,
+    "label": "z73⁹⁺",
+    "sequence": "TKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 73,
+    "charge": 11,
+    "mz": 757.7757568359375,
+    "theo": 757.7807301822908,
+    "ppm": -6.5630414646082835,
+    "intensity": 649.3070678710938,
+    "label": "z73¹¹⁺",
+    "sequence": "TKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 73,
+    "charge": 12,
+    "mz": 694.718017578125,
+    "theo": 694.7162757047655,
+    "ppm": 2.507316181307548,
+    "intensity": 2258.396484375,
+    "label": "z73¹²⁺",
+    "sequence": "TKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 74,
+    "charge": 10,
+    "mz": 844.7782503554374,
+    "theo": 844.7664819527597,
+    "ppm": 13.93095361751705,
+    "intensity": 2371.377197265625,
+    "label": "z74¹⁰⁺",
+    "sequence": "ITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 74,
+    "charge": 11,
+    "mz": 768.0717163085938,
+    "theo": 768.061099634508,
+    "ppm": 13.822694692953048,
+    "intensity": 957.5247192382812,
+    "label": "z74¹¹⁺",
+    "sequence": "ITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 75,
+    "charge": 9,
+    "mz": 944.8665161132812,
+    "theo": 944.8532229772014,
+    "ppm": 14.068995857301115,
+    "intensity": 3416.967529296875,
+    "label": "z75⁹⁺",
+    "sequence": "GITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 75,
+    "charge": 10,
+    "mz": 850.4801025390625,
+    "theo": 850.4686283246801,
+    "ppm": 13.491637434014848,
+    "intensity": 8861.919921875,
+    "label": "z75¹⁰⁺",
+    "sequence": "GITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 76,
+    "charge": 14,
+    "mz": 616.9111938476562,
+    "theo": 616.9124261826402,
+    "ppm": -1.9975849595642496,
+    "intensity": 486.5027770996094,
+    "label": "z76¹⁴⁺",
+    "sequence": "QGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 76,
+    "charge": 15,
+    "mz": 575.8464965820312,
+    "theo": 575.8520828672633,
+    "ppm": -9.700903058766796,
+    "intensity": 801.4588623046875,
+    "label": "z76¹⁵⁺",
+    "sequence": "QGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 77,
+    "charge": 9,
+    "mz": 971.6530151367188,
+    "theo": 971.6468498079339,
+    "ppm": 6.34523622040711,
+    "intensity": 751.305419921875,
+    "label": "z77⁹⁺",
+    "sequence": "IQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 77,
+    "charge": 12,
+    "mz": 728.986572265625,
+    "theo": 728.9869564689476,
+    "ppm": -0.5270373073031008,
+    "intensity": 752.9854125976562,
+    "label": "z77¹²⁺",
+    "sequence": "IQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 78,
+    "charge": 10,
+    "mz": 885.99951171875,
+    "theo": 885.9871852161801,
+    "ppm": 13.912732345959654,
+    "intensity": 2938.35693359375,
+    "label": "z78¹⁰⁺",
+    "sequence": "NIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 78,
+    "charge": 11,
+    "mz": 805.5272216796875,
+    "theo": 805.5344662376174,
+    "ppm": -8.993479774635857,
+    "intensity": 1066.1541748046875,
+    "label": "z78¹¹⁺",
+    "sequence": "NIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 78,
+    "charge": 14,
+    "mz": 633.1331787109375,
+    "theo": 633.1357827121255,
+    "ppm": -4.1128637160455845,
+    "intensity": 2153.71875,
+    "label": "z78¹⁴⁺",
+    "sequence": "NIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 79,
+    "charge": 9,
+    "mz": 997.1005249023438,
+    "theo": 997.0990576368149,
+    "ppm": 1.4715343652239796,
+    "intensity": 1647.9654541015625,
+    "label": "z79⁹⁺",
+    "sequence": "DNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 79,
+    "charge": 10,
+    "mz": 897.4905282546907,
+    "theo": 897.4898795183323,
+    "ppm": 0.7228341770485871,
+    "intensity": 2585.3544921875,
+    "label": "z79¹⁰⁺",
+    "sequence": "DNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 79,
+    "charge": 11,
+    "mz": 815.9976196289062,
+    "theo": 815.9914610577555,
+    "ppm": 7.547347545500033,
+    "intensity": 1691.035888671875,
+    "label": "z79¹¹⁺",
+    "sequence": "DNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 79,
+    "charge": 13,
+    "mz": 690.6175537109375,
+    "theo": 690.6092788107145,
+    "ppm": 11.98202873446808,
+    "intensity": 1385.671630859375,
+    "label": "z79¹³⁺",
+    "sequence": "DNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 80,
+    "charge": 11,
+    "mz": 830.1859741210938,
+    "theo": 830.1824711503951,
+    "ppm": 4.219518985688837,
+    "intensity": 2700.902587890625,
+    "label": "z80¹¹⁺",
+    "sequence": "RDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 81,
+    "charge": 10,
+    "mz": 924.4041137695312,
+    "theo": 924.4083970176746,
+    "ppm": -4.6335019858717486,
+    "intensity": 755.9974365234375,
+    "label": "z81¹⁰⁺",
+    "sequence": "LRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 81,
+    "charge": 11,
+    "mz": 840.4720458984375,
+    "theo": 840.4628406026121,
+    "ppm": 10.95265058807532,
+    "intensity": 6016.13232421875,
+    "label": "z81¹¹⁺",
+    "sequence": "LRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 81,
+    "charge": 12,
+    "mz": 770.5086059570312,
+    "theo": 770.508210256727,
+    "ppm": 0.5135575441913851,
+    "intensity": 1174.751953125,
+    "label": "z81¹²⁺",
+    "sequence": "LRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 82,
+    "charge": 11,
+    "mz": 849.4791870117188,
+    "theo": 849.4690600490298,
+    "ppm": 11.92152035333243,
+    "intensity": 2898.4736328125,
+    "label": "z82¹¹⁺",
+    "sequence": "VLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 82,
+    "charge": 13,
+    "mz": 718.9284057617188,
+    "theo": 718.9364779571772,
+    "ppm": -11.227967568692616,
+    "intensity": 788.7447509765625,
+    "label": "z82¹³⁺",
+    "sequence": "VLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 83,
+    "charge": 10,
+    "mz": 947.1171875,
+    "theo": 947.1247347097875,
+    "ppm": -7.968548925940715,
+    "intensity": 1349.516845703125,
+    "label": "z83¹⁰⁺",
+    "sequence": "KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 83,
+    "charge": 11,
+    "mz": 861.1072998046875,
+    "theo": 861.1140566863512,
+    "ppm": -7.846674446014783,
+    "intensity": 879.933349609375,
+    "label": "z83¹¹⁺",
+    "sequence": "KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 83,
+    "charge": 14,
+    "mz": 676.8036499023438,
+    "theo": 676.805460921845,
+    "ppm": -2.6758346464582923,
+    "intensity": 439.4457702636719,
+    "label": "z83¹⁴⁺",
+    "sequence": "KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 83,
+    "charge": 15,
+    "mz": 631.7428588867188,
+    "theo": 631.7522486238546,
+    "ppm": -14.86300548403534,
+    "intensity": 1574.275634765625,
+    "label": "z83¹⁵⁺",
+    "sequence": "KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 84,
+    "charge": 10,
+    "mz": 965.5416870117188,
+    "theo": 965.5378458116909,
+    "ppm": 3.9783008449916153,
+    "intensity": 1393.6732177734375,
+    "label": "z84¹⁰⁺",
+    "sequence": "R[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 84,
+    "charge": 11,
+    "mz": 877.8433837890625,
+    "theo": 877.8532485971726,
+    "ppm": -11.237422799199651,
+    "intensity": 7458.5869140625,
+    "label": "z84¹¹⁺",
+    "sequence": "R[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 84,
+    "charge": 12,
+    "mz": 804.7754516601562,
+    "theo": 804.7827509184073,
+    "ppm": -9.06984927631689,
+    "intensity": 3056.130615234375,
+    "label": "z84¹²⁺",
+    "sequence": "R[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 84,
+    "charge": 13,
+    "mz": 742.9531860351562,
+    "theo": 742.9538682671443,
+    "ppm": -0.9182696493459902,
+    "intensity": 1944.5162353515625,
+    "label": "z84¹³⁺",
+    "sequence": "R[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 84,
+    "charge": 15,
+    "mz": 644.0202026367188,
+    "theo": 644.0276560251236,
+    "ppm": -11.573087483361958,
+    "intensity": 587.202880859375,
+    "label": "z84¹⁵⁺",
+    "sequence": "R[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 85,
+    "charge": 12,
+    "mz": 816.207275390625,
+    "theo": 816.2043269063487,
+    "ppm": 3.6124340181978547,
+    "intensity": 1878.6097412109375,
+    "label": "z85¹²⁺",
+    "sequence": "HR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 85,
+    "charge": 13,
+    "mz": 753.4927368164062,
+    "theo": 753.4968614867826,
+    "ppm": -5.474037898678017,
+    "intensity": 2165.337646484375,
+    "label": "z85¹³⁺",
+    "sequence": "HR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 86,
+    "charge": 11,
+    "mz": 904.4961547851562,
+    "theo": 904.5041597675664,
+    "ppm": -8.850133328549575,
+    "intensity": 691.1307373046875,
+    "label": "z86¹¹⁺",
+    "sequence": "RHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 86,
+    "charge": 12,
+    "mz": 829.2094116210938,
+    "theo": 829.2127528246016,
+    "ppm": -4.029368212739855,
+    "intensity": 843.7017822265625,
+    "label": "z86¹²⁺",
+    "sequence": "RHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 86,
+    "charge": 14,
+    "mz": 710.9002685546875,
+    "theo": 710.8976847713712,
+    "ppm": 3.634536124681633,
+    "intensity": 1555.1533203125,
+    "label": "z86¹⁴⁺",
+    "sequence": "RHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 87,
+    "charge": 12,
+    "mz": 839.8981323242188,
+    "theo": 839.8873330754797,
+    "ppm": 12.857973104018347,
+    "intensity": 796.4107666015625,
+    "label": "z87¹²⁺",
+    "sequence": "KRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 87,
+    "charge": 13,
+    "mz": 775.3621826171875,
+    "theo": 775.3580979505957,
+    "ppm": 5.268103348086806,
+    "intensity": 2395.40625,
+    "label": "z87¹³⁺",
+    "sequence": "KRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 87,
+    "charge": 16,
+    "mz": 630.1599731445312,
+    "theo": 630.1673189196069,
+    "ppm": -11.656864542397342,
+    "intensity": 4120.9677734375,
+    "label": "z87¹⁶⁺",
+    "sequence": "KRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 88,
+    "charge": 11,
+    "mz": 922.6143798828125,
+    "theo": 922.6070758397061,
+    "ppm": 7.916742996729771,
+    "intensity": 2093.42138671875,
+    "label": "z88¹¹⁺",
+    "sequence": "AKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 88,
+    "charge": 12,
+    "mz": 845.7990112304688,
+    "theo": 845.8070925573965,
+    "ppm": -9.55457455821735,
+    "intensity": 612.6031494140625,
+    "label": "z88¹²⁺",
+    "sequence": "AKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 88,
+    "charge": 15,
+    "mz": 676.8445434570312,
+    "theo": 676.8471293363149,
+    "ppm": -3.8204775813475784,
+    "intensity": 2744.652099609375,
+    "label": "z88¹⁵⁺",
+    "sequence": "AKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 89,
+    "charge": 12,
+    "mz": 850.5580444335938,
+    "theo": 850.5588812006634,
+    "ppm": -0.9837850008909704,
+    "intensity": 3591.88427734375,
+    "label": "z89¹²⁺",
+    "sequence": "GAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 89,
+    "charge": 14,
+    "mz": 729.1873168945312,
+    "theo": 729.1943662365669,
+    "ppm": -9.667301836188388,
+    "intensity": 734.1832275390625,
+    "label": "z89¹⁴⁺",
+    "sequence": "GAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 90,
+    "charge": 10,
+    "mz": 1026.174072265625,
+    "theo": 1026.1713485223186,
+    "ppm": 2.654277290391177,
+    "intensity": 1399.1280517578125,
+    "label": "z90¹⁰⁺",
+    "sequence": "GGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 90,
+    "charge": 11,
+    "mz": 932.9872436523438,
+    "theo": 932.9746146977432,
+    "ppm": 13.53622531806812,
+    "intensity": 2239.125,
+    "label": "z90¹¹⁺",
+    "sequence": "GGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 90,
+    "charge": 16,
+    "mz": 641.7335815429688,
+    "theo": 641.7348214959449,
+    "ppm": -1.9321890204063694,
+    "intensity": 318.2455139160156,
+    "label": "z90¹⁶⁺",
+    "sequence": "GGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 91,
+    "charge": 11,
+    "mz": 944.6102905273438,
+    "theo": 944.6196113350647,
+    "ppm": -9.867260439176247,
+    "intensity": 2518.0185546875,
+    "label": "z91¹¹⁺",
+    "sequence": "KGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 91,
+    "charge": 13,
+    "mz": 799.4547729492188,
+    "theo": 799.4484828915146,
+    "ppm": 7.867996298431785,
+    "intensity": 1843.40625,
+    "label": "z91¹³⁺",
+    "sequence": "KGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 91,
+    "charge": 14,
+    "mz": 742.4269409179688,
+    "theo": 742.4169681458342,
+    "ppm": 13.432845102504988,
+    "intensity": 974.8244018554688,
+    "label": "z91¹⁴⁺",
+    "sequence": "KGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 92,
+    "charge": 15,
+    "mz": 696.7941284179688,
+    "theo": 696.791086280858,
+    "ppm": 4.365924264235752,
+    "intensity": 630.9920043945312,
+    "label": "z92¹⁵⁺",
+    "sequence": "GKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 93,
+    "charge": 11,
+    "mz": 960.0867919921875,
+    "theo": 960.0837502163001,
+    "ppm": 3.1682401526772144,
+    "intensity": 3332.060546875,
+    "label": "z93¹¹⁺",
+    "sequence": "LGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 93,
+    "charge": 12,
+    "mz": 880.170654296875,
+    "theo": 880.1607107359409,
+    "ppm": 11.29743785739701,
+    "intensity": 1268.4483642578125,
+    "label": "z93¹²⁺",
+    "sequence": "LGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 93,
+    "charge": 13,
+    "mz": 812.5291748046875,
+    "theo": 812.5335234833293,
+    "ppm": -5.351999045112073,
+    "intensity": 10122.3427734375,
+    "label": "z93¹³⁺",
+    "sequence": "LGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 93,
+    "charge": 16,
+    "mz": 660.3634033203125,
+    "theo": 660.372352164953,
+    "ppm": -13.55121033027503,
+    "intensity": 2162.8642578125,
+    "label": "z93¹⁶⁺",
+    "sequence": "LGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 94,
+    "charge": 11,
+    "mz": 965.2640380859375,
+    "theo": 965.2675196453188,
+    "ppm": -3.6068336605278115,
+    "intensity": 729.5498657226562,
+    "label": "z94¹¹⁺",
+    "sequence": "GLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 94,
+    "charge": 12,
+    "mz": 884.9141235351562,
+    "theo": 884.912499379208,
+    "ppm": 1.8353859272484627,
+    "intensity": 1622.299560546875,
+    "label": "z94¹²⁺",
+    "sequence": "GLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 95,
+    "charge": 11,
+    "mz": 976.9053955078125,
+    "theo": 976.9125162826404,
+    "ppm": -7.289060902761236,
+    "intensity": 1542.6265869140625,
+    "label": "z95¹¹⁺",
+    "sequence": "KGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 96,
+    "charge": 13,
+    "mz": 831.16015625,
+    "theo": 831.159515056325,
+    "ppm": 0.7714447869944049,
+    "intensity": 829.4466552734375,
+    "label": "z96¹³⁺",
+    "sequence": "GKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 96,
+    "charge": 14,
+    "mz": 771.8645629882812,
+    "theo": 771.8629265845867,
+    "ppm": 2.120070336548284,
+    "intensity": 1054.92138671875,
+    "label": "z96¹⁴⁺",
+    "sequence": "GKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 96,
+    "charge": 15,
+    "mz": 720.4759521484375,
+    "theo": 720.4725499090803,
+    "ppm": 4.72223314775553,
+    "intensity": 1047.6636962890625,
+    "label": "z96¹⁵⁺",
+    "sequence": "GKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 96,
+    "charge": 16,
+    "mz": 675.4982299804688,
+    "theo": 675.5059703180119,
+    "ppm": -11.458577545250478,
+    "intensity": 722.9368286132812,
+    "label": "z96¹⁶⁺",
+    "sequence": "GKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 98,
+    "charge": 12,
+    "mz": 915.7625732421875,
+    "theo": 915.765237167498,
+    "ppm": -2.90896094581763,
+    "intensity": 1969.4447021484375,
+    "label": "z98¹²⁺",
+    "sequence": "KGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 98,
+    "charge": 13,
+    "mz": 845.3941040039062,
+    "theo": 845.3992401893819,
+    "ppm": -6.07545551434908,
+    "intensity": 1622.8275146484375,
+    "label": "z98¹³⁺",
+    "sequence": "KGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 98,
+    "charge": 16,
+    "mz": 687.0856323242188,
+    "theo": 687.0757469886207,
+    "ppm": 14.387548449140496,
+    "intensity": 1067.7447509765625,
+    "label": "z98¹⁶⁺",
+    "sequence": "KGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 99,
+    "charge": 12,
+    "mz": 920.51806640625,
+    "theo": 920.5170258107651,
+    "ppm": 1.1304467552036699,
+    "intensity": 1863.76416015625,
+    "label": "z99¹²⁺",
+    "sequence": "GKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 99,
+    "charge": 15,
+    "mz": 736.6131591796875,
+    "theo": 736.6150759390098,
+    "ppm": -2.6021179648559585,
+    "intensity": 704.2720336914062,
+    "label": "z99¹⁵⁺",
+    "sequence": "GKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 99,
+    "charge": 16,
+    "mz": 690.6355590820312,
+    "theo": 690.6395884710711,
+    "ppm": -5.8342862284351025,
+    "intensity": 1128.0281982421875,
+    "label": "z99¹⁶⁺",
+    "sequence": "GKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 100,
+    "charge": 14,
+    "mz": 800.2965698242188,
+    "theo": 800.3085695465853,
+    "ppm": -14.993869643762789,
+    "intensity": 1009.3533935546875,
+    "label": "z100¹⁴⁺",
+    "sequence": "RGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 101,
+    "charge": 12,
+    "mz": 938.2686767578125,
+    "theo": 938.2772403722848,
+    "ppm": -9.12695534311249,
+    "intensity": 925.1181640625,
+    "label": "z101¹²⁺",
+    "sequence": "GRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 101,
+    "charge": 13,
+    "mz": 866.181884765625,
+    "theo": 866.1795508399545,
+    "ppm": 2.6945056233179208,
+    "intensity": 2311.47265625,
+    "label": "z101¹³⁺",
+    "sequence": "GRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   },
+   {
+    "ion": "z",
+    "number": 101,
+    "charge": 14,
+    "mz": 804.3755493164062,
+    "theo": 804.3815312408142,
+    "ppm": -7.436675477501349,
+    "intensity": 3771.675537109375,
+    "label": "z101¹⁴⁺",
+    "sequence": "GRGKGGKGLGKGGAKRHR[+28.03]KVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTA[+16.00]MDVV[+77.9269]YALKRQGRTLYGFGG"
+   }
+  ],
+  "residues": [
+   {
+    "pos": 1,
+    "char": "S",
+    "mod": "Acetyl"
+   },
+   {
+    "pos": 2,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 3,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 4,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 5,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 6,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 7,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 8,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 9,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 10,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 11,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 12,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 13,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 14,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 15,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 16,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 17,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 18,
+    "char": "H",
+    "mod": null
+   },
+   {
+    "pos": 19,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 20,
+    "char": "K",
+    "mod": "+28.03"
+   },
+   {
+    "pos": 21,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 22,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 23,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 24,
+    "char": "D",
+    "mod": null
+   },
+   {
+    "pos": 25,
+    "char": "N",
+    "mod": null
+   },
+   {
+    "pos": 26,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 27,
+    "char": "Q",
+    "mod": null
+   },
+   {
+    "pos": 28,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 29,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 30,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 31,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 32,
+    "char": "P",
+    "mod": null
+   },
+   {
+    "pos": 33,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 34,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 35,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 36,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 37,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 38,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 39,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 40,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 41,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 42,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 43,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 44,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 45,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 46,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 47,
+    "char": "S",
+    "mod": null
+   },
+   {
+    "pos": 48,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 49,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 50,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 51,
+    "char": "Y",
+    "mod": null
+   },
+   {
+    "pos": 52,
+    "char": "E",
+    "mod": null
+   },
+   {
+    "pos": 53,
+    "char": "E",
+    "mod": null
+   },
+   {
+    "pos": 54,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 55,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 56,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 57,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 58,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 59,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 60,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 61,
+    "char": "F",
+    "mod": null
+   },
+   {
+    "pos": 62,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 63,
+    "char": "E",
+    "mod": null
+   },
+   {
+    "pos": 64,
+    "char": "N",
+    "mod": null
+   },
+   {
+    "pos": 65,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 66,
+    "char": "I",
+    "mod": null
+   },
+   {
+    "pos": 67,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 68,
+    "char": "D",
+    "mod": null
+   },
+   {
+    "pos": 69,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 70,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 71,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 72,
+    "char": "Y",
+    "mod": null
+   },
+   {
+    "pos": 73,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 74,
+    "char": "E",
+    "mod": null
+   },
+   {
+    "pos": 75,
+    "char": "H",
+    "mod": null
+   },
+   {
+    "pos": 76,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 77,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 78,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 79,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 80,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 81,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 82,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 83,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 84,
+    "char": "M",
+    "mod": "+16.00"
+   },
+   {
+    "pos": 85,
+    "char": "D",
+    "mod": null
+   },
+   {
+    "pos": 86,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 87,
+    "char": "V",
+    "mod": null
+   },
+   {
+    "pos": 88,
+    "char": "Y",
+    "mod": "+77.9269"
+   },
+   {
+    "pos": 89,
+    "char": "A",
+    "mod": null
+   },
+   {
+    "pos": 90,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 91,
+    "char": "K",
+    "mod": null
+   },
+   {
+    "pos": 92,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 93,
+    "char": "Q",
+    "mod": null
+   },
+   {
+    "pos": 94,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 95,
+    "char": "R",
+    "mod": null
+   },
+   {
+    "pos": 96,
+    "char": "T",
+    "mod": null
+   },
+   {
+    "pos": 97,
+    "char": "L",
+    "mod": null
+   },
+   {
+    "pos": 98,
+    "char": "Y",
+    "mod": null
+   },
+   {
+    "pos": 99,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 100,
+    "char": "F",
+    "mod": null
+   },
+   {
+    "pos": 101,
+    "char": "G",
+    "mod": null
+   },
+   {
+    "pos": 102,
+    "char": "G",
+    "mod": null
+   }
+  ],
+  "tolerance_ppm": 15,
+  "scan": "subunit alpha · scan 2201 · ModB case",
+  "annotations": [
+   {
+    "kind": "callout",
+    "mz": 394.2303161621094,
+    "label": "base peak"
+   },
+   {
+    "kind": "callout",
+    "mz": 876.7230224609375,
+    "label": "top z-ion"
+   },
+   {
+    "kind": "band",
+    "from": 592.151611328125,
+    "to": 834.0776977539062,
+    "label": "c-ion ladder"
+   }
+  ]
+ },
+ "meta": {
+  "source": "fictional placeholder example; full peptide reconstructed from c/z rules (asserted in gen-data.py)",
+  "thresholds": "fragment tolerance 15 ppm; L=102 residues; 4 modified sites; peaks plotted at observed m/z",
+  "n": "396"
+ }
+}

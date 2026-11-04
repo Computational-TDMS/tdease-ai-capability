@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toppic-py"
+version = "0.1.0"
+description = "Python downstream analysis pipeline for TopPIC top-down proteomics output"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "11111tao"}]
+dependencies = [
+  "pandas>=1.5",
+  "numpy>=1.23",
+  "scipy>=1.9",
+  "scikit-misc>=0.5.3,<0.6",
+  "scikit-learn>=1.1",
+  "statsmodels>=0.13",
+  "biopython>=1.79",
+  "joblib>=1.1",
+]
+
+[project.optional-dependencies]
+parquet = ["pyarrow>=10"]
+dev = [
+  "build>=1.2",
+  "pytest>=8",
+  "pytest-cov>=5",
+]
+
+[project.scripts]
+toppic = "toppic.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/11111tao/toppic-py"
+Repository = "https://github.com/11111tao/toppic-py"
+Issues = "https://github.com/11111tao/toppic-py/issues"
+
+[tool.setuptools]
+# This directory is both the project root and the ``toppic`` package itself
+# (upstream repo root and package dir were merged when vendoring). Map the
+# package name onto "." so discovery does not expose alignment/, clustering/,
+# ... as top-level packages instead of toppic.alignment, toppic.clustering, ...
+package-dir = {toppic = "."}
+packages = [
+  "toppic",
+  "toppic.alignment",
+  "toppic.annotation",
+  "toppic.clustering",
+  "toppic.fdr",
+  "toppic.features",
+  "toppic.inference",
+  "toppic.io",
+  "toppic.pipeline",
+  "toppic.utils",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "jpr: requires the external TopPICR JPR reproducibility dataset",
+]

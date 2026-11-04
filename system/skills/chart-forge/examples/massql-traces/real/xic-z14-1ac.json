@@ -1,0 +1,4273 @@
+{
+ "schemaVersion": 1,
+ "tool": "tdease-ms",
+ "version": "0.1.0",
+ "command": "select",
+ "params": {
+  "file": "sample-run/centroided.mzML",
+  "statement": "SELECT spectra FROM mzml WHERE ms_level = 1 AND product_mz WITHIN 817.677 PPM 10 LIMIT 10000"
+ },
+ "source": [
+  {
+   "path": "sample-run/centroided.mzML",
+   "size": 150415146,
+   "digest": {
+    "algo": "sha256:head1MiB",
+    "value": "55c80e5e3fcb06b29225712570be5bd1aebfdc957cea88a3a12fae9698a4a5b3"
+   }
+  }
+ ],
+ "elapsedMs": 622,
+ "warnings": [],
+ "result": {
+  "matchedSpectrumCount": 235,
+  "plan": {
+   "limit": 10000,
+   "predicates": [
+    {
+     "field": "msLevel",
+     "value": 1
+    },
+    {
+     "field": "productMz",
+     "max": 817.68517677,
+     "min": 817.66882323
+    }
+   ]
+  },
+  "scannedSpectrumCount": 6848,
+  "spectra": [
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=36",
+    "index": 35,
+    "matchedProducts": [
+     {
+      "intensity": 3664.024169921875,
+      "mz": 817.6758422851562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5867,
+    "precursor": null,
+    "retentionTime": 1.2096541368,
+    "retentionTimeUnit": "minute",
+    "scan": "36",
+    "totalIonCurrent": 28337092.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=48",
+    "index": 47,
+    "matchedProducts": [
+     {
+      "intensity": 1849.53271484375,
+      "mz": 817.6844482421875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5479,
+    "precursor": null,
+    "retentionTime": 1.693596477067,
+    "retentionTimeUnit": "minute",
+    "scan": "48",
+    "totalIonCurrent": 20423654.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=69",
+    "index": 68,
+    "matchedProducts": [
+     {
+      "intensity": 3236.32470703125,
+      "mz": 817.6841430664062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5411,
+    "precursor": null,
+    "retentionTime": 2.750936902133,
+    "retentionTimeUnit": "minute",
+    "scan": "69",
+    "totalIonCurrent": 14289629.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=75",
+    "index": 74,
+    "matchedProducts": [
+     {
+      "intensity": 3292.754150390625,
+      "mz": 817.6771850585938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4308,
+    "precursor": null,
+    "retentionTime": 3.056653294933,
+    "retentionTimeUnit": "minute",
+    "scan": "75",
+    "totalIonCurrent": 10091811.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=78",
+    "index": 77,
+    "matchedProducts": [
+     {
+      "intensity": 3535.218505859375,
+      "mz": 817.6787109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4992,
+    "precursor": null,
+    "retentionTime": 3.208712292267,
+    "retentionTimeUnit": "minute",
+    "scan": "78",
+    "totalIonCurrent": 11329015.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=99",
+    "index": 98,
+    "matchedProducts": [
+     {
+      "intensity": 1132.4249267578125,
+      "mz": 817.6701049804688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5712,
+    "precursor": null,
+    "retentionTime": 4.275010334933,
+    "retentionTimeUnit": "minute",
+    "scan": "99",
+    "totalIonCurrent": 10322954.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=103",
+    "index": 102,
+    "matchedProducts": [
+     {
+      "intensity": 3017.8515625,
+      "mz": 817.68115234375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5650,
+    "precursor": null,
+    "retentionTime": 4.4832315512,
+    "retentionTimeUnit": "minute",
+    "scan": "103",
+    "totalIonCurrent": 10167614.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=104",
+    "index": 103,
+    "matchedProducts": [
+     {
+      "intensity": 968.6497802734375,
+      "mz": 817.6737060546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4500,
+    "precursor": null,
+    "retentionTime": 4.5357546712,
+    "retentionTimeUnit": "minute",
+    "scan": "104",
+    "totalIonCurrent": 7177920.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=110",
+    "index": 109,
+    "matchedProducts": [
+     {
+      "intensity": 2100.93359375,
+      "mz": 817.6724853515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5494,
+    "precursor": null,
+    "retentionTime": 4.848942299733,
+    "retentionTimeUnit": "minute",
+    "scan": "110",
+    "totalIonCurrent": 9238904.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=120",
+    "index": 119,
+    "matchedProducts": [
+     {
+      "intensity": 1535.2191162109375,
+      "mz": 817.6730346679688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5293,
+    "precursor": null,
+    "retentionTime": 5.3672487288,
+    "retentionTimeUnit": "minute",
+    "scan": "120",
+    "totalIonCurrent": 9391985.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=154",
+    "index": 153,
+    "matchedProducts": [
+     {
+      "intensity": 2135.953857421875,
+      "mz": 817.6748046875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4613,
+    "precursor": null,
+    "retentionTime": 7.143659770667,
+    "retentionTimeUnit": "minute",
+    "scan": "154",
+    "totalIonCurrent": 5662067.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=164",
+    "index": 163,
+    "matchedProducts": [
+     {
+      "intensity": 2154.267822265625,
+      "mz": 817.6691284179688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4857,
+    "precursor": null,
+    "retentionTime": 7.671310510667,
+    "retentionTimeUnit": "minute",
+    "scan": "164",
+    "totalIonCurrent": 6445358.5
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=214",
+    "index": 213,
+    "matchedProducts": [
+     {
+      "intensity": 11873.6513671875,
+      "mz": 817.6841430664062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2336,
+    "precursor": null,
+    "retentionTime": 10.185956802133,
+    "retentionTimeUnit": "minute",
+    "scan": "214",
+    "totalIonCurrent": 52664640.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=242",
+    "index": 241,
+    "matchedProducts": [
+     {
+      "intensity": 3926.7275390625,
+      "mz": 817.6780395507812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3953,
+    "precursor": null,
+    "retentionTime": 11.361867048,
+    "retentionTimeUnit": "minute",
+    "scan": "242",
+    "totalIonCurrent": 11376187.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=250",
+    "index": 249,
+    "matchedProducts": [
+     {
+      "intensity": 3898.818359375,
+      "mz": 817.6702880859375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2041,
+    "precursor": null,
+    "retentionTime": 11.765872315217,
+    "retentionTimeUnit": "minute",
+    "scan": "250",
+    "totalIonCurrent": 25693532.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=251",
+    "index": 250,
+    "matchedProducts": [
+     {
+      "intensity": 2715.03662109375,
+      "mz": 817.6792602539062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2211,
+    "precursor": null,
+    "retentionTime": 11.813537538667,
+    "retentionTimeUnit": "minute",
+    "scan": "251",
+    "totalIonCurrent": 26259478.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=252",
+    "index": 251,
+    "matchedProducts": [
+     {
+      "intensity": 7314.26708984375,
+      "mz": 817.6710205078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2137,
+    "precursor": null,
+    "retentionTime": 11.861368852817,
+    "retentionTimeUnit": "minute",
+    "scan": "252",
+    "totalIonCurrent": 27172140.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=253",
+    "index": 252,
+    "matchedProducts": [
+     {
+      "intensity": 3340.095947265625,
+      "mz": 817.6744384765625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1731,
+    "precursor": null,
+    "retentionTime": 11.909040581883,
+    "retentionTimeUnit": "minute",
+    "scan": "253",
+    "totalIonCurrent": 20013916.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=259",
+    "index": 258,
+    "matchedProducts": [
+     {
+      "intensity": 1062.1644287109375,
+      "mz": 817.677001953125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3775,
+    "precursor": null,
+    "retentionTime": 12.205602673867,
+    "retentionTimeUnit": "minute",
+    "scan": "259",
+    "totalIonCurrent": 10273340.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=369",
+    "index": 368,
+    "matchedProducts": [
+     {
+      "intensity": 5274.27490234375,
+      "mz": 817.68359375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1331,
+    "precursor": null,
+    "retentionTime": 17.45755938775,
+    "retentionTimeUnit": "minute",
+    "scan": "369",
+    "totalIonCurrent": 12681798.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=427",
+    "index": 426,
+    "matchedProducts": [
+     {
+      "intensity": 8599.236328125,
+      "mz": 817.6798095703125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1422,
+    "precursor": null,
+    "retentionTime": 20.182754081617,
+    "retentionTimeUnit": "minute",
+    "scan": "427",
+    "totalIonCurrent": 75650560.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=436",
+    "index": 435,
+    "matchedProducts": [
+     {
+      "intensity": 7909.009765625,
+      "mz": 817.6809692382812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1462,
+    "precursor": null,
+    "retentionTime": 20.602310390133,
+    "retentionTimeUnit": "minute",
+    "scan": "436",
+    "totalIonCurrent": 84370112.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=437",
+    "index": 436,
+    "matchedProducts": [
+     {
+      "intensity": 7663.0244140625,
+      "mz": 817.6807861328125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1386,
+    "precursor": null,
+    "retentionTime": 20.649065202667,
+    "retentionTimeUnit": "minute",
+    "scan": "437",
+    "totalIonCurrent": 89706360.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=447",
+    "index": 446,
+    "matchedProducts": [
+     {
+      "intensity": 7671.55517578125,
+      "mz": 817.6806640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1503,
+    "precursor": null,
+    "retentionTime": 21.11496933335,
+    "retentionTimeUnit": "minute",
+    "scan": "447",
+    "totalIonCurrent": 90428496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=460",
+    "index": 459,
+    "matchedProducts": [
+     {
+      "intensity": 8904.5654296875,
+      "mz": 817.6764526367188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1326,
+    "precursor": null,
+    "retentionTime": 21.7205113,
+    "retentionTimeUnit": "minute",
+    "scan": "460",
+    "totalIonCurrent": 86708216.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=481",
+    "index": 480,
+    "matchedProducts": [
+     {
+      "intensity": 8289.1875,
+      "mz": 817.6790161132812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1460,
+    "precursor": null,
+    "retentionTime": 22.6988213048,
+    "retentionTimeUnit": "minute",
+    "scan": "481",
+    "totalIonCurrent": 101798712.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=543",
+    "index": 542,
+    "matchedProducts": [
+     {
+      "intensity": 8601.1318359375,
+      "mz": 817.6773681640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1927,
+    "precursor": null,
+    "retentionTime": 25.594535717067,
+    "retentionTimeUnit": "minute",
+    "scan": "543",
+    "totalIonCurrent": 132107040.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=549",
+    "index": 548,
+    "matchedProducts": [
+     {
+      "intensity": 16458.3515625,
+      "mz": 817.6749877929688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2107,
+    "precursor": null,
+    "retentionTime": 25.874517879733,
+    "retentionTimeUnit": "minute",
+    "scan": "549",
+    "totalIonCurrent": 162164192.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=553",
+    "index": 552,
+    "matchedProducts": [
+     {
+      "intensity": 8349.02734375,
+      "mz": 817.6759033203125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2155,
+    "precursor": null,
+    "retentionTime": 26.061118448817,
+    "retentionTimeUnit": "minute",
+    "scan": "553",
+    "totalIonCurrent": 165258288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=554",
+    "index": 553,
+    "matchedProducts": [
+     {
+      "intensity": 40072.17578125,
+      "mz": 817.6771240234375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2232,
+    "precursor": null,
+    "retentionTime": 26.107738896017,
+    "retentionTimeUnit": "minute",
+    "scan": "554",
+    "totalIonCurrent": 147025168.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=555",
+    "index": 554,
+    "matchedProducts": [
+     {
+      "intensity": 5694.880859375,
+      "mz": 817.6773071289062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2739,
+    "precursor": null,
+    "retentionTime": 26.154524192017,
+    "retentionTimeUnit": "minute",
+    "scan": "555",
+    "totalIonCurrent": 182557456.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=556",
+    "index": 555,
+    "matchedProducts": [
+     {
+      "intensity": 10091.94140625,
+      "mz": 817.674560546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2155,
+    "precursor": null,
+    "retentionTime": 26.2015093264,
+    "retentionTimeUnit": "minute",
+    "scan": "556",
+    "totalIonCurrent": 164501392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=557",
+    "index": 556,
+    "matchedProducts": [
+     {
+      "intensity": 26159.234375,
+      "mz": 817.6775512695312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2419,
+    "precursor": null,
+    "retentionTime": 26.24828658215,
+    "retentionTimeUnit": "minute",
+    "scan": "557",
+    "totalIonCurrent": 162967488.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=558",
+    "index": 557,
+    "matchedProducts": [
+     {
+      "intensity": 19927.4453125,
+      "mz": 817.67626953125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2482,
+    "precursor": null,
+    "retentionTime": 26.295087890667,
+    "retentionTimeUnit": "minute",
+    "scan": "558",
+    "totalIonCurrent": 229850224.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=559",
+    "index": 558,
+    "matchedProducts": [
+     {
+      "intensity": 36131.08203125,
+      "mz": 817.677978515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2411,
+    "precursor": null,
+    "retentionTime": 26.341717344817,
+    "retentionTimeUnit": "minute",
+    "scan": "559",
+    "totalIonCurrent": 182675264.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=560",
+    "index": 559,
+    "matchedProducts": [
+     {
+      "intensity": 23527.83984375,
+      "mz": 817.6777954101562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2406,
+    "precursor": null,
+    "retentionTime": 26.388524065867,
+    "retentionTimeUnit": "minute",
+    "scan": "560",
+    "totalIonCurrent": 222642624.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=561",
+    "index": 560,
+    "matchedProducts": [
+     {
+      "intensity": 13696.646484375,
+      "mz": 817.679931640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2407,
+    "precursor": null,
+    "retentionTime": 26.435156050133,
+    "retentionTimeUnit": "minute",
+    "scan": "561",
+    "totalIonCurrent": 203215056.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=562",
+    "index": 561,
+    "matchedProducts": [
+     {
+      "intensity": 21426.142578125,
+      "mz": 817.6778564453125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2459,
+    "precursor": null,
+    "retentionTime": 26.4818026304,
+    "retentionTimeUnit": "minute",
+    "scan": "562",
+    "totalIonCurrent": 209553040.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=564",
+    "index": 563,
+    "matchedProducts": [
+     {
+      "intensity": 12841.318359375,
+      "mz": 817.6773071289062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2519,
+    "precursor": null,
+    "retentionTime": 26.5750904928,
+    "retentionTimeUnit": "minute",
+    "scan": "564",
+    "totalIonCurrent": 213204912.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=565",
+    "index": 564,
+    "matchedProducts": [
+     {
+      "intensity": 12587.484375,
+      "mz": 817.6771850585938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2390,
+    "precursor": null,
+    "retentionTime": 26.6223830395,
+    "retentionTimeUnit": "minute",
+    "scan": "565",
+    "totalIonCurrent": 211237552.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=566",
+    "index": 565,
+    "matchedProducts": [
+     {
+      "intensity": 15499.7783203125,
+      "mz": 817.6767578125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2452,
+    "precursor": null,
+    "retentionTime": 26.669027410667,
+    "retentionTimeUnit": "minute",
+    "scan": "566",
+    "totalIonCurrent": 241731728.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=568",
+    "index": 567,
+    "matchedProducts": [
+     {
+      "intensity": 9660.1083984375,
+      "mz": 817.6766967773438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2473,
+    "precursor": null,
+    "retentionTime": 26.762949312,
+    "retentionTimeUnit": "minute",
+    "scan": "568",
+    "totalIonCurrent": 225450352.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=569",
+    "index": 568,
+    "matchedProducts": [
+     {
+      "intensity": 12594.2744140625,
+      "mz": 817.6779174804688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2490,
+    "precursor": null,
+    "retentionTime": 26.8097465392,
+    "retentionTimeUnit": "minute",
+    "scan": "569",
+    "totalIonCurrent": 268832608.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=570",
+    "index": 569,
+    "matchedProducts": [
+     {
+      "intensity": 9531.2724609375,
+      "mz": 817.6806640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2356,
+    "precursor": null,
+    "retentionTime": 26.856565656,
+    "retentionTimeUnit": "minute",
+    "scan": "570",
+    "totalIonCurrent": 258450672.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=571",
+    "index": 570,
+    "matchedProducts": [
+     {
+      "intensity": 24151.228515625,
+      "mz": 817.678955078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2207,
+    "precursor": null,
+    "retentionTime": 26.903187634933,
+    "retentionTimeUnit": "minute",
+    "scan": "571",
+    "totalIonCurrent": 265644880.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=572",
+    "index": 571,
+    "matchedProducts": [
+     {
+      "intensity": 11663.9365234375,
+      "mz": 817.6803588867188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2361,
+    "precursor": null,
+    "retentionTime": 26.950303654133,
+    "retentionTimeUnit": "minute",
+    "scan": "572",
+    "totalIonCurrent": 253628704.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=573",
+    "index": 572,
+    "matchedProducts": [
+     {
+      "intensity": 9376.0439453125,
+      "mz": 817.6796264648438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2498,
+    "precursor": null,
+    "retentionTime": 26.996931789333,
+    "retentionTimeUnit": "minute",
+    "scan": "573",
+    "totalIonCurrent": 253663328.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=574",
+    "index": 573,
+    "matchedProducts": [
+     {
+      "intensity": 10641.474609375,
+      "mz": 817.677490234375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2414,
+    "precursor": null,
+    "retentionTime": 27.04423824,
+    "retentionTimeUnit": "minute",
+    "scan": "574",
+    "totalIonCurrent": 277746080.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=575",
+    "index": 574,
+    "matchedProducts": [
+     {
+      "intensity": 7667.84423828125,
+      "mz": 817.6804809570312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2429,
+    "precursor": null,
+    "retentionTime": 27.090866256,
+    "retentionTimeUnit": "minute",
+    "scan": "575",
+    "totalIonCurrent": 281227072.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=577",
+    "index": 576,
+    "matchedProducts": [
+     {
+      "intensity": 16241.5576171875,
+      "mz": 817.6798706054688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2214,
+    "precursor": null,
+    "retentionTime": 27.1844636592,
+    "retentionTimeUnit": "minute",
+    "scan": "577",
+    "totalIonCurrent": 306671392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=578",
+    "index": 577,
+    "matchedProducts": [
+     {
+      "intensity": 15297.345703125,
+      "mz": 817.6798706054688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2196,
+    "precursor": null,
+    "retentionTime": 27.231078696533,
+    "retentionTimeUnit": "minute",
+    "scan": "578",
+    "totalIonCurrent": 315011744.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=580",
+    "index": 579,
+    "matchedProducts": [
+     {
+      "intensity": 18481.734375,
+      "mz": 817.679931640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2190,
+    "precursor": null,
+    "retentionTime": 27.324471989867,
+    "retentionTimeUnit": "minute",
+    "scan": "580",
+    "totalIonCurrent": 299105024.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=581",
+    "index": 580,
+    "matchedProducts": [
+     {
+      "intensity": 10919.8046875,
+      "mz": 817.6801147460938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2280,
+    "precursor": null,
+    "retentionTime": 27.371243809883,
+    "retentionTimeUnit": "minute",
+    "scan": "581",
+    "totalIonCurrent": 297058080.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=583",
+    "index": 582,
+    "matchedProducts": [
+     {
+      "intensity": 13593.8876953125,
+      "mz": 817.6788330078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2140,
+    "precursor": null,
+    "retentionTime": 27.464821360283,
+    "retentionTimeUnit": "minute",
+    "scan": "583",
+    "totalIonCurrent": 336729760.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=599",
+    "index": 598,
+    "matchedProducts": [
+     {
+      "intensity": 62404.13671875,
+      "mz": 817.6754150390625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2293,
+    "precursor": null,
+    "retentionTime": 28.21599224775,
+    "retentionTimeUnit": "minute",
+    "scan": "599",
+    "totalIonCurrent": 342308064.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=600",
+    "index": 599,
+    "matchedProducts": [
+     {
+      "intensity": 58004.28515625,
+      "mz": 817.67626953125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2190,
+    "precursor": null,
+    "retentionTime": 28.2626140776,
+    "retentionTimeUnit": "minute",
+    "scan": "600",
+    "totalIonCurrent": 296490656.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=601",
+    "index": 600,
+    "matchedProducts": [
+     {
+      "intensity": 76937.1796875,
+      "mz": 817.6762084960938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2167,
+    "precursor": null,
+    "retentionTime": 28.30922434215,
+    "retentionTimeUnit": "minute",
+    "scan": "601",
+    "totalIonCurrent": 296187392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=602",
+    "index": 601,
+    "matchedProducts": [
+     {
+      "intensity": 33574.97265625,
+      "mz": 817.67724609375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2201,
+    "precursor": null,
+    "retentionTime": 28.355676493333,
+    "retentionTimeUnit": "minute",
+    "scan": "602",
+    "totalIonCurrent": 292749248.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=603",
+    "index": 602,
+    "matchedProducts": [
+     {
+      "intensity": 55513.19921875,
+      "mz": 817.6759033203125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2384,
+    "precursor": null,
+    "retentionTime": 28.402127141083,
+    "retentionTimeUnit": "minute",
+    "scan": "603",
+    "totalIonCurrent": 270409568.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=604",
+    "index": 603,
+    "matchedProducts": [
+     {
+      "intensity": 52702.80859375,
+      "mz": 817.6762084960938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2285,
+    "precursor": null,
+    "retentionTime": 28.448755504,
+    "retentionTimeUnit": "minute",
+    "scan": "604",
+    "totalIonCurrent": 254967328.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=607",
+    "index": 606,
+    "matchedProducts": [
+     {
+      "intensity": 22393.79296875,
+      "mz": 817.67431640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2183,
+    "precursor": null,
+    "retentionTime": 28.588607596817,
+    "retentionTimeUnit": "minute",
+    "scan": "607",
+    "totalIonCurrent": 315067584.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=689",
+    "index": 688,
+    "matchedProducts": [
+     {
+      "intensity": 600.6895751953125,
+      "mz": 817.6749877929688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2697,
+    "precursor": null,
+    "retentionTime": 32.736614560817,
+    "retentionTimeUnit": "minute",
+    "scan": "689",
+    "totalIonCurrent": 9493265.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=693",
+    "index": 692,
+    "matchedProducts": [
+     {
+      "intensity": 718.7391357421875,
+      "mz": 817.6737670898438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2187,
+    "precursor": null,
+    "retentionTime": 32.947004983483,
+    "retentionTimeUnit": "minute",
+    "scan": "693",
+    "totalIonCurrent": 9695003.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=712",
+    "index": 711,
+    "matchedProducts": [
+     {
+      "intensity": 674.9235229492188,
+      "mz": 817.67138671875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2647,
+    "precursor": null,
+    "retentionTime": 33.93960161495,
+    "retentionTimeUnit": "minute",
+    "scan": "712",
+    "totalIonCurrent": 15960715.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=716",
+    "index": 715,
+    "matchedProducts": [
+     {
+      "intensity": 868.271484375,
+      "mz": 817.6723022460938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2202,
+    "precursor": null,
+    "retentionTime": 34.147988652267,
+    "retentionTimeUnit": "minute",
+    "scan": "716",
+    "totalIonCurrent": 17781756.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=724",
+    "index": 723,
+    "matchedProducts": [
+     {
+      "intensity": 762.7949829101562,
+      "mz": 817.6737060546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1990,
+    "precursor": null,
+    "retentionTime": 34.563939130417,
+    "retentionTimeUnit": "minute",
+    "scan": "724",
+    "totalIonCurrent": 12473104.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=725",
+    "index": 724,
+    "matchedProducts": [
+     {
+      "intensity": 576.4646606445312,
+      "mz": 817.6727905273438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2081,
+    "precursor": null,
+    "retentionTime": 34.615767656017,
+    "retentionTimeUnit": "minute",
+    "scan": "725",
+    "totalIonCurrent": 13385310.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=826",
+    "index": 825,
+    "matchedProducts": [
+     {
+      "intensity": 20505.51171875,
+      "mz": 817.6786499023438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2530,
+    "precursor": null,
+    "retentionTime": 37.287378225067,
+    "retentionTimeUnit": "minute",
+    "scan": "826",
+    "totalIonCurrent": 438322208.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=866",
+    "index": 865,
+    "matchedProducts": [
+     {
+      "intensity": 151321.265625,
+      "mz": 817.674560546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2218,
+    "precursor": null,
+    "retentionTime": 38.2202902736,
+    "retentionTimeUnit": "minute",
+    "scan": "866",
+    "totalIonCurrent": 1618609408.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=886",
+    "index": 885,
+    "matchedProducts": [
+     {
+      "intensity": 114754.6171875,
+      "mz": 817.6737670898438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2062,
+    "precursor": null,
+    "retentionTime": 38.589270049333,
+    "retentionTimeUnit": "minute",
+    "scan": "886",
+    "totalIonCurrent": 1207584000.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=905",
+    "index": 904,
+    "matchedProducts": [
+     {
+      "intensity": 136237.96875,
+      "mz": 817.6730346679688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 1275,
+    "precursor": null,
+    "retentionTime": 38.944746923733,
+    "retentionTimeUnit": "minute",
+    "scan": "905",
+    "totalIonCurrent": 919596608.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=985",
+    "index": 984,
+    "matchedProducts": [
+     {
+      "intensity": 74806.3046875,
+      "mz": 817.6805419921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5829,
+    "precursor": null,
+    "retentionTime": 41.1792798936,
+    "retentionTimeUnit": "minute",
+    "scan": "985",
+    "totalIonCurrent": 1176230784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=995",
+    "index": 994,
+    "matchedProducts": [
+     {
+      "intensity": 142742.4375,
+      "mz": 817.6692504882812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2461,
+    "precursor": null,
+    "retentionTime": 41.530030576,
+    "retentionTimeUnit": "minute",
+    "scan": "995",
+    "totalIonCurrent": 1386060288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1191",
+    "index": 1190,
+    "matchedProducts": [
+     {
+      "intensity": 52565.33203125,
+      "mz": 817.6707153320312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3739,
+    "precursor": null,
+    "retentionTime": 45.309772909867,
+    "retentionTimeUnit": "minute",
+    "scan": "1191",
+    "totalIonCurrent": 1271279104.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1286",
+    "index": 1285,
+    "matchedProducts": [
+     {
+      "intensity": 187745.15625,
+      "mz": 817.6765747070312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2774,
+    "precursor": null,
+    "retentionTime": 47.275956985083,
+    "retentionTimeUnit": "minute",
+    "scan": "1286",
+    "totalIonCurrent": 2913785344.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1510",
+    "index": 1509,
+    "matchedProducts": [
+     {
+      "intensity": 230353.078125,
+      "mz": 817.672119140625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5777,
+    "precursor": null,
+    "retentionTime": 51.782554289617,
+    "retentionTimeUnit": "minute",
+    "scan": "1510",
+    "totalIonCurrent": 2290687744.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1576",
+    "index": 1575,
+    "matchedProducts": [
+     {
+      "intensity": 180358.765625,
+      "mz": 817.67919921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5548,
+    "precursor": null,
+    "retentionTime": 53.390858453617,
+    "retentionTimeUnit": "minute",
+    "scan": "1576",
+    "totalIonCurrent": 2131132416.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1596",
+    "index": 1595,
+    "matchedProducts": [
+     {
+      "intensity": 611522.25,
+      "mz": 817.6777954101562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6659,
+    "precursor": null,
+    "retentionTime": 53.866824064,
+    "retentionTimeUnit": "minute",
+    "scan": "1596",
+    "totalIonCurrent": 3296935424.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1631",
+    "index": 1630,
+    "matchedProducts": [
+     {
+      "intensity": 589191.6875,
+      "mz": 817.6806640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3941,
+    "precursor": null,
+    "retentionTime": 54.556319403467,
+    "retentionTimeUnit": "minute",
+    "scan": "1631",
+    "totalIonCurrent": 4601205248.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1636",
+    "index": 1635,
+    "matchedProducts": [
+     {
+      "intensity": 846628.8125,
+      "mz": 817.6735229492188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5654,
+    "precursor": null,
+    "retentionTime": 54.645446666933,
+    "retentionTimeUnit": "minute",
+    "scan": "1636",
+    "totalIonCurrent": 4619302912.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1656",
+    "index": 1655,
+    "matchedProducts": [
+     {
+      "intensity": 731437.6875,
+      "mz": 817.6744995117188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5750,
+    "precursor": null,
+    "retentionTime": 55.059898532,
+    "retentionTimeUnit": "minute",
+    "scan": "1656",
+    "totalIonCurrent": 3999578624.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1661",
+    "index": 1660,
+    "matchedProducts": [
+     {
+      "intensity": 970763.125,
+      "mz": 817.6797485351562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6053,
+    "precursor": null,
+    "retentionTime": 55.203423182667,
+    "retentionTimeUnit": "minute",
+    "scan": "1661",
+    "totalIonCurrent": 3889762048.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1786",
+    "index": 1785,
+    "matchedProducts": [
+     {
+      "intensity": 380292.71875,
+      "mz": 817.6760864257812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3832,
+    "precursor": null,
+    "retentionTime": 57.6571128416,
+    "retentionTimeUnit": "minute",
+    "scan": "1786",
+    "totalIonCurrent": 4921565184.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1806",
+    "index": 1805,
+    "matchedProducts": [
+     {
+      "intensity": 432314.0625,
+      "mz": 817.6800537109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5735,
+    "precursor": null,
+    "retentionTime": 58.0087847608,
+    "retentionTimeUnit": "minute",
+    "scan": "1806",
+    "totalIonCurrent": 3873576448.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1816",
+    "index": 1815,
+    "matchedProducts": [
+     {
+      "intensity": 532342.375,
+      "mz": 817.6729125976562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5241,
+    "precursor": null,
+    "retentionTime": 58.233580317867,
+    "retentionTimeUnit": "minute",
+    "scan": "1816",
+    "totalIonCurrent": 3955946496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=1821",
+    "index": 1820,
+    "matchedProducts": [
+     {
+      "intensity": 412295.1875,
+      "mz": 817.6737060546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3038,
+    "precursor": null,
+    "retentionTime": 58.355453033067,
+    "retentionTimeUnit": "minute",
+    "scan": "1821",
+    "totalIonCurrent": 3831784704.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2306",
+    "index": 2305,
+    "matchedProducts": [
+     {
+      "intensity": 305318.75,
+      "mz": 817.6824340820312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5186,
+    "precursor": null,
+    "retentionTime": 67.635841662933,
+    "retentionTimeUnit": "minute",
+    "scan": "2306",
+    "totalIonCurrent": 2925046784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2326",
+    "index": 2325,
+    "matchedProducts": [
+     {
+      "intensity": 270768.21875,
+      "mz": 817.6691284179688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6951,
+    "precursor": null,
+    "retentionTime": 68.016225780533,
+    "retentionTimeUnit": "minute",
+    "scan": "2326",
+    "totalIonCurrent": 2737121536.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2371",
+    "index": 2370,
+    "matchedProducts": [
+     {
+      "intensity": 415201.4375,
+      "mz": 817.6842041015625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3445,
+    "precursor": null,
+    "retentionTime": 69.1602611504,
+    "retentionTimeUnit": "minute",
+    "scan": "2371",
+    "totalIonCurrent": 3922534656.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2426",
+    "index": 2425,
+    "matchedProducts": [
+     {
+      "intensity": 457673.28125,
+      "mz": 817.6689453125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5793,
+    "precursor": null,
+    "retentionTime": 70.164807304267,
+    "retentionTimeUnit": "minute",
+    "scan": "2426",
+    "totalIonCurrent": 2633149952.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2476",
+    "index": 2475,
+    "matchedProducts": [
+     {
+      "intensity": 275667.5,
+      "mz": 817.6707153320312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5356,
+    "precursor": null,
+    "retentionTime": 71.4427840472,
+    "retentionTimeUnit": "minute",
+    "scan": "2476",
+    "totalIonCurrent": 2465739008.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2561",
+    "index": 2560,
+    "matchedProducts": [
+     {
+      "intensity": 208466.171875,
+      "mz": 817.6761474609375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6101,
+    "precursor": null,
+    "retentionTime": 73.422850680817,
+    "retentionTimeUnit": "minute",
+    "scan": "2561",
+    "totalIonCurrent": 2678314496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2591",
+    "index": 2590,
+    "matchedProducts": [
+     {
+      "intensity": 258058.625,
+      "mz": 817.6735229492188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5724,
+    "precursor": null,
+    "retentionTime": 74.185032412267,
+    "retentionTimeUnit": "minute",
+    "scan": "2591",
+    "totalIonCurrent": 2588894208.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2656",
+    "index": 2655,
+    "matchedProducts": [
+     {
+      "intensity": 261195.140625,
+      "mz": 817.6773681640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5571,
+    "precursor": null,
+    "retentionTime": 75.841084602933,
+    "retentionTimeUnit": "minute",
+    "scan": "2656",
+    "totalIonCurrent": 2174795008.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2686",
+    "index": 2685,
+    "matchedProducts": [
+     {
+      "intensity": 862643.0,
+      "mz": 817.6742553710938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5423,
+    "precursor": null,
+    "retentionTime": 76.4955915576,
+    "retentionTimeUnit": "minute",
+    "scan": "2686",
+    "totalIonCurrent": 2340287744.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=2766",
+    "index": 2765,
+    "matchedProducts": [
+     {
+      "intensity": 264137.6875,
+      "mz": 817.6776123046875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5484,
+    "precursor": null,
+    "retentionTime": 78.274836858683,
+    "retentionTimeUnit": "minute",
+    "scan": "2766",
+    "totalIonCurrent": 2365995008.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3051",
+    "index": 3050,
+    "matchedProducts": [
+     {
+      "intensity": 182314.28125,
+      "mz": 817.6785278320312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5294,
+    "precursor": null,
+    "retentionTime": 83.931301887483,
+    "retentionTimeUnit": "minute",
+    "scan": "3051",
+    "totalIonCurrent": 2132836608.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3061",
+    "index": 3060,
+    "matchedProducts": [
+     {
+      "intensity": 175361.625,
+      "mz": 817.6754150390625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5436,
+    "precursor": null,
+    "retentionTime": 84.12972437975,
+    "retentionTimeUnit": "minute",
+    "scan": "3061",
+    "totalIonCurrent": 2033975040.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3231",
+    "index": 3230,
+    "matchedProducts": [
+     {
+      "intensity": 186319.421875,
+      "mz": 817.6742553710938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5832,
+    "precursor": null,
+    "retentionTime": 87.41787730615,
+    "retentionTimeUnit": "minute",
+    "scan": "3231",
+    "totalIonCurrent": 1876511744.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3296",
+    "index": 3295,
+    "matchedProducts": [
+     {
+      "intensity": 198901.921875,
+      "mz": 817.6812133789062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5795,
+    "precursor": null,
+    "retentionTime": 88.8067566832,
+    "retentionTimeUnit": "minute",
+    "scan": "3296",
+    "totalIonCurrent": 2158047488.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3446",
+    "index": 3445,
+    "matchedProducts": [
+     {
+      "intensity": 230315.125,
+      "mz": 817.6698608398438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4675,
+    "precursor": null,
+    "retentionTime": 92.082458557883,
+    "retentionTimeUnit": "minute",
+    "scan": "3446",
+    "totalIonCurrent": 2585846784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3528",
+    "index": 3527,
+    "matchedProducts": [
+     {
+      "intensity": 381034.03125,
+      "mz": 817.669921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5900,
+    "precursor": null,
+    "retentionTime": 93.785443204267,
+    "retentionTimeUnit": "minute",
+    "scan": "3528",
+    "totalIonCurrent": 2027860736.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3543",
+    "index": 3542,
+    "matchedProducts": [
+     {
+      "intensity": 235113.703125,
+      "mz": 817.6837158203125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5466,
+    "precursor": null,
+    "retentionTime": 94.1830069552,
+    "retentionTimeUnit": "minute",
+    "scan": "3543",
+    "totalIonCurrent": 2286466048.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3548",
+    "index": 3547,
+    "matchedProducts": [
+     {
+      "intensity": 386536.5,
+      "mz": 817.6712646484375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5545,
+    "precursor": null,
+    "retentionTime": 94.3094089096,
+    "retentionTimeUnit": "minute",
+    "scan": "3548",
+    "totalIonCurrent": 2554223616.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3613",
+    "index": 3612,
+    "matchedProducts": [
+     {
+      "intensity": 246265.203125,
+      "mz": 817.6821899414062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6330,
+    "precursor": null,
+    "retentionTime": 95.852148557067,
+    "retentionTimeUnit": "minute",
+    "scan": "3613",
+    "totalIonCurrent": 2259218432.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3633",
+    "index": 3632,
+    "matchedProducts": [
+     {
+      "intensity": 250031.34375,
+      "mz": 817.678955078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5722,
+    "precursor": null,
+    "retentionTime": 96.402399315733,
+    "retentionTimeUnit": "minute",
+    "scan": "3633",
+    "totalIonCurrent": 2489677568.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3668",
+    "index": 3667,
+    "matchedProducts": [
+     {
+      "intensity": 201378.40625,
+      "mz": 817.6697387695312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5539,
+    "precursor": null,
+    "retentionTime": 97.436659126133,
+    "retentionTimeUnit": "minute",
+    "scan": "3668",
+    "totalIonCurrent": 3006497280.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3673",
+    "index": 3672,
+    "matchedProducts": [
+     {
+      "intensity": 257592.328125,
+      "mz": 817.6792602539062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6088,
+    "precursor": null,
+    "retentionTime": 97.5686943584,
+    "retentionTimeUnit": "minute",
+    "scan": "3673",
+    "totalIonCurrent": 3065642496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3743",
+    "index": 3742,
+    "matchedProducts": [
+     {
+      "intensity": 310644.4375,
+      "mz": 817.68115234375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8030,
+    "precursor": null,
+    "retentionTime": 99.573192672,
+    "retentionTimeUnit": "minute",
+    "scan": "3743",
+    "totalIonCurrent": 2251112448.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3823",
+    "index": 3822,
+    "matchedProducts": [
+     {
+      "intensity": 101879.875,
+      "mz": 817.6846313476562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8776,
+    "precursor": null,
+    "retentionTime": 101.847536931733,
+    "retentionTimeUnit": "minute",
+    "scan": "3823",
+    "totalIonCurrent": 2091560832.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3843",
+    "index": 3842,
+    "matchedProducts": [
+     {
+      "intensity": 251887.40625,
+      "mz": 817.6800537109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6739,
+    "precursor": null,
+    "retentionTime": 102.520600889617,
+    "retentionTimeUnit": "minute",
+    "scan": "3843",
+    "totalIonCurrent": 2858736384.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3883",
+    "index": 3882,
+    "matchedProducts": [
+     {
+      "intensity": 243596.09375,
+      "mz": 817.678466796875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6254,
+    "precursor": null,
+    "retentionTime": 103.707700646667,
+    "retentionTimeUnit": "minute",
+    "scan": "3883",
+    "totalIonCurrent": 3658699520.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3898",
+    "index": 3897,
+    "matchedProducts": [
+     {
+      "intensity": 248537.625,
+      "mz": 817.6725463867188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6597,
+    "precursor": null,
+    "retentionTime": 104.07415540615,
+    "retentionTimeUnit": "minute",
+    "scan": "3898",
+    "totalIonCurrent": 3995998464.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3903",
+    "index": 3902,
+    "matchedProducts": [
+     {
+      "intensity": 1282840.25,
+      "mz": 817.6739501953125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4907,
+    "precursor": null,
+    "retentionTime": 104.20407511015,
+    "retentionTimeUnit": "minute",
+    "scan": "3903",
+    "totalIonCurrent": 4465762304.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3913",
+    "index": 3912,
+    "matchedProducts": [
+     {
+      "intensity": 1286351.875,
+      "mz": 817.675537109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5864,
+    "precursor": null,
+    "retentionTime": 104.405685571467,
+    "retentionTimeUnit": "minute",
+    "scan": "3913",
+    "totalIonCurrent": 4600730112.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3918",
+    "index": 3917,
+    "matchedProducts": [
+     {
+      "intensity": 1735684.125,
+      "mz": 817.6729736328125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3804,
+    "precursor": null,
+    "retentionTime": 104.54003318535,
+    "retentionTimeUnit": "minute",
+    "scan": "3918",
+    "totalIonCurrent": 5641588224.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3923",
+    "index": 3922,
+    "matchedProducts": [
+     {
+      "intensity": 1920051.0,
+      "mz": 817.6759033203125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6162,
+    "precursor": null,
+    "retentionTime": 104.653849826417,
+    "retentionTimeUnit": "minute",
+    "scan": "3923",
+    "totalIonCurrent": 5264541184.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3933",
+    "index": 3932,
+    "matchedProducts": [
+     {
+      "intensity": 1153554.625,
+      "mz": 817.6744995117188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6407,
+    "precursor": null,
+    "retentionTime": 104.863556667483,
+    "retentionTimeUnit": "minute",
+    "scan": "3933",
+    "totalIonCurrent": 4232313088.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3938",
+    "index": 3937,
+    "matchedProducts": [
+     {
+      "intensity": 383464.1875,
+      "mz": 817.6755981445312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3606,
+    "precursor": null,
+    "retentionTime": 105.009632588267,
+    "retentionTimeUnit": "minute",
+    "scan": "3938",
+    "totalIonCurrent": 3831048192.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3948",
+    "index": 3947,
+    "matchedProducts": [
+     {
+      "intensity": 780446.9375,
+      "mz": 817.6740112304688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6438,
+    "precursor": null,
+    "retentionTime": 105.193878181883,
+    "retentionTimeUnit": "minute",
+    "scan": "3948",
+    "totalIonCurrent": 4437300224.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3958",
+    "index": 3957,
+    "matchedProducts": [
+     {
+      "intensity": 304553.96875,
+      "mz": 817.6716918945312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6093,
+    "precursor": null,
+    "retentionTime": 105.5270778232,
+    "retentionTimeUnit": "minute",
+    "scan": "3958",
+    "totalIonCurrent": 3947067648.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=3993",
+    "index": 3992,
+    "matchedProducts": [
+     {
+      "intensity": 502215.34375,
+      "mz": 817.6697998046875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7061,
+    "precursor": null,
+    "retentionTime": 106.690725383733,
+    "retentionTimeUnit": "minute",
+    "scan": "3993",
+    "totalIonCurrent": 3917191424.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4048",
+    "index": 4047,
+    "matchedProducts": [
+     {
+      "intensity": 312843.28125,
+      "mz": 817.6742553710938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6125,
+    "precursor": null,
+    "retentionTime": 108.305496132533,
+    "retentionTimeUnit": "minute",
+    "scan": "4048",
+    "totalIonCurrent": 4892123136.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4083",
+    "index": 4082,
+    "matchedProducts": [
+     {
+      "intensity": 1192752.375,
+      "mz": 817.6705322265625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4534,
+    "precursor": null,
+    "retentionTime": 109.291849918933,
+    "retentionTimeUnit": "minute",
+    "scan": "4083",
+    "totalIonCurrent": 5781832192.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4098",
+    "index": 4097,
+    "matchedProducts": [
+     {
+      "intensity": 2697494.75,
+      "mz": 817.6693725585938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3365,
+    "precursor": null,
+    "retentionTime": 109.574072880533,
+    "retentionTimeUnit": "minute",
+    "scan": "4098",
+    "totalIonCurrent": 6657189376.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4108",
+    "index": 4107,
+    "matchedProducts": [
+     {
+      "intensity": 711482.0625,
+      "mz": 817.670654296875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3263,
+    "precursor": null,
+    "retentionTime": 109.722110649867,
+    "retentionTimeUnit": "minute",
+    "scan": "4108",
+    "totalIonCurrent": 6647542784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4133",
+    "index": 4132,
+    "matchedProducts": [
+     {
+      "intensity": 2180286.25,
+      "mz": 817.6718139648438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3881,
+    "precursor": null,
+    "retentionTime": 110.1337437696,
+    "retentionTimeUnit": "minute",
+    "scan": "4133",
+    "totalIonCurrent": 6418821120.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4138",
+    "index": 4137,
+    "matchedProducts": [
+     {
+      "intensity": 2153691.0,
+      "mz": 817.6741333007812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2571,
+    "precursor": null,
+    "retentionTime": 110.2295803976,
+    "retentionTimeUnit": "minute",
+    "scan": "4138",
+    "totalIonCurrent": 6888054272.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4143",
+    "index": 4142,
+    "matchedProducts": [
+     {
+      "intensity": 737274.625,
+      "mz": 817.6702880859375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2663,
+    "precursor": null,
+    "retentionTime": 110.318869786933,
+    "retentionTimeUnit": "minute",
+    "scan": "4143",
+    "totalIonCurrent": 7193914368.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4163",
+    "index": 4162,
+    "matchedProducts": [
+     {
+      "intensity": 840414.8125,
+      "mz": 817.671875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3427,
+    "precursor": null,
+    "retentionTime": 110.617585099483,
+    "retentionTimeUnit": "minute",
+    "scan": "4163",
+    "totalIonCurrent": 6510135296.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4178",
+    "index": 4177,
+    "matchedProducts": [
+     {
+      "intensity": 750011.8125,
+      "mz": 817.6691284179688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3186,
+    "precursor": null,
+    "retentionTime": 110.887456742683,
+    "retentionTimeUnit": "minute",
+    "scan": "4178",
+    "totalIonCurrent": 6385891840.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4183",
+    "index": 4182,
+    "matchedProducts": [
+     {
+      "intensity": 643360.875,
+      "mz": 817.6695556640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3296,
+    "precursor": null,
+    "retentionTime": 110.956859784817,
+    "retentionTimeUnit": "minute",
+    "scan": "4183",
+    "totalIonCurrent": 6175785472.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4188",
+    "index": 4187,
+    "matchedProducts": [
+     {
+      "intensity": 700530.4375,
+      "mz": 817.6694946289062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3139,
+    "precursor": null,
+    "retentionTime": 111.028889814667,
+    "retentionTimeUnit": "minute",
+    "scan": "4188",
+    "totalIonCurrent": 6551946752.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4203",
+    "index": 4202,
+    "matchedProducts": [
+     {
+      "intensity": 333576.3125,
+      "mz": 817.6819458007812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4675,
+    "precursor": null,
+    "retentionTime": 111.276662649867,
+    "retentionTimeUnit": "minute",
+    "scan": "4203",
+    "totalIonCurrent": 5372679168.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4213",
+    "index": 4212,
+    "matchedProducts": [
+     {
+      "intensity": 318526.46875,
+      "mz": 817.6732177734375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3908,
+    "precursor": null,
+    "retentionTime": 111.47151007735,
+    "retentionTimeUnit": "minute",
+    "scan": "4213",
+    "totalIonCurrent": 5070966784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4218",
+    "index": 4217,
+    "matchedProducts": [
+     {
+      "intensity": 376279.8125,
+      "mz": 817.6737060546875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5143,
+    "precursor": null,
+    "retentionTime": 111.56732248,
+    "retentionTimeUnit": "minute",
+    "scan": "4218",
+    "totalIonCurrent": 6331394560.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4258",
+    "index": 4257,
+    "matchedProducts": [
+     {
+      "intensity": 1019874.9375,
+      "mz": 817.675537109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5618,
+    "precursor": null,
+    "retentionTime": 112.418627823733,
+    "retentionTimeUnit": "minute",
+    "scan": "4258",
+    "totalIonCurrent": 6026190848.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4413",
+    "index": 4412,
+    "matchedProducts": [
+     {
+      "intensity": 550914.625,
+      "mz": 817.6728515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5897,
+    "precursor": null,
+    "retentionTime": 115.98760175655,
+    "retentionTimeUnit": "minute",
+    "scan": "4413",
+    "totalIonCurrent": 6108654592.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4508",
+    "index": 4507,
+    "matchedProducts": [
+     {
+      "intensity": 445239.59375,
+      "mz": 817.6837158203125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4775,
+    "precursor": null,
+    "retentionTime": 117.9792719136,
+    "retentionTimeUnit": "minute",
+    "scan": "4508",
+    "totalIonCurrent": 5498915328.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4603",
+    "index": 4602,
+    "matchedProducts": [
+     {
+      "intensity": 436002.5,
+      "mz": 817.676025390625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6424,
+    "precursor": null,
+    "retentionTime": 120.340398616283,
+    "retentionTimeUnit": "minute",
+    "scan": "4603",
+    "totalIonCurrent": 2653375744.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4618",
+    "index": 4617,
+    "matchedProducts": [
+     {
+      "intensity": 181175.4375,
+      "mz": 817.6766357421875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6579,
+    "precursor": null,
+    "retentionTime": 120.742483874133,
+    "retentionTimeUnit": "minute",
+    "scan": "4618",
+    "totalIonCurrent": 2266064896.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4623",
+    "index": 4622,
+    "matchedProducts": [
+     {
+      "intensity": 511323.25,
+      "mz": 817.6762084960938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6733,
+    "precursor": null,
+    "retentionTime": 120.908510102133,
+    "retentionTimeUnit": "minute",
+    "scan": "4623",
+    "totalIonCurrent": 2747201792.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4633",
+    "index": 4632,
+    "matchedProducts": [
+     {
+      "intensity": 295813.125,
+      "mz": 817.6837768554688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6741,
+    "precursor": null,
+    "retentionTime": 121.2385184936,
+    "retentionTimeUnit": "minute",
+    "scan": "4633",
+    "totalIonCurrent": 1784938624.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4648",
+    "index": 4647,
+    "matchedProducts": [
+     {
+      "intensity": 337531.65625,
+      "mz": 817.676025390625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7014,
+    "precursor": null,
+    "retentionTime": 121.721615804267,
+    "retentionTimeUnit": "minute",
+    "scan": "4648",
+    "totalIonCurrent": 2022663680.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4663",
+    "index": 4662,
+    "matchedProducts": [
+     {
+      "intensity": 391515.09375,
+      "mz": 817.6690673828125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7757,
+    "precursor": null,
+    "retentionTime": 122.228952561883,
+    "retentionTimeUnit": "minute",
+    "scan": "4663",
+    "totalIonCurrent": 2147615488.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4683",
+    "index": 4682,
+    "matchedProducts": [
+     {
+      "intensity": 142922.234375,
+      "mz": 817.6705322265625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7238,
+    "precursor": null,
+    "retentionTime": 122.9383267744,
+    "retentionTimeUnit": "minute",
+    "scan": "4683",
+    "totalIonCurrent": 1919179648.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4693",
+    "index": 4692,
+    "matchedProducts": [
+     {
+      "intensity": 189746.671875,
+      "mz": 817.6847534179688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7123,
+    "precursor": null,
+    "retentionTime": 123.243021406933,
+    "retentionTimeUnit": "minute",
+    "scan": "4693",
+    "totalIonCurrent": 2907979008.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4713",
+    "index": 4712,
+    "matchedProducts": [
+     {
+      "intensity": 199089.59375,
+      "mz": 817.6839599609375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6509,
+    "precursor": null,
+    "retentionTime": 123.897210643467,
+    "retentionTimeUnit": "minute",
+    "scan": "4713",
+    "totalIonCurrent": 3255003392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4723",
+    "index": 4722,
+    "matchedProducts": [
+     {
+      "intensity": 337207.375,
+      "mz": 817.6824340820312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4941,
+    "precursor": null,
+    "retentionTime": 124.1630779856,
+    "retentionTimeUnit": "minute",
+    "scan": "4723",
+    "totalIonCurrent": 3465687808.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4728",
+    "index": 4727,
+    "matchedProducts": [
+     {
+      "intensity": 652337.5,
+      "mz": 817.6781616210938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4561,
+    "precursor": null,
+    "retentionTime": 124.2663022688,
+    "retentionTimeUnit": "minute",
+    "scan": "4728",
+    "totalIonCurrent": 4665334784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4733",
+    "index": 4732,
+    "matchedProducts": [
+     {
+      "intensity": 592701.0,
+      "mz": 817.6804809570312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 2370,
+    "precursor": null,
+    "retentionTime": 124.384860162133,
+    "retentionTimeUnit": "minute",
+    "scan": "4733",
+    "totalIonCurrent": 5185021952.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4758",
+    "index": 4757,
+    "matchedProducts": [
+     {
+      "intensity": 584447.125,
+      "mz": 817.671630859375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3301,
+    "precursor": null,
+    "retentionTime": 124.728083488283,
+    "retentionTimeUnit": "minute",
+    "scan": "4758",
+    "totalIonCurrent": 5295365120.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4783",
+    "index": 4782,
+    "matchedProducts": [
+     {
+      "intensity": 560208.875,
+      "mz": 817.6708374023438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5937,
+    "precursor": null,
+    "retentionTime": 125.178119615217,
+    "retentionTimeUnit": "minute",
+    "scan": "4783",
+    "totalIonCurrent": 4659388928.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4838",
+    "index": 4837,
+    "matchedProducts": [
+     {
+      "intensity": 698810.9375,
+      "mz": 817.6710205078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6559,
+    "precursor": null,
+    "retentionTime": 126.7669171816,
+    "retentionTimeUnit": "minute",
+    "scan": "4838",
+    "totalIonCurrent": 4237996800.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4928",
+    "index": 4927,
+    "matchedProducts": [
+     {
+      "intensity": 339807.09375,
+      "mz": 817.6705932617188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4947,
+    "precursor": null,
+    "retentionTime": 129.53938830375,
+    "retentionTimeUnit": "minute",
+    "scan": "4928",
+    "totalIonCurrent": 8343291392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=4983",
+    "index": 4982,
+    "matchedProducts": [
+     {
+      "intensity": 1096312.0,
+      "mz": 817.6802978515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3334,
+    "precursor": null,
+    "retentionTime": 130.706267057083,
+    "retentionTimeUnit": "minute",
+    "scan": "4983",
+    "totalIonCurrent": 8017190400.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5028",
+    "index": 5027,
+    "matchedProducts": [
+     {
+      "intensity": 336398.625,
+      "mz": 817.6737670898438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4990,
+    "precursor": null,
+    "retentionTime": 131.577160699733,
+    "retentionTimeUnit": "minute",
+    "scan": "5028",
+    "totalIonCurrent": 9323702272.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5068",
+    "index": 5067,
+    "matchedProducts": [
+     {
+      "intensity": 717885.0,
+      "mz": 817.6817016601562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4679,
+    "precursor": null,
+    "retentionTime": 132.56598665415,
+    "retentionTimeUnit": "minute",
+    "scan": "5068",
+    "totalIonCurrent": 8286957056.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5073",
+    "index": 5072,
+    "matchedProducts": [
+     {
+      "intensity": 569739.75,
+      "mz": 817.683837890625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3813,
+    "precursor": null,
+    "retentionTime": 132.669518844,
+    "retentionTimeUnit": "minute",
+    "scan": "5073",
+    "totalIonCurrent": 8632660992.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5083",
+    "index": 5082,
+    "matchedProducts": [
+     {
+      "intensity": 878151.25,
+      "mz": 817.6817626953125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3664,
+    "precursor": null,
+    "retentionTime": 132.83455090615,
+    "retentionTimeUnit": "minute",
+    "scan": "5083",
+    "totalIonCurrent": 9063428096.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5123",
+    "index": 5122,
+    "matchedProducts": [
+     {
+      "intensity": 261005.875,
+      "mz": 817.6738891601562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4049,
+    "precursor": null,
+    "retentionTime": 133.801115128817,
+    "retentionTimeUnit": "minute",
+    "scan": "5123",
+    "totalIonCurrent": 5767749120.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5128",
+    "index": 5127,
+    "matchedProducts": [
+     {
+      "intensity": 236277.515625,
+      "mz": 817.681640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5133,
+    "precursor": null,
+    "retentionTime": 133.92354990215,
+    "retentionTimeUnit": "minute",
+    "scan": "5128",
+    "totalIonCurrent": 7604302336.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5143",
+    "index": 5142,
+    "matchedProducts": [
+     {
+      "intensity": 934533.8125,
+      "mz": 817.677978515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3663,
+    "precursor": null,
+    "retentionTime": 134.298501833883,
+    "retentionTimeUnit": "minute",
+    "scan": "5143",
+    "totalIonCurrent": 7110476288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5218",
+    "index": 5217,
+    "matchedProducts": [
+     {
+      "intensity": 445567.8125,
+      "mz": 817.6769409179688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5801,
+    "precursor": null,
+    "retentionTime": 135.98336857895,
+    "retentionTimeUnit": "minute",
+    "scan": "5218",
+    "totalIonCurrent": 4685531136.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5248",
+    "index": 5247,
+    "matchedProducts": [
+     {
+      "intensity": 208715.6875,
+      "mz": 817.6740112304688
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6220,
+    "precursor": null,
+    "retentionTime": 136.6317109616,
+    "retentionTimeUnit": "minute",
+    "scan": "5248",
+    "totalIonCurrent": 4794007040.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5293",
+    "index": 5292,
+    "matchedProducts": [
+     {
+      "intensity": 117347.4296875,
+      "mz": 817.6771850585938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6409,
+    "precursor": null,
+    "retentionTime": 137.964511584817,
+    "retentionTimeUnit": "minute",
+    "scan": "5293",
+    "totalIonCurrent": 2588177920.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5303",
+    "index": 5302,
+    "matchedProducts": [
+     {
+      "intensity": 93714.8203125,
+      "mz": 817.6763916015625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7543,
+    "precursor": null,
+    "retentionTime": 138.305783729867,
+    "retentionTimeUnit": "minute",
+    "scan": "5303",
+    "totalIonCurrent": 2128873344.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5328",
+    "index": 5327,
+    "matchedProducts": [
+     {
+      "intensity": 87884.984375,
+      "mz": 817.673828125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7146,
+    "precursor": null,
+    "retentionTime": 139.1644673312,
+    "retentionTimeUnit": "minute",
+    "scan": "5328",
+    "totalIonCurrent": 1945844480.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5383",
+    "index": 5382,
+    "matchedProducts": [
+     {
+      "intensity": 92331.59375,
+      "mz": 817.6835327148438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8763,
+    "precursor": null,
+    "retentionTime": 141.01789161015,
+    "retentionTimeUnit": "minute",
+    "scan": "5383",
+    "totalIonCurrent": 1470618496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5393",
+    "index": 5392,
+    "matchedProducts": [
+     {
+      "intensity": 102756.09375,
+      "mz": 817.678955078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7273,
+    "precursor": null,
+    "retentionTime": 141.4454387464,
+    "retentionTimeUnit": "minute",
+    "scan": "5393",
+    "totalIonCurrent": 1672884352.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5403",
+    "index": 5402,
+    "matchedProducts": [
+     {
+      "intensity": 279399.84375,
+      "mz": 817.6832275390625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6724,
+    "precursor": null,
+    "retentionTime": 141.782137197067,
+    "retentionTimeUnit": "minute",
+    "scan": "5403",
+    "totalIonCurrent": 1626057600.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5433",
+    "index": 5432,
+    "matchedProducts": [
+     {
+      "intensity": 107241.1640625,
+      "mz": 817.6760864257812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6778,
+    "precursor": null,
+    "retentionTime": 142.752687504267,
+    "retentionTimeUnit": "minute",
+    "scan": "5433",
+    "totalIonCurrent": 1327091072.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5443",
+    "index": 5442,
+    "matchedProducts": [
+     {
+      "intensity": 277758.21875,
+      "mz": 817.682861328125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7741,
+    "precursor": null,
+    "retentionTime": 143.246198338667,
+    "retentionTimeUnit": "minute",
+    "scan": "5443",
+    "totalIonCurrent": 1479917056.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5458",
+    "index": 5457,
+    "matchedProducts": [
+     {
+      "intensity": 272464.5625,
+      "mz": 817.6722412109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6817,
+    "precursor": null,
+    "retentionTime": 143.755596930133,
+    "retentionTimeUnit": "minute",
+    "scan": "5458",
+    "totalIonCurrent": 2216810496.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5483",
+    "index": 5482,
+    "matchedProducts": [
+     {
+      "intensity": 96499.9921875,
+      "mz": 817.6742553710938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6677,
+    "precursor": null,
+    "retentionTime": 144.5193409088,
+    "retentionTimeUnit": "minute",
+    "scan": "5483",
+    "totalIonCurrent": 2008272256.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5493",
+    "index": 5492,
+    "matchedProducts": [
+     {
+      "intensity": 316731.8125,
+      "mz": 817.6726684570312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7335,
+    "precursor": null,
+    "retentionTime": 144.776187531733,
+    "retentionTimeUnit": "minute",
+    "scan": "5493",
+    "totalIonCurrent": 1578556928.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5498",
+    "index": 5497,
+    "matchedProducts": [
+     {
+      "intensity": 110055.9296875,
+      "mz": 817.6757202148438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6883,
+    "precursor": null,
+    "retentionTime": 144.943723852533,
+    "retentionTimeUnit": "minute",
+    "scan": "5498",
+    "totalIonCurrent": 1536301312.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5508",
+    "index": 5507,
+    "matchedProducts": [
+     {
+      "intensity": 95830.484375,
+      "mz": 817.6826171875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7304,
+    "precursor": null,
+    "retentionTime": 145.240144686667,
+    "retentionTimeUnit": "minute",
+    "scan": "5508",
+    "totalIonCurrent": 1415916160.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5513",
+    "index": 5512,
+    "matchedProducts": [
+     {
+      "intensity": 79480.5703125,
+      "mz": 817.681640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8017,
+    "precursor": null,
+    "retentionTime": 145.398149245867,
+    "retentionTimeUnit": "minute",
+    "scan": "5513",
+    "totalIonCurrent": 1384631808.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5569",
+    "index": 5568,
+    "matchedProducts": [
+     {
+      "intensity": 115910.7265625,
+      "mz": 817.6820068359375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6502,
+    "precursor": null,
+    "retentionTime": 147.121860881883,
+    "retentionTimeUnit": "minute",
+    "scan": "5569",
+    "totalIonCurrent": 1318569472.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5574",
+    "index": 5573,
+    "matchedProducts": [
+     {
+      "intensity": 322621.34375,
+      "mz": 817.6800537109375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6646,
+    "precursor": null,
+    "retentionTime": 147.28527170855,
+    "retentionTimeUnit": "minute",
+    "scan": "5574",
+    "totalIonCurrent": 1299824896.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5584",
+    "index": 5583,
+    "matchedProducts": [
+     {
+      "intensity": 156839.65625,
+      "mz": 817.68359375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6349,
+    "precursor": null,
+    "retentionTime": 147.633198830417,
+    "retentionTimeUnit": "minute",
+    "scan": "5584",
+    "totalIonCurrent": 1360057984.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5644",
+    "index": 5643,
+    "matchedProducts": [
+     {
+      "intensity": 540516.0,
+      "mz": 817.6829833984375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3002,
+    "precursor": null,
+    "retentionTime": 149.078770346133,
+    "retentionTimeUnit": "minute",
+    "scan": "5644",
+    "totalIonCurrent": 4184197120.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5674",
+    "index": 5673,
+    "matchedProducts": [
+     {
+      "intensity": 245128.078125,
+      "mz": 817.6781616210938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5220,
+    "precursor": null,
+    "retentionTime": 149.6264590048,
+    "retentionTimeUnit": "minute",
+    "scan": "5674",
+    "totalIonCurrent": 5486457856.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5699",
+    "index": 5698,
+    "matchedProducts": [
+     {
+      "intensity": 1196702.375,
+      "mz": 817.6819458007812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4061,
+    "precursor": null,
+    "retentionTime": 150.095567257083,
+    "retentionTimeUnit": "minute",
+    "scan": "5699",
+    "totalIonCurrent": 4521236992.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5709",
+    "index": 5708,
+    "matchedProducts": [
+     {
+      "intensity": 456574.28125,
+      "mz": 817.6834716796875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3682,
+    "precursor": null,
+    "retentionTime": 150.249227043467,
+    "retentionTimeUnit": "minute",
+    "scan": "5709",
+    "totalIonCurrent": 6021901824.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5779",
+    "index": 5778,
+    "matchedProducts": [
+     {
+      "intensity": 227541.34375,
+      "mz": 817.6768798828125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5803,
+    "precursor": null,
+    "retentionTime": 151.680804656267,
+    "retentionTimeUnit": "minute",
+    "scan": "5779",
+    "totalIonCurrent": 4690073088.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5794",
+    "index": 5793,
+    "matchedProducts": [
+     {
+      "intensity": 426757.6875,
+      "mz": 817.6776733398438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6158,
+    "precursor": null,
+    "retentionTime": 152.0282415624,
+    "retentionTimeUnit": "minute",
+    "scan": "5794",
+    "totalIonCurrent": 3764421120.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5799",
+    "index": 5798,
+    "matchedProducts": [
+     {
+      "intensity": 187238.3125,
+      "mz": 817.680419921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6266,
+    "precursor": null,
+    "retentionTime": 152.14690727415,
+    "retentionTimeUnit": "minute",
+    "scan": "5799",
+    "totalIonCurrent": 3925676288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5904",
+    "index": 5903,
+    "matchedProducts": [
+     {
+      "intensity": 375781.125,
+      "mz": 817.66943359375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6215,
+    "precursor": null,
+    "retentionTime": 154.481094169867,
+    "retentionTimeUnit": "minute",
+    "scan": "5904",
+    "totalIonCurrent": 3080390656.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5949",
+    "index": 5948,
+    "matchedProducts": [
+     {
+      "intensity": 485541.5625,
+      "mz": 817.6757202148438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6836,
+    "precursor": null,
+    "retentionTime": 155.636073029867,
+    "retentionTimeUnit": "minute",
+    "scan": "5949",
+    "totalIonCurrent": 2700179712.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=5989",
+    "index": 5988,
+    "matchedProducts": [
+     {
+      "intensity": 224746.03125,
+      "mz": 817.6724243164062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7365,
+    "precursor": null,
+    "retentionTime": 156.64169813815,
+    "retentionTimeUnit": "minute",
+    "scan": "5989",
+    "totalIonCurrent": 2141248128.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6019",
+    "index": 6018,
+    "matchedProducts": [
+     {
+      "intensity": 630834.25,
+      "mz": 817.6708984375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6747,
+    "precursor": null,
+    "retentionTime": 157.517336822933,
+    "retentionTimeUnit": "minute",
+    "scan": "6019",
+    "totalIonCurrent": 2714968576.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6029",
+    "index": 6028,
+    "matchedProducts": [
+     {
+      "intensity": 1115409.375,
+      "mz": 817.67041015625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6849,
+    "precursor": null,
+    "retentionTime": 157.81720288,
+    "retentionTimeUnit": "minute",
+    "scan": "6029",
+    "totalIonCurrent": 2349163008.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6039",
+    "index": 6038,
+    "matchedProducts": [
+     {
+      "intensity": 373012.96875,
+      "mz": 817.6724853515625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6889,
+    "precursor": null,
+    "retentionTime": 158.133046987467,
+    "retentionTimeUnit": "minute",
+    "scan": "6039",
+    "totalIonCurrent": 2689268736.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6049",
+    "index": 6048,
+    "matchedProducts": [
+     {
+      "intensity": 398073.875,
+      "mz": 817.6710205078125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8939,
+    "precursor": null,
+    "retentionTime": 158.4030451016,
+    "retentionTimeUnit": "minute",
+    "scan": "6049",
+    "totalIonCurrent": 1970155904.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6054",
+    "index": 6053,
+    "matchedProducts": [
+     {
+      "intensity": 602393.8125,
+      "mz": 817.6725463867188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7320,
+    "precursor": null,
+    "retentionTime": 158.555949160533,
+    "retentionTimeUnit": "minute",
+    "scan": "6054",
+    "totalIonCurrent": 2761056512.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6064",
+    "index": 6063,
+    "matchedProducts": [
+     {
+      "intensity": 596584.875,
+      "mz": 817.6715698242188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7442,
+    "precursor": null,
+    "retentionTime": 158.9766285664,
+    "retentionTimeUnit": "minute",
+    "scan": "6064",
+    "totalIonCurrent": 2551225600.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6074",
+    "index": 6073,
+    "matchedProducts": [
+     {
+      "intensity": 236815.328125,
+      "mz": 817.67919921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8151,
+    "precursor": null,
+    "retentionTime": 159.2563831264,
+    "retentionTimeUnit": "minute",
+    "scan": "6074",
+    "totalIonCurrent": 2110883072.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6079",
+    "index": 6078,
+    "matchedProducts": [
+     {
+      "intensity": 381492.40625,
+      "mz": 817.6718139648438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7063,
+    "precursor": null,
+    "retentionTime": 159.414465166133,
+    "retentionTimeUnit": "minute",
+    "scan": "6079",
+    "totalIonCurrent": 2181676288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6099",
+    "index": 6098,
+    "matchedProducts": [
+     {
+      "intensity": 415057.25,
+      "mz": 817.67236328125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6939,
+    "precursor": null,
+    "retentionTime": 160.0284348528,
+    "retentionTimeUnit": "minute",
+    "scan": "6099",
+    "totalIonCurrent": 2101871616.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6104",
+    "index": 6103,
+    "matchedProducts": [
+     {
+      "intensity": 142386.03125,
+      "mz": 817.6718139648438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7001,
+    "precursor": null,
+    "retentionTime": 160.1843966088,
+    "retentionTimeUnit": "minute",
+    "scan": "6104",
+    "totalIonCurrent": 2175235328.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6129",
+    "index": 6128,
+    "matchedProducts": [
+     {
+      "intensity": 215421.390625,
+      "mz": 817.6735229492188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6855,
+    "precursor": null,
+    "retentionTime": 160.85626518695,
+    "retentionTimeUnit": "minute",
+    "scan": "6129",
+    "totalIonCurrent": 2014704768.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6154",
+    "index": 6153,
+    "matchedProducts": [
+     {
+      "intensity": 165217.28125,
+      "mz": 817.6700439453125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6924,
+    "precursor": null,
+    "retentionTime": 161.701127061333,
+    "retentionTimeUnit": "minute",
+    "scan": "6154",
+    "totalIonCurrent": 1860841472.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6174",
+    "index": 6173,
+    "matchedProducts": [
+     {
+      "intensity": 228548.421875,
+      "mz": 817.6762084960938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7001,
+    "precursor": null,
+    "retentionTime": 162.331528246667,
+    "retentionTimeUnit": "minute",
+    "scan": "6174",
+    "totalIonCurrent": 1659013888.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6184",
+    "index": 6183,
+    "matchedProducts": [
+     {
+      "intensity": 137294.453125,
+      "mz": 817.6729125976562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7714,
+    "precursor": null,
+    "retentionTime": 162.648095829333,
+    "retentionTimeUnit": "minute",
+    "scan": "6184",
+    "totalIonCurrent": 1666919296.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6219",
+    "index": 6218,
+    "matchedProducts": [
+     {
+      "intensity": 305258.3125,
+      "mz": 817.6716918945312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7099,
+    "precursor": null,
+    "retentionTime": 163.773093424267,
+    "retentionTimeUnit": "minute",
+    "scan": "6219",
+    "totalIonCurrent": 1503099648.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6244",
+    "index": 6243,
+    "matchedProducts": [
+     {
+      "intensity": 110489.671875,
+      "mz": 817.6838989257812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7353,
+    "precursor": null,
+    "retentionTime": 164.6750357872,
+    "retentionTimeUnit": "minute",
+    "scan": "6244",
+    "totalIonCurrent": 1739650560.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6294",
+    "index": 6293,
+    "matchedProducts": [
+     {
+      "intensity": 191055.859375,
+      "mz": 817.6717529296875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 4635,
+    "precursor": null,
+    "retentionTime": 166.198297949867,
+    "retentionTimeUnit": "minute",
+    "scan": "6294",
+    "totalIonCurrent": 4072058624.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6319",
+    "index": 6318,
+    "matchedProducts": [
+     {
+      "intensity": 201591.8125,
+      "mz": 817.6732177734375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5722,
+    "precursor": null,
+    "retentionTime": 166.7448913176,
+    "retentionTimeUnit": "minute",
+    "scan": "6319",
+    "totalIonCurrent": 3619707392.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6324",
+    "index": 6323,
+    "matchedProducts": [
+     {
+      "intensity": 115382.1640625,
+      "mz": 817.6776123046875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6627,
+    "precursor": null,
+    "retentionTime": 166.867270728533,
+    "retentionTimeUnit": "minute",
+    "scan": "6324",
+    "totalIonCurrent": 3560288000.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6334",
+    "index": 6333,
+    "matchedProducts": [
+     {
+      "intensity": 154785.765625,
+      "mz": 817.6770629882812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7190,
+    "precursor": null,
+    "retentionTime": 167.152751625867,
+    "retentionTimeUnit": "minute",
+    "scan": "6334",
+    "totalIonCurrent": 2233549824.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6364",
+    "index": 6363,
+    "matchedProducts": [
+     {
+      "intensity": 187394.859375,
+      "mz": 817.6767578125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5792,
+    "precursor": null,
+    "retentionTime": 167.999166346133,
+    "retentionTimeUnit": "minute",
+    "scan": "6364",
+    "totalIonCurrent": 3160380160.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6369",
+    "index": 6368,
+    "matchedProducts": [
+     {
+      "intensity": 313309.6875,
+      "mz": 817.6787719726562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 3681,
+    "precursor": null,
+    "retentionTime": 168.136160920267,
+    "retentionTimeUnit": "minute",
+    "scan": "6369",
+    "totalIonCurrent": 2764517888.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6394",
+    "index": 6393,
+    "matchedProducts": [
+     {
+      "intensity": 151494.015625,
+      "mz": 817.6793823242188
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6359,
+    "precursor": null,
+    "retentionTime": 168.677634436533,
+    "retentionTimeUnit": "minute",
+    "scan": "6394",
+    "totalIonCurrent": 2712230912.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6404",
+    "index": 6403,
+    "matchedProducts": [
+     {
+      "intensity": 158333.609375,
+      "mz": 817.6758422851562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6602,
+    "precursor": null,
+    "retentionTime": 168.957428962667,
+    "retentionTimeUnit": "minute",
+    "scan": "6404",
+    "totalIonCurrent": 2506893312.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6419",
+    "index": 6418,
+    "matchedProducts": [
+     {
+      "intensity": 93146.09375,
+      "mz": 817.6719970703125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6904,
+    "precursor": null,
+    "retentionTime": 169.369557210667,
+    "retentionTimeUnit": "minute",
+    "scan": "6419",
+    "totalIonCurrent": 2115793152.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6429",
+    "index": 6428,
+    "matchedProducts": [
+     {
+      "intensity": 119068.4765625,
+      "mz": 817.6727294921875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6620,
+    "precursor": null,
+    "retentionTime": 169.744548423467,
+    "retentionTimeUnit": "minute",
+    "scan": "6429",
+    "totalIonCurrent": 2068078976.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6439",
+    "index": 6438,
+    "matchedProducts": [
+     {
+      "intensity": 70531.1328125,
+      "mz": 817.6819458007812
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8633,
+    "precursor": null,
+    "retentionTime": 170.0794208472,
+    "retentionTimeUnit": "minute",
+    "scan": "6439",
+    "totalIonCurrent": 1495709952.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6459",
+    "index": 6458,
+    "matchedProducts": [
+     {
+      "intensity": 351612.3125,
+      "mz": 817.67578125
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5889,
+    "precursor": null,
+    "retentionTime": 170.7766654328,
+    "retentionTimeUnit": "minute",
+    "scan": "6459",
+    "totalIonCurrent": 2023655680.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6484",
+    "index": 6483,
+    "matchedProducts": [
+     {
+      "intensity": 237761.984375,
+      "mz": 817.6719360351562
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8579,
+    "precursor": null,
+    "retentionTime": 171.6347894336,
+    "retentionTimeUnit": "minute",
+    "scan": "6484",
+    "totalIonCurrent": 1701014528.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6489",
+    "index": 6488,
+    "matchedProducts": [
+     {
+      "intensity": 172228.453125,
+      "mz": 817.6829833984375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7300,
+    "precursor": null,
+    "retentionTime": 171.830074541067,
+    "retentionTimeUnit": "minute",
+    "scan": "6489",
+    "totalIonCurrent": 1888857472.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6499",
+    "index": 6498,
+    "matchedProducts": [
+     {
+      "intensity": 232594.34375,
+      "mz": 817.6762084960938
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8774,
+    "precursor": null,
+    "retentionTime": 172.179536966133,
+    "retentionTimeUnit": "minute",
+    "scan": "6499",
+    "totalIonCurrent": 2003244416.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6514",
+    "index": 6513,
+    "matchedProducts": [
+     {
+      "intensity": 450570.6875,
+      "mz": 817.67431640625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7963,
+    "precursor": null,
+    "retentionTime": 172.7937658776,
+    "retentionTimeUnit": "minute",
+    "scan": "6514",
+    "totalIonCurrent": 3863734784.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6519",
+    "index": 6518,
+    "matchedProducts": [
+     {
+      "intensity": 692375.9375,
+      "mz": 817.66943359375
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7630,
+    "precursor": null,
+    "retentionTime": 172.963553757067,
+    "retentionTimeUnit": "minute",
+    "scan": "6519",
+    "totalIonCurrent": 3789555456.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6544",
+    "index": 6543,
+    "matchedProducts": [
+     {
+      "intensity": 493188.40625,
+      "mz": 817.6697998046875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5312,
+    "precursor": null,
+    "retentionTime": 173.7681020568,
+    "retentionTimeUnit": "minute",
+    "scan": "6544",
+    "totalIonCurrent": 6489775104.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6564",
+    "index": 6563,
+    "matchedProducts": [
+     {
+      "intensity": 1092517.625,
+      "mz": 817.6766357421875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6912,
+    "precursor": null,
+    "retentionTime": 174.209412299733,
+    "retentionTimeUnit": "minute",
+    "scan": "6564",
+    "totalIonCurrent": 8989927424.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6569",
+    "index": 6568,
+    "matchedProducts": [
+     {
+      "intensity": 191377.296875,
+      "mz": 817.6773071289062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7205,
+    "precursor": null,
+    "retentionTime": 174.3661734464,
+    "retentionTimeUnit": "minute",
+    "scan": "6569",
+    "totalIonCurrent": 3559776256.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6584",
+    "index": 6583,
+    "matchedProducts": [
+     {
+      "intensity": 98234.9453125,
+      "mz": 817.684326171875
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 8099,
+    "precursor": null,
+    "retentionTime": 174.879854948267,
+    "retentionTimeUnit": "minute",
+    "scan": "6584",
+    "totalIonCurrent": 1157738368.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6594",
+    "index": 6593,
+    "matchedProducts": [
+     {
+      "intensity": 102407.5,
+      "mz": 817.683837890625
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 7776,
+    "precursor": null,
+    "retentionTime": 175.247052629867,
+    "retentionTimeUnit": "minute",
+    "scan": "6594",
+    "totalIonCurrent": 905348288.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6784",
+    "index": 6783,
+    "matchedProducts": [
+     {
+      "intensity": 377196.09375,
+      "mz": 817.6851196289062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 5512,
+    "precursor": null,
+    "retentionTime": 182.903882376533,
+    "retentionTimeUnit": "minute",
+    "scan": "6784",
+    "totalIonCurrent": 1289651456.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6789",
+    "index": 6788,
+    "matchedProducts": [
+     {
+      "intensity": 98172.3828125,
+      "mz": 817.6843872070312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6203,
+    "precursor": null,
+    "retentionTime": 183.0392649944,
+    "retentionTimeUnit": "minute",
+    "scan": "6789",
+    "totalIonCurrent": 1140796928.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6799",
+    "index": 6798,
+    "matchedProducts": [
+     {
+      "intensity": 163906.625,
+      "mz": 817.6716918945312
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6277,
+    "precursor": null,
+    "retentionTime": 183.3222657648,
+    "retentionTimeUnit": "minute",
+    "scan": "6799",
+    "totalIonCurrent": 768362816.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6814",
+    "index": 6813,
+    "matchedProducts": [
+     {
+      "intensity": 100639.1171875,
+      "mz": 817.6763305664062
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6090,
+    "precursor": null,
+    "retentionTime": 183.8620956512,
+    "retentionTimeUnit": "minute",
+    "scan": "6814",
+    "totalIonCurrent": 371481472.0
+   },
+   {
+    "centroided": true,
+    "id": "controllerType=0 controllerNumber=1 scan=6829",
+    "index": 6828,
+    "matchedProducts": [
+     {
+      "intensity": 35965.8125,
+      "mz": 817.6835327148438
+     }
+    ],
+    "msLevel": 1,
+    "peakCount": 6624,
+    "precursor": null,
+    "retentionTime": 184.4191451408,
+    "retentionTimeUnit": "minute",
+    "scan": "6829",
+    "totalIonCurrent": 196417856.0
+   }
+  ],
+  "truncated": false
+ }
+}

@@ -1,0 +1,6 @@
+{
+ "bundle": "d3",
+ "scripts": [
+  "../../templates/crameri-batlow.js"
+ ]
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>chart-forge figure</title>
+<style>
+/*__TOKENS__*/
+</style>
+</head>
+<body>
+<main id="app">
+  <header>
+    <h1 id="fig-title"></h1>
+    <p id="fig-subtitle"></p>
+    <div id="export-bar" style="display:none;margin:4px 0 10px">
+      <button id="export-svg" style="font:600 11px var(--font,system-ui);padding:2px 10px;border:1px solid var(--g-soft,#ccc);background:#fff;color:var(--g-mid,#555);border-radius:3px;cursor:pointer">Save SVG</button>
+      <button id="export-png" style="font:600 11px var(--font,system-ui);padding:2px 10px;border:1px solid var(--g-soft,#ccc);background:#fff;color:var(--g-mid,#555);border-radius:3px;cursor:pointer">Save PNG</button>
+    </div>
+  </header>
+  <div id="chart" role="figure" aria-labelledby="fig-title"></div>
+  <footer id="provenance"></footer>
+</main>
+
+<script>
+/*__D3__*/
+</script>
+
+<!-- Data contract: injected by build.py. Chart code reads window.DATA = {data, meta}. -->
+<script id="forge-data" type="application/json">
+/*__DATA__*/
+</script>
+
+<script>
+/* chart-forge runtime: header, provenance footer, export helper, readiness flag. */
+(function () {
+  "use strict";
+  window.DATA = JSON.parse(document.getElementById("forge-data").textContent);
+  const meta = window.DATA.meta || {};
+
+  document.title = meta.title || "chart-forge figure";
+  document.getElementById("fig-title").textContent = meta.title || "";
+  document.getElementById("fig-subtitle").textContent = meta.subtitle || "";
+
+  const prov = [];
+  if (meta.source) prov.push("Source: " + meta.source);
+  if (meta.transform) prov.push("Transform: " + meta.transform);
+  if (meta.thresholds) prov.push("Thresholds: " + JSON.stringify(meta.thresholds));
+  if (meta.colour_scale) prov.push("Colour scale: " + meta.colour_scale);
+  if (meta.n) prov.push("N = " + meta.n);
+  prov.push("Generated " + (meta.generated || new Date().toISOString()) + " by chart-forge");
+  document.getElementById("provenance").textContent = prov.join("  ·  ");
+
+  /* Export helper: serializes the #chart SVG with xmlns + provenance stamp.
+     Client-side export buttons (below) make every figure self-sufficient —
+     no node, no server, works in any browser or app webview. Static-export
+     scripts (dev-time batch QA) also route through here. */
+  window.chartForge = {
+    exportSVG() {
+      const svg = document.querySelector("#chart svg");
+      if (!svg) throw new Error("no svg in #chart");
+      const clone = svg.cloneNode(true);
+      clone.setAttribute("xmlns", "http://www.w3.org/2000/svg");
+      const stamp = document.createComment(
+        " chart-forge | " + (meta.title || "") + " | " + (meta.source || "no-source") + " ");
+      clone.insertBefore(stamp, clone.firstChild);
+      return '<?xml version="1.0" encoding="UTF-8"?>\n' + new XMLSerializer().serializeToString(clone);
+    }
+  };
+
+  /* ---- client-side export buttons (zero-dependency).
+     Wired on load: the chart script (which creates the svg) runs after this
+     runtime script, so the check must happen once charts exist. ---- */
+  window.addEventListener("load", () => {
+    const svg = document.querySelector("#chart svg");
+    const canvas = document.querySelector("#chart canvas");
+    if (!svg || canvas) return;             // hybrid/WebGL figures require full-page PNG capture
+    document.getElementById("export-bar").style.display = "block";
+    const safe = s => (s || "chart-forge").replace(/[^\w.-]+/g, "_").slice(0, 80);
+    const download = (name, href) => {
+      const a = document.createElement("a");
+      a.href = href; a.download = name; document.body.appendChild(a); a.click(); a.remove();
+    };
+    document.getElementById("export-svg").onclick = () => {
+      const blob = new Blob([window.chartForge.exportSVG()], { type: "image/svg+xml" });
+      const url = URL.createObjectURL(blob);
+      download(safe(meta.title) + ".svg", url);
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+    };
+    document.getElementById("export-png").onclick = () => {
+      const blob = new Blob([window.chartForge.exportSVG()], { type: "image/svg+xml" });
+      const url = URL.createObjectURL(blob);
+      const img = new Image();
+      img.onload = () => {
+        const vb = svg.viewBox.baseVal;
+        const w = vb.width || svg.clientWidth || 1054;
+        const h = vb.height || svg.clientHeight || 600;
+        const scale = 3.4;                  // house export scale (300 dpi class)
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.round(w * scale); canvas.height = Math.round(h * scale);
+        const ctx = canvas.getContext("2d");
+        ctx.fillStyle = "#ffffff";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        URL.revokeObjectURL(url);
+        download(safe(meta.title) + ".png", canvas.toDataURL("image/png"));
+      };
+      img.src = url;
+    };
+  });
+
+  window.__chartReady = false;
+  window.__chartError = null;
+  /* Self-reporting failure: without a headless pre-render QA pass, a broken
+     chart must be visible on the page, not a silent blank. */
+  function reportError(message) {
+    window.__chartError = String(message || "unknown");
+    window.__chartReady = false;
+    if (document.getElementById("chart-error")) return;
+    const banner = document.createElement("div");
+    banner.id = "chart-error";
+    banner.style.cssText = "margin:8px 0;padding:8px 12px;border:1px solid #b3261e;" +
+      "border-radius:4px;color:#b3261e;font:12px var(--font, system-ui);background:#fdf3f2";
+    banner.textContent = "chart error: " + window.__chartError;
+    document.getElementById("chart").before(banner);
+  }
+  window.addEventListener("error", (event) => {
+    reportError((event.message || "unknown") +
+      (event.filename ? " (" + event.filename.split("/").pop() + ":" + event.lineno + ")" : ""));
+  });
+  window.addEventListener("unhandledrejection", event => reportError(event.reason));
+})();
+</script>
+
+<script>
+/*__CHART__*/
+</script>
+</body>
+</html>

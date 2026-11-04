@@ -1,0 +1,34 @@
+{
+ "data": {
+  "rows": [
+   {
+    "label": "WT01",
+    "value": 812
+   },
+   {
+    "label": "WT02",
+    "value": 934
+   },
+   {
+    "label": "WT03",
+    "value": 771
+   },
+   {
+    "label": "M01",
+    "value": 1523
+   },
+   {
+    "label": "M02",
+    "value": 1688
+   },
+   {
+    "label": "M03",
+    "value": 1445
+   }
+  ]
+ },
+ "meta": {
+  "title": "Basic bar — starting template",
+  "n": "6 bars (replace rows)"
+ }
+}

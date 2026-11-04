@@ -1,0 +1,29 @@
+# toppicr-py default config
+# Override per-run by editing the workspace config.yaml before submit.
+#
+# Run-folder layout is FLAT. Before running, stage into the run folder:
+#   {sample}.mzML      for each sample below
+#   database.fasta     the protein database (rename your fasta to this)
+
+samples:
+  - chlamy_h4_centroided
+
+# topfd parameters (flag authority: the deployed toppic Node README, GET /api/nodes).
+topfd:
+  activation: FILE   # 碎裂方式 FILE=按谱文件自判；仪器元数据缺失时手填 ETD/CID/HCD/UVPD/MPD
+  max_charge: 30     # 去卷积最大电荷（完整组蛋白常规 30）
+  mz_error: 0.02     # 前驱 m/z 容差 (Da)；Orbitrap 经验 0.02
+  skip_html: true    # 跳过 HTML 报告（省磁盘与时间）
+
+# toppic parameters (flag authority: the deployed toppic Node README, GET /api/nodes).
+toppic:
+  activation: FILE  # 碎裂方式（同上，与 topfd 保持一致）
+  mass_error_tolerance: 10   # 前驱质量误差 (PPM，裸整数；勿写 "10ppm")
+  n_terminal_form: NONE,NME,NME_ACETYLATION,M_ACETYLATION   # N 端形式搜索集（完整蛋白常规四选）
+  num_shift: 1     # 每蛋白形式允许的意外移位数；定向复核保持 1
+  # TopPIC -R: comma-separated subset of COMPLETE,PREFIX,SUFFIX,INTERNAL (TopPIC's own default).
+  # 'TERMIN'/'MULTIPLE' are NOT valid TopPIC values; TopPIC accepts them silently, matches
+  # nothing, and exits 0 -> an empty proteoform table reported as SUCCEEDED. For intact histones,
+  # COMPLETE alone is cleanest.
+  proteoform_type: COMPLETE
+  skip_html: true

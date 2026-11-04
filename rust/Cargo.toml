@@ -1,0 +1,19 @@
+[workspace]
+members = ["toolbox"]
+resolver = "2"
+
+[patch.crates-io]
+chemical_elements = { path = "third_party/chemical_elements" }
+
+[workspace.package]
+edition = "2021"
+license = "GPL-3.0-or-later"
+rust-version = "1.97"
+
+[workspace.dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true

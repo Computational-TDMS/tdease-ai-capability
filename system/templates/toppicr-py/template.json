@@ -1,0 +1,10 @@
+{
+  "id": "toppicr-py",
+  "version": "3",
+  "name": "TopPIC Pipeline",
+  "description": "Top-down proteomics identification: mzML -> topfd -> serialized full-thread TopPIC searches. The first search builds the shared FASTA index. Skips HTML output by default.",
+  "nodes": ["toppic"],
+  "entrypoints": {
+    "workflow": "workflow.json"
+  }
+}
